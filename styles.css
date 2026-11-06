@@ -1694,3 +1694,320 @@ body {
     font-size: 3.5rem;
   }
 }
+
+
+/* ========================================================
+   RESPONSIVE DESIGN & TABLET / REDMI PAD SE 11" OPTIMIZATIONS
+   ======================================================== */
+
+/* Calendar / Past Papers Plan Tab Styling */
+#calContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.calendar-summary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.cal-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.cal-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #f8fafc;
+}
+
+.cal-counter {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.12);
+  padding: 3px 10px;
+  border-radius: 9999px;
+}
+
+.cal-day-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.cal-day-card:hover {
+  background: var(--bg-card-hover);
+  border-color: #6366f1;
+  transform: translateY(-2px);
+}
+
+.cal-day-card.is-today {
+  border: 2px solid #f59e0b;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.25);
+  background: rgba(245, 158, 11, 0.05);
+}
+
+.cal-day-card.is-done {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.06);
+}
+
+.cal-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cal-date-badge {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #f8fafc;
+}
+
+.cal-day-badge {
+  font-size: 0.74rem;
+  background: rgba(99, 102, 241, 0.18);
+  color: #818cf8;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+.cal-paper-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.cal-task-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(10, 14, 26, 0.5);
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.cal-task-item {
+  display: flex;
+  font-size: 0.82rem;
+  gap: 8px;
+}
+
+.cal-task-label {
+  color: #94a3b8;
+  font-weight: 600;
+  min-width: 65px;
+}
+
+.cal-task-desc {
+  color: #f1f5f9;
+}
+
+.cal-done-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  cursor: pointer;
+  margin-top: 4px;
+  user-select: none;
+}
+
+.cal-done-checkbox input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  accent-color: #10b981;
+  cursor: pointer;
+}
+
+/* Tablet Portrait & Landscape (min-width: 768px) - e.g. Redmi Pad SE 11" */
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+    padding: 20px 24px;
+  }
+
+  /* Header on Tablet */
+  .app-header {
+    padding: 14px 28px;
+  }
+
+  .brand-name {
+    font-size: 1.25rem;
+  }
+
+  /* Hero Card */
+  .hero-card {
+    padding: 24px 28px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+  }
+
+  .hero-countdown {
+    font-size: 3rem;
+  }
+
+  .hero-current-activity {
+    font-size: 1.5rem;
+  }
+
+  /* Top Tab Navigation */
+  .tab-navigation {
+    max-width: 820px;
+    margin: 0 auto 24px auto;
+    padding: 6px;
+    border-radius: 16px;
+  }
+
+  .tab-btn {
+    padding: 11px 16px;
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+
+  /* Timeline Grid (2 Columns on Tablet) */
+  #timelineContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .timeline-item {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  /* Calendar Papers (2 Columns on Tablet) */
+  #calContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  /* Kanji Cards (2 Columns on Tablet Portrait) */
+  .kanji-cards-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .kanji-card {
+    border-radius: 18px;
+    padding: 18px;
+  }
+
+  .kanji-char-col {
+    width: 72px;
+    height: 72px;
+  }
+
+  .kanji-big-char {
+    font-size: 2.2rem;
+  }
+
+  /* Kana Grid */
+  .kana-grid {
+    grid-template-columns: repeat(auto-fill, minmax(82px, 1fr));
+    gap: 12px;
+  }
+
+  .kana-card {
+    padding: 14px 8px;
+    border-radius: 14px;
+  }
+
+  .kana-char {
+    font-size: 1.8rem;
+  }
+
+  /* Notes Tab */
+  .notes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    align-items: start;
+  }
+
+  /* Modals on Tablet */
+  .modal-content,
+  .settings-modal-content,
+  .alarm-modal-content {
+    max-width: 580px;
+    border-radius: 26px;
+    padding: 28px;
+  }
+
+  .focus-modal-content {
+    max-width: 700px;
+    border-radius: 28px;
+    padding: 40px 32px;
+  }
+
+  .focus-timer-display {
+    font-size: 5rem;
+  }
+
+  /* Audio & D-Day Banners */
+  .audio-banner,
+  .dday-banner {
+    max-width: 960px;
+    margin: 12px auto;
+    border-radius: 16px;
+  }
+}
+
+/* Large Tablet Landscape & Desktop (min-width: 1024px) - Redmi Pad SE Landscape 1200px */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    padding: 26px 36px;
+  }
+
+  .audio-banner,
+  .dday-banner {
+    max-width: 1200px;
+  }
+
+  /* Kanji Cards: 3 Columns in Landscape */
+  .kanji-cards-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  /* Calendar Papers: 3 Columns in Landscape */
+  #calContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  /* Kana Grid: Larger items */
+  .kana-grid {
+    grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+    gap: 14px;
+  }
+
+  .hero-card {
+    padding: 28px 36px;
+  }
+
+  .hero-countdown {
+    font-size: 3.5rem;
+  }
+}
