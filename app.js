@@ -1126,15 +1126,21 @@ function switchTab(tabName) {
   const tabDaily = document.getElementById('tabDaily');
   const tabPlan = document.getElementById('tabPlan');
   const tabKanji = document.getElementById('tabKanji');
+  const tabVocab = document.getElementById('tabVocab');
+  const tabSameMeaning = document.getElementById('tabSameMeaning');
+  const tabGrammar = document.getElementById('tabGrammar');
   const tabNotes = document.getElementById('tabNotes');
 
   const viewDaily = document.getElementById('viewDaily');
   const viewPlan = document.getElementById('viewPlan');
   const viewKanji = document.getElementById('viewKanji');
+  const viewVocab = document.getElementById('viewVocab');
+  const viewSameMeaning = document.getElementById('viewSameMeaning');
+  const viewGrammar = document.getElementById('viewGrammar');
   const viewNotes = document.getElementById('viewNotes');
 
-  [tabDaily, tabPlan, tabKanji, tabNotes].forEach(t => t && t.classList.remove('active'));
-  [viewDaily, viewPlan, viewKanji, viewNotes].forEach(v => v && v.classList.add('hidden'));
+  [tabDaily, tabPlan, tabKanji, tabVocab, tabSameMeaning, tabGrammar, tabNotes].forEach(t => t && t.classList.remove('active'));
+  [viewDaily, viewPlan, viewKanji, viewVocab, viewSameMeaning, viewGrammar, viewNotes].forEach(v => v && v.classList.add('hidden'));
 
   if (tabName === 'daily') {
     if (tabDaily) tabDaily.classList.add('active');
@@ -1146,6 +1152,18 @@ function switchTab(tabName) {
     if (tabKanji) tabKanji.classList.add('active');
     if (viewKanji) viewKanji.classList.remove('hidden');
     renderKanjiSection();
+  } else if (tabName === 'vocab') {
+    if (tabVocab) tabVocab.classList.add('active');
+    if (viewVocab) viewVocab.classList.remove('hidden');
+    renderVocabSection();
+  } else if (tabName === 'samemeaning') {
+    if (tabSameMeaning) tabSameMeaning.classList.add('active');
+    if (viewSameMeaning) viewSameMeaning.classList.remove('hidden');
+    renderSameMeaningSection();
+  } else if (tabName === 'grammar') {
+    if (tabGrammar) tabGrammar.classList.add('active');
+    if (viewGrammar) viewGrammar.classList.remove('hidden');
+    renderGrammarSection();
   } else if (tabName === 'notes') {
     if (tabNotes) tabNotes.classList.add('active');
     if (viewNotes) viewNotes.classList.remove('hidden');
@@ -1432,3 +1450,318 @@ document.addEventListener('DOMContentLoaded', () => {
   if (preWarnSelect) preWarnSelect.checked = settings.preWarning10m;
   if (vibSelect) vibSelect.checked = settings.vibration;
 });
+
+// =============================================================
+// N3 VOCABULARY SECTION (with Ruby Furigana)
+// =============================================================
+let currentVocabFilter = 'all';
+let vocabSearchQuery = '';
+let isVocabQuiz = false;
+let vocabDisplayLimit = 36;
+
+function setVocabFilter(filterName) {
+  currentVocabFilter = filterName;
+  vocabDisplayLimit = 36;
+  const chips = ['chipVocabAll', 'chipVocabCompound', 'chipVocabAdverb', 'chipVocabKatakana', 'chipVocabVerbAdj'];
+  chips.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.remove('active');
+  });
+
+  const activeMap = {
+    all: 'chipVocabAll',
+    compound: 'chipVocabCompound',
+    adverb: 'chipVocabAdverb',
+    katakana: 'chipVocabKatakana',
+    verb_adj: 'chipVocabVerbAdj'
+  };
+  const activeEl = document.getElementById(activeMap[filterName]);
+  if (activeEl) activeEl.classList.add('active');
+  renderVocabSection();
+}
+
+function onVocabSearch(query) {
+  vocabSearchQuery = (query || '').trim().toLowerCase();
+  vocabDisplayLimit = 36;
+  renderVocabSection();
+}
+
+function toggleVocabQuizMode(isChecked) {
+  isVocabQuiz = isChecked;
+  renderVocabSection();
+}
+
+function loadMoreVocab() {
+  vocabDisplayLimit += 36;
+  renderVocabSection();
+}
+
+function renderVocabSection() {
+  const container = document.getElementById('vocabDisplayContainer');
+  const countLabel = document.getElementById('vocabCountLabel');
+  if (!container || typeof N3_VOCAB_DATA === 'undefined') return;
+
+  const filtered = N3_VOCAB_DATA.filter(item => {
+    if (currentVocabFilter !== 'all' && item.category !== currentVocabFilter) return false;
+    if (!vocabSearchQuery) return true;
+    return item.word.toLowerCase().includes(vocabSearchQuery) ||
+           item.reading.toLowerCase().includes(vocabSearchQuery) ||
+           item.romaji.toLowerCase().includes(vocabSearchQuery) ||
+           item.meaning.toLowerCase().includes(vocabSearchQuery) ||
+           (item.example && item.example.toLowerCase().includes(vocabSearchQuery)) ||
+           (item.exampleMeaning && item.exampleMeaning.toLowerCase().includes(vocabSearchQuery));
+  });
+
+  const totalMatches = filtered.length;
+  const visibleItems = filtered.slice(0, vocabDisplayLimit);
+
+  if (countLabel) countLabel.textContent = `${totalMatches} ခုအနက် ${visibleItems.length} ခု ပြသထားသည်`;
+
+  if (totalMatches === 0) {
+    container.innerHTML = '<div style="text-align: center; color: #64748b; padding: 30px; font-size: 0.9rem;">ရှာမတွေ့ပါ။ အခြား စာလုံး သို့မဟုတ် မြန်မာစကားလုံးဖြင့် ရှာကြည့်ပါ။</div>';
+    return;
+  }
+
+  const hasMore = visibleItems.length < totalMatches;
+  const remaining = totalMatches - visibleItems.length;
+
+  container.innerHTML = `
+    <div class="vocab-cards-list">
+      ${visibleItems.map((item, idx) => `
+        <div class="study-card" id="vocab-card-${idx}">
+          <div class="study-card-header">
+            <div class="study-card-word-group">
+              <span class="study-main-word" onclick="speakJapanese('${item.word.replace(/'/g, "\'")}')" style="cursor:pointer;" title="အသံထွက် နားထောင်ရန်">
+                ${item.word}
+              </span>
+              <span class="study-reading">${item.reading} (${item.romaji})</span>
+            </div>
+            <button class="kanji-audio-btn" onclick="speakJapanese('${item.word.replace(/'/g, "\'")}')">
+              🔊 အသံ
+            </button>
+          </div>
+          <div class="study-meaning" style="${isVocabQuiz ? 'filter: blur(5px); cursor: pointer;' : ''}" onclick="this.style.filter='none'">
+            ${item.meaning}
+          </div>
+          ${item.exampleRuby ? `
+            <div class="study-example-box" onclick="speakJapanese('${item.example.replace(/'/g, "\'")}')" style="cursor:pointer;">
+              <div class="study-example-sentence">${item.exampleRuby}</div>
+              <div class="study-example-mean">${item.exampleMeaning}</div>
+            </div>
+          ` : ''}
+        </div>
+      `).join('')}
+    </div>
+    ${hasMore ? `
+      <div style="text-align: center; margin: 24px 0 10px 0;">
+        <button class="icon-btn" onclick="loadMoreVocab()" style="padding: 12px 24px; font-size: 0.9rem; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--accent-study);">
+          ➕ နောက်ထပ် (${remaining} ခု) ဆက်ကြည့်မည်
+        </button>
+      </div>
+    ` : ''}
+  `;
+}
+
+// =============================================================
+// N3 SAME MEANING SECTION (類義語・言い換え - JLPT 問題４)
+// =============================================================
+let sameMeaningSearchQuery = '';
+let isSameMeaningQuiz = false;
+let sameMeaningDisplayLimit = 36;
+
+function onSameMeaningSearch(query) {
+  sameMeaningSearchQuery = (query || '').trim().toLowerCase();
+  sameMeaningDisplayLimit = 36;
+  renderSameMeaningSection();
+}
+
+function toggleSameMeaningQuizMode(isChecked) {
+  isSameMeaningQuiz = isChecked;
+  renderSameMeaningSection();
+}
+
+function loadMoreSameMeaning() {
+  sameMeaningDisplayLimit += 36;
+  renderSameMeaningSection();
+}
+
+function renderSameMeaningSection() {
+  const container = document.getElementById('sameMeaningDisplayContainer');
+  const countLabel = document.getElementById('sameMeaningCountLabel');
+  if (!container || typeof N3_SAMEMEANING_DATA === 'undefined') return;
+
+  const filtered = N3_SAMEMEANING_DATA.filter(item => {
+    if (!sameMeaningSearchQuery) return true;
+    return item.word.toLowerCase().includes(sameMeaningSearchQuery) ||
+           item.reading.toLowerCase().includes(sameMeaningSearchQuery) ||
+           item.sameMeaning.toLowerCase().includes(sameMeaningSearchQuery) ||
+           item.sameMeaningReading.toLowerCase().includes(sameMeaningSearchQuery) ||
+           item.meaning.toLowerCase().includes(sameMeaningSearchQuery) ||
+           (item.example && item.example.toLowerCase().includes(sameMeaningSearchQuery)) ||
+           (item.exampleMeaning && item.exampleMeaning.toLowerCase().includes(sameMeaningSearchQuery));
+  });
+
+  const totalMatches = filtered.length;
+  const visibleItems = filtered.slice(0, sameMeaningDisplayLimit);
+
+  if (countLabel) countLabel.textContent = `${totalMatches} တွဲအနက် ${visibleItems.length} တွဲ ပြသထားသည်`;
+
+  if (totalMatches === 0) {
+    container.innerHTML = '<div style="text-align: center; color: #64748b; padding: 30px; font-size: 0.9rem;">ရှာမတွေ့ပါ။ အခြား စာလုံး သို့မဟုတ် မြန်မာစကားလုံးဖြင့် ရှာကြည့်ပါ။</div>';
+    return;
+  }
+
+  const hasMore = visibleItems.length < totalMatches;
+  const remaining = totalMatches - visibleItems.length;
+
+  container.innerHTML = `
+    <div class="same-meaning-cards-list">
+      ${visibleItems.map((item, idx) => `
+        <div class="study-card">
+          <div class="same-meaning-pair-row">
+            <div class="same-meaning-item" onclick="speakJapanese('${item.word.replace(/'/g, "\'")}')" style="cursor:pointer;">
+              <span class="same-meaning-word">${item.word}</span>
+              <span class="study-reading">${item.reading}</span>
+            </div>
+            <span class="same-meaning-equals">＝</span>
+            <div class="same-meaning-item target" onclick="speakJapanese('${item.sameMeaning.replace(/'/g, "\'")}')" style="cursor:pointer; ${isSameMeaningQuiz ? 'filter: blur(5px);' : ''}" onclick="this.style.filter='none'">
+              <span class="same-meaning-word" style="color: #38bdf8;">${item.sameMeaning}</span>
+              <span class="study-reading">${item.sameMeaningReading}</span>
+            </div>
+          </div>
+          <div class="study-meaning">
+            📝 မြန်မာအဓိပ္ပာယ်: ${item.meaning}
+          </div>
+          ${item.exampleRuby ? `
+            <div class="study-example-box" onclick="speakJapanese('${item.example.replace(/'/g, "\'")}')" style="cursor:pointer;">
+              <div class="study-example-sentence">${item.exampleRuby}</div>
+              <div class="study-example-mean">${item.exampleMeaning}</div>
+            </div>
+          ` : ''}
+        </div>
+      `).join('')}
+    </div>
+    ${hasMore ? `
+      <div style="text-align: center; margin: 24px 0 10px 0;">
+        <button class="icon-btn" onclick="loadMoreSameMeaning()" style="padding: 12px 24px; font-size: 0.9rem; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--accent-study);">
+          ➕ နောက်ထပ် (${remaining} တွဲ) ဆက်ကြည့်မည်
+        </button>
+      </div>
+    ` : ''}
+  `;
+}
+
+// =============================================================
+// N3 GRAMMAR SECTION (with Ruby Furigana)
+// =============================================================
+let currentGrammarFilter = 'all';
+let grammarSearchQuery = '';
+let isGrammarQuiz = false;
+let grammarDisplayLimit = 30;
+
+function setGrammarFilter(filterName) {
+  currentGrammarFilter = filterName;
+  grammarDisplayLimit = 30;
+  const chips = ['chipGrammarAll', 'chipGrammarLogic', 'chipGrammarRules', 'chipGrammarRelation', 'chipGrammarContrast', 'chipGrammarTime', 'chipGrammarImpression'];
+  chips.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.remove('active');
+  });
+
+  const activeMap = {
+    all: 'chipGrammarAll',
+    logic: 'chipGrammarLogic',
+    rules: 'chipGrammarRules',
+    relation: 'chipGrammarRelation',
+    contrast: 'chipGrammarContrast',
+    time: 'chipGrammarTime',
+    impression: 'chipGrammarImpression'
+  };
+  const activeEl = document.getElementById(activeMap[filterName]);
+  if (activeEl) activeEl.classList.add('active');
+  renderGrammarSection();
+}
+
+function onGrammarSearch(query) {
+  grammarSearchQuery = (query || '').trim().toLowerCase();
+  grammarDisplayLimit = 30;
+  renderGrammarSection();
+}
+
+function toggleGrammarQuizMode(isChecked) {
+  isGrammarQuiz = isChecked;
+  renderGrammarSection();
+}
+
+function loadMoreGrammar() {
+  grammarDisplayLimit += 30;
+  renderGrammarSection();
+}
+
+function renderGrammarSection() {
+  const container = document.getElementById('grammarDisplayContainer');
+  const countLabel = document.getElementById('grammarCountLabel');
+  if (!container || typeof N3_GRAMMAR_DATA === 'undefined') return;
+
+  const filtered = N3_GRAMMAR_DATA.filter(item => {
+    if (currentGrammarFilter !== 'all' && item.category !== currentGrammarFilter) return false;
+    if (!grammarSearchQuery) return true;
+    return item.pattern.toLowerCase().includes(grammarSearchQuery) ||
+           item.meaning.toLowerCase().includes(grammarSearchQuery) ||
+           item.connection.toLowerCase().includes(grammarSearchQuery) ||
+           item.explanation.toLowerCase().includes(grammarSearchQuery) ||
+           item.examples.some(ex => ex.sentence.toLowerCase().includes(grammarSearchQuery) || ex.meaning.toLowerCase().includes(grammarSearchQuery));
+  });
+
+  const totalMatches = filtered.length;
+  const visibleItems = filtered.slice(0, grammarDisplayLimit);
+
+  if (countLabel) countLabel.textContent = `${totalMatches} ခုအနက် ${visibleItems.length} ခု ပြသထားသည်`;
+
+  if (totalMatches === 0) {
+    container.innerHTML = '<div style="text-align: center; color: #64748b; padding: 30px; font-size: 0.9rem;">ရှာမတွေ့ပါ။ အခြား စကားလုံး သို့မဟုတ် မြန်မာအဓိပ္ပာယ်ဖြင့် ရှာကြည့်ပါ။</div>';
+    return;
+  }
+
+  const hasMore = visibleItems.length < totalMatches;
+  const remaining = totalMatches - visibleItems.length;
+
+  container.innerHTML = `
+    <div class="grammar-cards-list">
+      ${visibleItems.map((item, idx) => `
+        <div class="study-card">
+          <div class="study-card-header">
+            <span class="grammar-pattern-title">${item.pattern}</span>
+            <button class="kanji-audio-btn" onclick="speakJapanese('${item.pattern.replace(/〜/g, '').replace(/'/g, "\'")}')">
+              🔊 အသံ
+            </button>
+          </div>
+          <div class="grammar-formula-box">
+            🧩 ချိတ်ဆက်ပုံ: ${item.connection}
+          </div>
+          <div class="study-meaning" style="${isGrammarQuiz ? 'filter: blur(5px); cursor: pointer;' : ''}" onclick="this.style.filter='none'">
+            💡 အဓိပ္ပာယ်: ${item.meaning}
+          </div>
+          <div class="grammar-explanation-text">
+            ${item.explanation}
+          </div>
+          <div class="study-example-box">
+            ${item.examples.map(ex => `
+              <div style="margin-bottom: 8px; cursor: pointer;" onclick="speakJapanese('${ex.sentence.replace(/'/g, "\'")}')">
+                <div class="study-example-sentence">${ex.ruby}</div>
+                <div class="study-example-mean">${ex.meaning}</div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `).join('')}
+    </div>
+    ${hasMore ? `
+      <div style="text-align: center; margin: 24px 0 10px 0;">
+        <button class="icon-btn" onclick="loadMoreGrammar()" style="padding: 12px 24px; font-size: 0.9rem; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--accent-study);">
+          ➕ နောက်ထပ် (${remaining} ခု) ဆက်ကြည့်မည်
+        </button>
+      </div>
+    ` : ''}
+  `;
+}

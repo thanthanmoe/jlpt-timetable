@@ -1,11 +1,14 @@
-// Service Worker for JLPT Timetable App (v5 with Redmi Pad SE 11" & Tablet Responsive Layout)
-const CACHE_NAME = 'jlpt-timetable-v5';
+// Service Worker for JLPT Timetable App (v6 with N3 Vocab, Same Meaning & Grammar with Furigana)
+const CACHE_NAME = 'jlpt-timetable-v6';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
-  './styles.css?v=2.3',
+  './styles.css?v=2.4',
   './kanji_data.js?v=2.2',
-  './app.js?v=2.2',
+  './n3_vocab_data.js?v=2.4',
+  './n3_samemeaning_data.js?v=2.4',
+  './n3_grammar_data.js?v=2.4',
+  './app.js?v=2.4',
   './manifest.json',
   './icon-192.png',
   './icon-512.png'

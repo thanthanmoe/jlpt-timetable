@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" href="./icon-192.png">
   <link rel="manifest" href="./manifest.json">
 
-  <link rel="stylesheet" href="./styles.css?v=2.3">
+  <link rel="stylesheet" href="./styles.css?v=2.4">
 </head>
 
 <body>
@@ -137,7 +137,7 @@
       </button>
     </div>
 
-    <!-- Tab Navigation (4 Tabs) -->
+    <!-- Tab Navigation (7 Dedicated Tabs) -->
     <div class="tab-navigation">
       <button class="tab-btn active" id="tabDaily" onclick="switchTab('daily')">
         📅 Date & အချိန်
@@ -147,6 +147,15 @@
       </button>
       <button class="tab-btn" id="tabKanji" onclick="switchTab('kanji')">
         🈸 Kanji & Kana
+      </button>
+      <button class="tab-btn" id="tabVocab" onclick="switchTab('vocab')">
+        📖 N3 Vocab
+      </button>
+      <button class="tab-btn" id="tabSameMeaning" onclick="switchTab('samemeaning')">
+        🔄 N3 အဓိပ္ပာယ်တူ
+      </button>
+      <button class="tab-btn" id="tabGrammar" onclick="switchTab('grammar')">
+        🧩 N3 Grammar
       </button>
       <button class="tab-btn" id="tabNotes" onclick="switchTab('notes')">
         📝 အမှတ်မှတ်စု
@@ -246,7 +255,96 @@
       </div>
     </div>
 
-    <!-- VIEW 4: Score & Mistake Notebook -->
+    <!-- VIEW 4: N3 Vocabulary (ဝေါဟာရ - Furigana ပါဝင်) -->
+    <div id="viewVocab" class="hidden">
+      <!-- Filter Chips -->
+      <div class="kanji-filter-bar">
+        <button class="kanji-filter-chip active" id="chipVocabAll" onclick="setVocabFilter('all')">အားလုံး (All)</button>
+        <button class="kanji-filter-chip" id="chipVocabCompound" onclick="setVocabFilter('compound')">ကြိယာတွဲများ (Compound Verbs)</button>
+        <button class="kanji-filter-chip" id="chipVocabAdverb" onclick="setVocabFilter('adverb')">ကြိယာဝိသေသန (Adverbs)</button>
+        <button class="kanji-filter-chip" id="chipVocabKatakana" onclick="setVocabFilter('katakana')">ကာတာခါနာ (Katakana)</button>
+        <button class="kanji-filter-chip" id="chipVocabVerbAdj" onclick="setVocabFilter('verb_adj')">အဓိက ကြိယာ/နာမဝိသေသန</button>
+      </div>
+
+      <!-- Search Input -->
+      <input type="text" id="vocabSearchInput" class="kanji-search-box"
+        placeholder="🔍 စကားလုံး၊ ဖတ်ပုံ သို့မဟုတ် မြန်မာအဓိပ္ပာယ် ရှာရန်..." oninput="onVocabSearch(this.value)">
+
+      <div class="test-mode-toggle-row">
+        <span id="vocabCountLabel" style="font-weight:600; color:#38bdf8;">-- ခု ပြသထားသည်</span>
+        <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+          <input type="checkbox" id="testVocabCheck" onchange="toggleVocabQuizMode(this.checked)"
+            style="width:18px; height:18px; accent-color:#6366f1;">
+          <span>👁️ အဓိပ္ပာယ် ဝှက်မည် (Quiz Mode)</span>
+        </label>
+      </div>
+
+      <div id="vocabDisplayContainer">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- VIEW 5: N3 Same Meaning / Paraphrase (類義語・言い換え - JLPT 問題４ အမေးများဆုံး) -->
+    <div id="viewSameMeaning" class="hidden">
+      <div class="calendar-summary-card">
+        <div style="font-weight: 700; font-size: 1.05rem; color: #f8fafc; margin-bottom: 4px;">
+          🔄 JLPT N3 မေးခွန်း ၄ (問題４) အမေးများဆုံး အဓိပ္ပာယ်တူ စကားလုံးများ
+        </div>
+        <div style="font-size: 0.82rem; color: #94a3b8;">
+          စာမေးပွဲတွင် မျက်စိလည်စေတတ်သော အဓိပ္ပာယ်တူ စကားလုံးတွဲများ (類義語) ဖြစ်ပြီး ဥပမာစာကြောင်းတိုင်းတွင် Furigana တင်ပေးထားပါသည်။
+        </div>
+      </div>
+
+      <!-- Search Input -->
+      <input type="text" id="sameMeaningSearchInput" class="kanji-search-box"
+        placeholder="🔍 အဓိပ္ပာယ်တူ စကားလုံး သို့မဟုတ် မြန်မာအဓိပ္ပာယ် ရှာရန်..." oninput="onSameMeaningSearch(this.value)">
+
+      <div class="test-mode-toggle-row">
+        <span id="sameMeaningCountLabel" style="font-weight:600; color:#38bdf8;">-- တွဲ ပြသထားသည်</span>
+        <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+          <input type="checkbox" id="testSameMeaningCheck" onchange="toggleSameMeaningQuizMode(this.checked)"
+            style="width:18px; height:18px; accent-color:#6366f1;">
+          <span>👁️ အဓိပ္ပာယ်တူစကားလုံး ဝှက်မည် (Quiz Mode)</span>
+        </label>
+      </div>
+
+      <div id="sameMeaningDisplayContainer">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- VIEW 6: N3 Grammar (သဒ္ဒါ - Furigana ပါဝင်) -->
+    <div id="viewGrammar" class="hidden">
+      <!-- Filter Chips -->
+      <div class="kanji-filter-bar">
+        <button class="kanji-filter-chip active" id="chipGrammarAll" onclick="setGrammarFilter('all')">အားလုံး (All)</button>
+        <button class="kanji-filter-chip" id="chipGrammarLogic" onclick="setGrammarFilter('logic')">အကြောင်းပြချက် & ဖြစ်နိုင်ခြေ</button>
+        <button class="kanji-filter-chip" id="chipGrammarRules" onclick="setGrammarFilter('rules')">စည်းကမ်း & အလေ့အကျင့်</button>
+        <button class="kanji-filter-chip" id="chipGrammarRelation" onclick="setGrammarFilter('relation')">ဆက်နွယ်မှု & ရှုထောင့်</button>
+        <button class="kanji-filter-chip" id="chipGrammarContrast" onclick="setGrammarFilter('contrast')">ဆန့်ကျင်ဘက် & နှိုင်းယှဉ်ချက်</button>
+        <button class="kanji-filter-chip" id="chipGrammarTime" onclick="setGrammarFilter('time')">အချိန်ကာလ & အခြေအနေ</button>
+        <button class="kanji-filter-chip" id="chipGrammarImpression" onclick="setGrammarFilter('impression')">သဘောသဘာဝ & အသွင်အပြင်</button>
+      </div>
+
+      <!-- Search Input -->
+      <input type="text" id="grammarSearchInput" class="kanji-search-box"
+        placeholder="🔍 သဒ္ဒါပုံစံ သို့မဟုတ် မြန်မာအဓိပ္ပာယ် ရှာရန် (ဥပမာ - わけ, 違いない, စည်းကမ်း)..." oninput="onGrammarSearch(this.value)">
+
+      <div class="test-mode-toggle-row">
+        <span id="grammarCountLabel" style="font-weight:600; color:#38bdf8;">-- ခု ပြသထားသည်</span>
+        <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+          <input type="checkbox" id="testGrammarCheck" onchange="toggleGrammarQuizMode(this.checked)"
+            style="width:18px; height:18px; accent-color:#6366f1;">
+          <span>👁️ အဓိပ္ပာယ် ဝှက်မည် (Quiz Mode)</span>
+        </label>
+      </div>
+
+      <div id="grammarDisplayContainer">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- VIEW 7: Score & Mistake Notebook -->
     <div id="viewNotes" class="hidden">
       <div class="notes-container">
         <div class="notes-card">
@@ -413,7 +511,10 @@
   </div>
 
   <script src="./kanji_data.js?v=2.2"></script>
-  <script src="./app.js?v=2.2"></script>
+  <script src="./n3_vocab_data.js?v=2.4"></script>
+  <script src="./n3_samemeaning_data.js?v=2.4"></script>
+  <script src="./n3_grammar_data.js?v=2.4"></script>
+  <script src="./app.js?v=2.4"></script>
 </body>
 
 </html>
