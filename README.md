@@ -14,3 +14,4 @@ A Progressive Web App (PWA) designed for iOS and mobile devices to manage JLPT p
   - 780+ Japanese compound vocabulary words with Burmese meanings
 - **Audio:** Web Speech API Japanese text-to-speech
 - **Offline Mode:** iOS PWA with Service Worker offline caching
+
