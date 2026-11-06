@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" href="./icon-192.png">
   <link rel="manifest" href="./manifest.json">
 
-  <link rel="stylesheet" href="./styles.css?v=2.4">
+  <link rel="stylesheet" href="./styles.css?v=2.5">
 </head>
 
 <body>
@@ -260,6 +260,7 @@
       <!-- Filter Chips -->
       <div class="kanji-filter-bar">
         <button class="kanji-filter-chip active" id="chipVocabAll" onclick="setVocabFilter('all')">အားလုံး (All)</button>
+        <button class="kanji-filter-chip" id="chipVocabHot" onclick="setVocabFilter('hot')" style="color:#f87171; border-color:rgba(239,68,68,0.4); font-weight:700;">🔥 မေးခွန်းဟောင်း အမေးဆုံး</button>
         <button class="kanji-filter-chip" id="chipVocabCompound" onclick="setVocabFilter('compound')">ကြိယာတွဲများ (Compound Verbs)</button>
         <button class="kanji-filter-chip" id="chipVocabAdverb" onclick="setVocabFilter('adverb')">ကြိယာဝိသေသန (Adverbs)</button>
         <button class="kanji-filter-chip" id="chipVocabKatakana" onclick="setVocabFilter('katakana')">ကာတာခါနာ (Katakana)</button>
@@ -318,6 +319,7 @@
       <!-- Filter Chips -->
       <div class="kanji-filter-bar">
         <button class="kanji-filter-chip active" id="chipGrammarAll" onclick="setGrammarFilter('all')">အားလုံး (All)</button>
+        <button class="kanji-filter-chip" id="chipGrammarHot" onclick="setGrammarFilter('hot')" style="color:#f87171; border-color:rgba(239,68,68,0.4); font-weight:700;">🔥 မေးခွန်းဟောင်း အမေးဆုံး</button>
         <button class="kanji-filter-chip" id="chipGrammarLogic" onclick="setGrammarFilter('logic')">အကြောင်းပြချက် & ဖြစ်နိုင်ခြေ</button>
         <button class="kanji-filter-chip" id="chipGrammarRules" onclick="setGrammarFilter('rules')">စည်းကမ်း & အလေ့အကျင့်</button>
         <button class="kanji-filter-chip" id="chipGrammarRelation" onclick="setGrammarFilter('relation')">ဆက်နွယ်မှု & ရှုထောင့်</button>
@@ -511,10 +513,10 @@
   </div>
 
   <script src="./kanji_data.js?v=2.2"></script>
-  <script src="./n3_vocab_data.js?v=2.4"></script>
+  <script src="./n3_vocab_data.js?v=2.5"></script>
   <script src="./n3_samemeaning_data.js?v=2.4"></script>
-  <script src="./n3_grammar_data.js?v=2.4"></script>
-  <script src="./app.js?v=2.4"></script>
+  <script src="./n3_grammar_data.js?v=2.5"></script>
+  <script src="./app.js?v=2.5"></script>
 </body>
 
 </html>

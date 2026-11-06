@@ -2194,3 +2194,17 @@ ruby rt {
   color: #cbd5e1;
   line-height: 1.5;
 }
+
+.study-badge-hot {
+  font-size: 0.72rem;
+  padding: 3px 8px;
+  background: rgba(239, 68, 68, 0.18);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.45);
+  border-radius: 9999px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.15);
+}

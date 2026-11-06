@@ -1,5 +1,473 @@
-// JLPT N3 Frequently Tested Vocabulary (with Furigana Ruby)
+// JLPT N3 Frequently Tested Vocabulary from Past Exam Papers (with Furigana Ruby)
 const N3_VOCAB_DATA = [
+  {
+    "word": "延期",
+    "reading": "えんき",
+    "romaji": "enki",
+    "category": "verb_adj",
+    "tag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး (Rank 1)",
+    "isHot": true,
+    "meaning": "ရက်ရွှေ့ဆိုင်းခြင်း",
+    "example": "雨のため、試合は来週に延期された。",
+    "exampleRuby": "<ruby>雨<rt>あめ</rt></ruby>のため、<ruby>試合<rt>しあい</rt></ruby>は<ruby>来週<rt>らいしゅう</rt></ruby>に<ruby>延期<rt>えんき</rt></ruby>された。",
+    "exampleMeaning": "မိုးရွာသောကြောင့် ပွဲစဉ်ကို နောက်အပတ်သို့ ရွှေ့ဆိုင်းခဲ့သည်။"
+  },
+  {
+    "word": "中止",
+    "reading": "ちゅうし",
+    "romaji": "chuushi",
+    "category": "verb_adj",
+    "tag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး (Rank 2)",
+    "isHot": true,
+    "meaning": "ဖျက်သိမ်းခြင်း / ရပ်ဆိုင်းခြင်း",
+    "example": "台風が近づいているので、イベントは中止になった。",
+    "exampleRuby": "<ruby>台風<rt>たいふう</rt></ruby>が<ruby>近<rt>ちか</rt></ruby>づいているので、イベントは<ruby>中止<rt>ちゅうし</rt></ruby>になった。",
+    "exampleMeaning": "တိုင်ဖွန်းမုန်တိုင်း နီးကပ်လာသောကြောင့် အခမ်းအနားကို ဖျက်သိမ်းလိုက်သည်။"
+  },
+  {
+    "word": "遠慮",
+    "reading": "えんりょ",
+    "romaji": "enryo",
+    "category": "verb_adj",
+    "tag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး (Rank 3)",
+    "isHot": true,
+    "meaning": "အားနာခြင်း / တွန့်ဆုတ်နေခြင်း",
+    "example": "遠慮しないで、何でも質問してください。",
+    "exampleRuby": "<ruby>遠慮<rt>えんりょ</rt></ruby>しないで、<ruby>何<rt>なん</rt></ruby>でも<ruby>質問<rt>しつもん</rt></ruby>してください。",
+    "exampleMeaning": "အားမနာပါနှင့်၊ မည်သည့်အရာမဆို မေးမြန်းပါ။"
+  },
+  {
+    "word": "予防",
+    "reading": "よぼう",
+    "romaji": "yobou",
+    "category": "verb_adj",
+    "tag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး (Rank 4)",
+    "isHot": true,
+    "meaning": "ကြိုတင်ကာကွယ်ခြင်း",
+    "example": "風邪を予防するために、マスクをつけて手洗いを徹底する。",
+    "exampleRuby": "<ruby>風邪<rt>かぜ</rt></ruby>を<ruby>予防<rt>よぼう</rt></ruby>するために、マスクをつけて<ruby>手洗<rt>てあら</rt></ruby>いを<ruby>徹底<rt>てってい</rt></ruby>する。",
+    "exampleMeaning": "အအေးမိဖျားနာခြင်းကို ကြိုတင်ကာကွယ်ရန် နှာခေါင်းစည်းတပ်ပြီး လက်ကို သေချာစွာ ဆေးကြောသည်။"
+  },
+  {
+    "word": "効果",
+    "reading": "こうか",
+    "romaji": "kouka",
+    "category": "verb_adj",
+    "tag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး (Rank 5)",
+    "isHot": true,
+    "meaning": "အကျိုးသက်ရောက်မှု / ဆေးစွမ်းပြမှု",
+    "example": "この薬を飲んだら、すぐに効果が現れた。",
+    "exampleRuby": "この<ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>んだら、すぐに<ruby>効果<rt>こうか</rt></ruby>が<ruby>現<rt>あらわ</rt></ruby>れた。",
+    "exampleMeaning": "ဒီဆေးကို သောက်လိုက်ရာ ချက်ချင်းပင် အကျိုးသက်ရောက်မှု (ဆေးစွမ်း) ပြလာခဲ့သည်။"
+  },
+  {
+    "word": "節約",
+    "reading": "せつやく",
+    "romaji": "setsuyaku",
+    "category": "verb_adj",
+    "tag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး (Rank 6)",
+    "isHot": true,
+    "meaning": "ချွေတာခြင်း / ခြိုးခြံခြင်း",
+    "example": "電気代を節約するために、使わない部屋の電気を消す。",
+    "exampleRuby": "<ruby>電気代<rt>でんきだい</rt></ruby>を<ruby>節約<rt>せつやく</rt></ruby>するために、<ruby>使<rt>つか</rt></ruby>わない<ruby>部屋<rt>へや</rt></ruby>の<ruby>電気<rt>でんき</rt></ruby>を<ruby>消<rt>け</rt></ruby>す。",
+    "exampleMeaning": "မီးဖိုးချွေတာရန် အသုံးမပြုသော အခန်းရှိ မီးများကို ပိတ်သည်။"
+  },
+  {
+    "word": "ぐっすり",
+    "reading": "ぐっすり",
+    "romaji": "gussuri",
+    "category": "adverb",
+    "tag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး (Rank 7)",
+    "isHot": true,
+    "meaning": "နှစ်နှစ်ခြိုက်ခြိုက် (အိပ်ပျော်သည်)",
+    "example": "昨夜は疲れていたので、朝までぐっすり眠った。",
+    "exampleRuby": "<ruby>昨夜<rt>ゆうべ</rt></ruby>は<ruby>疲<rt>つか</rt></ruby>れていたので、<ruby>朝<rt>あさ</rt></ruby>までぐっすり<ruby>眠<rt>ねむ</rt></ruby>った。",
+    "exampleMeaning": "မနေ့ညက ပင်ပန်းနေခဲ့သဖြင့် မနက်တိုင်အောင် နှစ်နှစ်ခြိုက်ခြိုက် အိပ်ပျော်ခဲ့သည်။"
+  },
+  {
+    "word": "うっかり",
+    "reading": "うっかり",
+    "romaji": "ukkari",
+    "category": "adverb",
+    "tag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး (Rank 8)",
+    "isHot": true,
+    "meaning": "သတိမထားမိဘဲ / မေ့လျော့ပြီး (အမှားလုပ်မိသည်)",
+    "example": "宿題をうっかり忘れて登校してしまった。",
+    "exampleRuby": "<ruby>宿題<rt>しゅくだい</rt></ruby>をうっかり<ruby>忘<rt>わす</rt></ruby>れて<ruby>登校<rt>とうこう</rt></ruby>してしまった。",
+    "exampleMeaning": "အိမ်စာကို သတိမထားမိဘဲ မေ့ကျန်ခဲ့ကာ ကျောင်းသို့ သွားမိခဲ့သည်။"
+  },
+  {
+    "word": "すっきり",
+    "reading": "すっきり",
+    "romaji": "sukkiri",
+    "category": "adverb",
+    "tag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး (Rank 9)",
+    "isHot": true,
+    "meaning": "လန်းဆန်းသွားသည် / စိတ်ပေါ့ပါးရှင်းလင်းသွားသည်",
+    "example": "シャワーを浴びたら、気分がすっきりした。",
+    "exampleRuby": "シャワーを<ruby>浴<rt>あ</rt></ruby>びたら、<ruby>気分<rt>きぶん</rt></ruby>がすっきりした。",
+    "exampleMeaning": "ရေချိုးလိုက်ရာ စိတ်ကြည်လင်လန်းဆန်းသွားခဲ့သည်။"
+  },
+  {
+    "word": "ぴったり",
+    "reading": "ぴったり",
+    "romaji": "pittari",
+    "category": "adverb",
+    "tag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး (Rank 10)",
+    "isHot": true,
+    "meaning": "ကွက်တိဖြစ်သော / အံကိုက်ဖြစ်သော",
+    "example": "この靴は私の足のサイズにぴったりだ。",
+    "exampleRuby": "この<ruby>靴<rt>くつ</rt></ruby>は<ruby>私<rt>わたし</rt></ruby>の<ruby>足<rt>あし</rt></ruby>のサイズにぴったりだ。",
+    "exampleMeaning": "ဒီဖိနပ်က ကျွန်တော့်ခြေထောက်အရွယ်အစားနှင့် အံကိုက်ကွက်တိ ဖြစ်သည်။"
+  },
+  {
+    "word": "ばったり",
+    "reading": "ばったり",
+    "romaji": "battari",
+    "category": "adverb",
+    "tag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး (Rank 11)",
+    "isHot": true,
+    "meaning": "မမျှော်လင့်ဘဲ ရုတ်တရက် တည့်တည့်ဆုံသည်",
+    "example": "駅前で偶然昔の友達とばったり会った。",
+    "exampleRuby": "<ruby>駅前<rt>えきまえ</rt></ruby>で<ruby>偶然<rt>ぐうぜん</rt></ruby><ruby>昔<rt>むかし</rt></ruby>の<ruby>友達<rt>ともだち</rt></ruby>とばったり<ruby>会<rt>あ</rt></ruby>った。",
+    "exampleMeaning": "ဘူတာရုံရှေ့တွင် မမျှော်လင့်ဘဲ ငယ်သူငယ်ချင်းနှင့် တည့်တည့် ဆုံခဲ့သည်။"
+  },
+  {
+    "word": "そっくり",
+    "reading": "そっくり",
+    "romaji": "sokkuri",
+    "category": "adverb",
+    "tag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး (Rank 12)",
+    "isHot": true,
+    "meaning": "တစ်ပုံစံတည်း တူသော / ချွတ်စွပ်တူသော",
+    "example": "彼は父親に顔がそっくりだ。",
+    "exampleRuby": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>父親<rt>ちちおや</rt></ruby>に<ruby>顔<rt>かお</rt></ruby>がそっくりだ。",
+    "exampleMeaning": "သူသည် မျက်နှာသွင်ပြင်က ဖခင်ဖြစ်သူနှင့် တစ်ပုံစံတည်း ချွတ်စွပ်တူသည်။"
+  },
+  {
+    "word": "思いがけない",
+    "reading": "おもいがけない",
+    "romaji": "omoigakenai",
+    "category": "verb_adj",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "မမျှော်လင့်ထားသော / မထင်မှတ်ထားသော",
+    "example": "思いがけない知らせを聞いて、とても驚いた。",
+    "exampleRuby": "<ruby>思<rt>おも</rt></ruby>いがけない<ruby>知<rt>し</rt></ruby>らせを<ruby>聞<rt>き</rt></ruby>いて、とても<ruby>驚<rt>おどろ</rt></ruby>いた。",
+    "exampleMeaning": "မမျှော်လင့်ထားသော သတင်းကို ကြားသိရ၍ အလွန်ပင် အံ့အားသင့်ခဲ့သည်။"
+  },
+  {
+    "word": "見直す",
+    "reading": "みなおす",
+    "romaji": "minaosu",
+    "category": "compound",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "ပြန်လည်စစ်ဆေးသည် / အမြင်သစ်ဖြင့် ပြန်လည်သုံးသပ်သည်",
+    "example": "答案を提出する前にもう一度見直した。",
+    "exampleRuby": "<ruby>答案<rt>とうあん</rt></ruby>を<ruby>提出<rt>ていしゅつ</rt></ruby>する<ruby>前<rt>まえ</rt></ruby>にもう<ruby>一度<rt>いちど</rt></ruby><ruby>見直<rt>みなお</rt></ruby>した。",
+    "exampleMeaning": "အဖြေလွှာ မတင်မီ နောက်ထပ်တစ်ကြိမ် ပြန်လည်စစ်ဆေးခဲ့သည်။"
+  },
+  {
+    "word": "受け取る",
+    "reading": "うけとる",
+    "romaji": "uketoru",
+    "category": "compound",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "လက်ခံရယူသည် / အဓိပ္ပာယ် ကောက်ယူသည်",
+    "example": "宅配便の荷物を無事に受け取った。",
+    "exampleRuby": "<ruby>宅配便<rt>たくはいびん</rt></ruby>の<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>無事<rt>ぶじ</rt></ruby>に<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>った。",
+    "exampleMeaning": "အိမ်အရောက်ပို့ ပါဆယ်ပစ္စည်းကို ဘေးကင်းစွာ လက်ခံရရှိခဲ့သည်။"
+  },
+  {
+    "word": "取り消す",
+    "reading": "とりけす",
+    "romaji": "torikesu",
+    "category": "compound",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "ပယ်ဖျက်သည် / ပြန်လည်ရုပ်သိမ်းသည်",
+    "example": "予約を取り消すには手数料がかかります。",
+    "exampleRuby": "<ruby>予約<rt>よやく</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>消<rt>け</rt></ruby>すには<ruby>手数料<rt>てすうりょう</rt></ruby>がかかります。",
+    "exampleMeaning": "ဘိုကင်ပယ်ဖျက်ရန်အတွက် ဝန်ဆောင်ခ ကျသင့်ပါမည်။"
+  },
+  {
+    "word": "見合わせる",
+    "reading": "みあわせる",
+    "romaji": "miawaseru",
+    "category": "compound",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "ဆိုင်းငံ့ထားသည် / အခြေအနေကြည့်၍ ရွှေ့ဆိုင်းသည်",
+    "example": "大雪のため、列車の運行を見合わせている。",
+    "exampleRuby": "<ruby>大雪<rt>おおゆき</rt></ruby>のため、<ruby>列車<rt>れっしゃ</rt></ruby>の<ruby>運行<rt>うんこう</rt></ruby>を<ruby>見合<rt>みあ</rt></ruby>わせている。",
+    "exampleMeaning": "နှင်းမုန်တိုင်းကြောင့် ရထားပြေးဆွဲမှုကို ဆိုင်းငံ့ထားသည်။"
+  },
+  {
+    "word": "立ち寄る",
+    "reading": "たちよる",
+    "romaji": "tachiyoru",
+    "category": "compound",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "လမ်းကြုံ ဝင်ရောက်သည်",
+    "example": "帰宅の途中で、スーパーに立ち寄って買い物した。",
+    "exampleRuby": "<ruby>帰宅<rt>きたく</rt></ruby>の<ruby>途中<rt>とちゅう</rt></ruby>で、スーパーに<ruby>立<rt>た</rt></ruby>ち<ruby>寄<rt>よ</rt></ruby>って<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>した。",
+    "exampleMeaning": "အိမ်အပြန်လမ်းတွင် စူပါမားကတ်သို့ လမ်းကြုံဝင်၍ ဈေးဝယ်ခဲ့သည်။"
+  },
+  {
+    "word": "落ち着く",
+    "reading": "おちつく",
+    "romaji": "ochitsuku",
+    "category": "compound",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "စိတ်ငြိမ်သက်သည် / တည်ငြိမ်သွားသည်",
+    "example": "深呼吸をしたら、気持ちが落ち着いた。",
+    "exampleRuby": "<ruby>深呼吸<rt>しんこきゅう</rt></ruby>をしたら、<ruby>気持<rt>きも</rt></ruby>ちが<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いた。",
+    "exampleMeaning": "အသက်ပြင်းပြင်း ရှူသွင်းလိုက်ရာ စိတ်တည်ငြိမ်သွားခဲ့သည်။"
+  },
+  {
+    "word": "気に入る",
+    "reading": "きにいる",
+    "romaji": "kiniiru",
+    "category": "compound",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "သဘောကျသည် / စိတ်တိုင်းကျသည်",
+    "example": "このデザインがとても気に入ったので購入した。",
+    "exampleRuby": "このデザインがとても<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>ったので<ruby>購入<rt>こうにゅう</rt></ruby>した。",
+    "exampleMeaning": "ဤဒီဇိုင်းကို အလွန်သဘောကျသောကြောင့် ဝယ်ယူခဲ့သည်။"
+  },
+  {
+    "word": "偶然",
+    "reading": "ぐうぜん",
+    "romaji": "guuzen",
+    "category": "adverb",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "မတော်တဆ / မမျှော်လင့်ဘဲ အမှတ်မထင်",
+    "example": "本屋で偶然、高校の同級生に出会った。",
+    "exampleRuby": "<ruby>本屋<rt>ほんや</rt></ruby>で<ruby>偶然<rt>ぐうぜん</rt></ruby>、<ruby>高校<rt>こうこう</rt></ruby>の<ruby>同級生<rt>どうきゅうせい</rt></ruby>に<ruby>出会<rt>であ</rt></ruby>った。",
+    "exampleMeaning": "စာအုပ်ဆိုင်တွင် မတော်တဆ အထက်တန်းကျောင်းနေဖက်နှင့် ဆုံတွေ့ခဲ့သည်။"
+  },
+  {
+    "word": "結局",
+    "reading": "けっきょく",
+    "romaji": "kekkyoku",
+    "category": "adverb",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "နောက်ဆုံးတော့ / အဆုံးသတ်တွင်",
+    "example": "色々話し合ったが、結局結論は出なかった。",
+    "exampleRuby": "<ruby>色々<rt>いろいろ</rt></ruby><ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>ったが、<ruby>結局<rt>けっきょく</rt></ruby><ruby>結論<rt>けつろん</rt></ruby>は<ruby>出<rt>で</rt></ruby>なかった。",
+    "exampleMeaning": "အမျိုးမျိုး ဆွေးနွေးတိုင်ပင်ခဲ့သော်လည်း နောက်ဆုံးတွင် အဖြေမထွက်ခဲ့ပေ။"
+  },
+  {
+    "word": "早速",
+    "reading": "さっそく",
+    "romaji": "sassoku",
+    "category": "adverb",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "ချက်ချင်းမဆိုင်းဘဲ / ချက်ချင်းပင်",
+    "example": "プレゼントをもらったので、早速使ってみた。",
+    "exampleRuby": "プレゼントをもらったので、<ruby>早速<rt>さっそく</rt></ruby><ruby>使<rt>つか</rt></ruby>ってみた。",
+    "exampleMeaning": "လက်ဆောင်ရရှိခဲ့သဖြင့် ချက်ချင်းပင် စမ်းသပ်အသုံးပြုကြည့်ခဲ့သည်။"
+  },
+  {
+    "word": "至急",
+    "reading": "しきゅう",
+    "romaji": "shikyuu",
+    "category": "adverb",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "အရေးတကြီး / အမြန်ဆုံး",
+    "example": "この書類を至急社長にお届けください。",
+    "exampleRuby": "この<ruby>書類<rt>しょるい</rt></ruby>を<ruby>至急<rt>しきゅう</rt></ruby><ruby>社長<rt>しゃちょう</rt></ruby>にお<ruby>届<rt>とど</rt></ruby>けください。",
+    "exampleMeaning": "ဤစာရွက်စာတမ်းကို အရေးတကြီး ဥက္ကဋ္ဌထံသို့ အမြန်ပို့ဆောင်ပေးပါ။"
+  },
+  {
+    "word": "徐々に",
+    "reading": "じょじょに",
+    "romaji": "jojoni",
+    "category": "adverb",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "တဖြည်းဖြည်းချင်း / အဆင့်ဆင့်",
+    "example": "薬を飲んでから、病状が徐々に回復してきた。",
+    "exampleRuby": "<ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>んでから、<ruby>病状<rt>びょうじょう</rt></ruby>が<ruby>徐々<rt>じょじょ</rt></ruby>に<ruby>回復<rt>かいふく</rt></ruby>してきた。",
+    "exampleMeaning": "ဆေးသောက်ပြီးနောက် ရောဂါအခြေအနေသည် တဖြည်းဖြည်းချင်း သက်သာပျောက်ကင်းလာခဲ့သည်။"
+  },
+  {
+    "word": "次第に",
+    "reading": "しだいに",
+    "romaji": "shidaini",
+    "category": "adverb",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "တဖြည်းဖြည်းနှင့် (အခြေအနေ ပြောင်းလဲခြင်း)",
+    "example": "空が次第に暗くなってきた。",
+    "exampleRuby": "<ruby>空<rt>そら</rt></ruby>が<ruby>次第<rt>しだい</rt></ruby>に<ruby>暗<rt>くら</rt></ruby>くなってきた。",
+    "exampleMeaning": "ကောင်းကင်ကြီးသည် တဖြည်းဖြည်း မှောင်မည်းလာခဲ့သည်။"
+  },
+  {
+    "word": "とっくに",
+    "reading": "とっくに",
+    "romaji": "tokkuni",
+    "category": "adverb",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "လွန်ခဲ့သော အချိန်အတော်ကြာကတည်းက / အစောကြီးကတည်းက",
+    "example": "その話なら、とっくに知っていたよ。",
+    "exampleRuby": "その<ruby>話<rt>はなし</rt></ruby>なら、とっくに<ruby>知<rt>し</rt></ruby>っていたよ。",
+    "exampleMeaning": "ထိုကိစ္စဆိုလျှင် လွန်ခဲ့သော အချိန်အတော်ကြာကတည်းက သိရှိပြီးဖြစ်ပါသည်။"
+  },
+  {
+    "word": "ようやく",
+    "reading": "ようやく",
+    "romaji": "youyaku",
+    "category": "adverb",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "အချိန်အတော်ကြာပြီးမှ နောက်ဆုံးတော့ / မနည်း",
+    "example": "長い研究の末に、ようやく成果が出た。",
+    "exampleRuby": "<ruby>長<rt>なが</rt></ruby>い<ruby>研究<rt>けんきゅう</rt></ruby>の<ruby>末<rt>すえ</rt></ruby>に、ようやく<ruby>成果<rt>せいか</rt></ruby>が<ruby>出<rt>で</rt></ruby>た。",
+    "exampleMeaning": "အချိန်ကြာမြင့်စွာ သုတေသနပြုလုပ်ပြီးသည့်အဆုံးတွင် နောက်ဆုံးတော့ ရလဒ်ကောင်း ထွက်ပေါ်လာခဲ့သည်။"
+  },
+  {
+    "word": "わざと",
+    "reading": "わざと",
+    "romaji": "wazato",
+    "category": "adverb",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "တမင်တကာ / ရည်ရွယ်ချက်ရှိရှိ",
+    "example": "彼はわざと負けてくれたようだ。",
+    "exampleRuby": "<ruby>彼<rt>かれ</rt></ruby>はわざと<ruby>負<rt>ま</rt></ruby>けてくれたようだ。",
+    "exampleMeaning": "သူသည် တမင်တကာ သက်သက် ရှုံးပေးခဲ့ပုံရသည်။"
+  },
+  {
+    "word": "わざわざ",
+    "reading": "わざわざ",
+    "romaji": "wazawaza",
+    "category": "adverb",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "တကူးတက / အပင်ပန်းခံ၍ သီးသန့်",
+    "example": "わざわざ遠くからお越しいただき、ありがとうございます。",
+    "exampleRuby": "わざわざ<ruby>遠<rt>とお</rt></ruby>くからお<ruby>越<rt>こ</rt></ruby>しいただき、ありがとうございます。",
+    "exampleMeaning": "အဝေးကြီးကနေ တကူးတက အပင်ပန်းခံ ကြွရောက်လာပေးသည့်အတွက် ကျေးဇူးတင်ရှိပါသည်။"
+  },
+  {
+    "word": "せっかく",
+    "reading": "せっかく",
+    "romaji": "sekkaku",
+    "category": "adverb",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "တကူးတက ကြိုးစားထားသော်လည်း / အဖိုးတန်သော အခွင့်အရေးဖြစ်ပါလျက်",
+    "example": "せっかくの休みだから、旅行に行きたい。",
+    "exampleRuby": "せっかくの<ruby>休<rt>やす</rt></ruby>みだから、<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>きたい。",
+    "exampleMeaning": "အဖိုးတန်သော အားလပ်ရက်ဖြစ်သည့်အတွက် ခရီးထွက်ချင်သည်။"
+  },
+  {
+    "word": "あいにく",
+    "reading": "あいにく",
+    "romaji": "ainiku",
+    "category": "adverb",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "ကံမကောင်းစွာဖြင့် / မတော်တဆ တိုက်ဆိုင်စွာ မအားလပ်ခြင်း",
+    "example": "あいにく部長はただいま外出しております。",
+    "exampleRuby": "あいにく<ruby>部長<rt>ぶちょう</rt></ruby>はただいま<ruby>外出<rt>がいしゅつ</rt></ruby>しております。",
+    "exampleMeaning": "စိတ်မကောင်းစွာဖြင့်ပဲ ဌာနမှူးမှာ ယခုလောလောဆယ် အပြင်သို့ ထွက်သွားပါသည်ခင်ဗျာ။"
+  },
+  {
+    "word": "スケジュール",
+    "reading": "スケジュール",
+    "romaji": "sukejuuru",
+    "category": "katakana",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "အချိန်ဇယား / အစီအစဉ်",
+    "example": "来週のスケジュールを確認してください。",
+    "exampleRuby": "<ruby>来週<rt>らいしゅう</rt></ruby>のスケジュールを<ruby>確認<rt>かくにん</rt></ruby>してください。",
+    "exampleMeaning": "နောက်တစ်ပတ်၏ အစီအစဉ်ဇယားကို စစ်ဆေးပါ။"
+  },
+  {
+    "word": "キャンセル",
+    "reading": "キャンセル",
+    "romaji": "kyanseru",
+    "category": "katakana",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "ဖျက်သိမ်းခြင်း",
+    "example": "急用ができたので、ホテルをキャンセルした。",
+    "exampleRuby": "<ruby>急用<rt>きゅうよう</rt></ruby>ができたので、ホテルをキャンセルした。",
+    "exampleMeaning": "အရေးပေါ်ကိစ္စ ပေါ်လာသောကြောင့် ဟိုတယ်ဘိုကင်ကို ဖျက်သိမ်းခဲ့သည်။"
+  },
+  {
+    "word": "コミュニケーション",
+    "reading": "コミュニケーション",
+    "romaji": "komyunikeeshon",
+    "category": "katakana",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "အပြန်အလှန် ဆက်သွယ်ပြောဆို ဆက်ဆံရေး",
+    "example": "職場の仲間とコミュニケーションをとることが大切だ。",
+    "exampleRuby": "<ruby>職場<rt>しょくば</rt></ruby>の<ruby>仲間<rt>なかま</rt></ruby>とコミュニケーションをとることが<ruby>大切<rt>たいせつ</rt></ruby>だ。",
+    "exampleMeaning": "လုပ်ငန်းခွင် လုပ်ဖော်ကိုင်ဖက်များနှင့် အပြန်အလှန် ဆက်ဆံရေးရှိရန် အရေးကြီးသည်။"
+  },
+  {
+    "word": "プレッシャー",
+    "reading": "プレッシャー",
+    "romaji": "puresshaa",
+    "category": "katakana",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "ဖိအား",
+    "example": "大事な試合の前で、強いプレッシャーを感じている。",
+    "exampleRuby": "<ruby>大事<rt>だいじ</rt></ruby>な<ruby>試合<rt>しあい</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>で、<ruby>強<rt>つよ</rt></ruby>いプレッシャーを<ruby>感<rt>かん</rt></ruby>じている。",
+    "exampleMeaning": "အရေးကြီးသော ပွဲစဉ်မတိုင်မီ ပြင်းထန်သော ဖိအားကို ခံစားနေရသည်။"
+  },
+  {
+    "word": "クレーム",
+    "reading": "クレーム",
+    "romaji": "kureemu",
+    "category": "katakana",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "ဖောက်သည်များ၏ ကန့်ကွက်တိုင်ကြားချက်",
+    "example": "お客様からのクレームに迅速に対応する。",
+    "exampleRuby": "お<ruby>客様<rt>きゃくさま</rt></ruby>からのクレームに<ruby>迅速<rt>じんそく</rt></ruby>に<ruby>対応<rt>たいおう</rt></ruby>する。",
+    "exampleMeaning": "ဖောက်သည်များထံမှ တိုင်ကြားချက်များကို လျင်မြန်စွာ ဖြေရှင်းဆောင်ရွက်သည်။"
+  },
+  {
+    "word": "アドバイス",
+    "reading": "アドバイス",
+    "romaji": "adobaisu",
+    "category": "katakana",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "အကြံဉာဏ်",
+    "example": "先輩のアドバイスのおかげで、面接に受かった。",
+    "exampleRuby": "<ruby>先輩<rt>せんぱい</rt></ruby>のアドバイスのおかげで、<ruby>面接<rt>めんせつ</rt></ruby>に<ruby>受<rt>う</rt></ruby>かった。",
+    "exampleMeaning": "စီနီယာ၏ အကြံပေးမှုကြောင့် လူတွေ့စစ်ဆေးမှု အောင်မြင်ခဲ့သည်။"
+  },
+  {
+    "word": "リラックス",
+    "reading": "リラックス",
+    "romaji": "rirakkusu",
+    "category": "katakana",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true,
+    "meaning": "စိတ်အေးလက်အေး နေထိုင်ခြင်း",
+    "example": "音楽を聴いてリラックスする。",
+    "exampleRuby": "<ruby>音楽<rt>おんがく</rt></ruby>を<ruby>聴<rt>き</rt></ruby>いてリラックスする。",
+    "exampleMeaning": "သီချင်းနားထောင်ပြီး စိတ်အေးလက်အေး နေထိုင်သည်။"
+  },
   {
     "word": "売り切れる",
     "reading": "うりきれる",
@@ -8,7 +476,9 @@ const N3_VOCAB_DATA = [
     "meaning": "ရောင်းကုန်သွားသည် / ပစ္စည်းပြတ်သည်",
     "example": "人気のあるコンサートのチケットはすぐに売り切れた。",
     "exampleRuby": "<ruby>人気<rt>にんき</rt></ruby>のあるコンサートのチケットはすぐに<ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れた。",
-    "exampleMeaning": "လူကြိုက်များသော ဖျော်ဖြေပွဲလက်မှတ်များသည် ချက်ချင်း ရောင်းကုန်သွားခဲ့သည်။"
+    "exampleMeaning": "လူကြိုက်များသော ဖျော်ဖြေပွဲလက်မှတ်များသည် ချက်ချင်း ရောင်းကုန်သွားခဲ့သည်။",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true
   },
   {
     "word": "問い合わせる",
@@ -18,7 +488,9 @@ const N3_VOCAB_DATA = [
     "meaning": "စုံစမ်းမေးမြန်းသည်",
     "example": "詳しい日程については、事務所に問い合わせてください。",
     "exampleRuby": "<ruby>詳<rt>くわ</rt></ruby>しい<ruby>日程<rt>にってい</rt></ruby>については、<ruby>事務所<rt>じむしょ</rt></ruby>に<ruby>問<rt>と</rt></ruby>い<ruby>合<rt>あ</rt></ruby>わせてください。",
-    "exampleMeaning": "အသေးစိတ်ရက်စွဲများနှင့် ပတ်သက်၍ ရုံးခန်းသို့ စုံစမ်းမေးမြန်းပါ။"
+    "exampleMeaning": "အသေးစိတ်ရက်စွဲများနှင့် ပတ်သက်၍ ရုံးခန်းသို့ စုံစမ်းမေးမြန်းပါ။",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true
   },
   {
     "word": "申し込む",
@@ -28,7 +500,9 @@ const N3_VOCAB_DATA = [
     "meaning": "လျှောက်ထားသည် / စာရင်းသွင်းသည်",
     "example": "JLPT試験の受験をインターネットで申し込んだ。",
     "exampleRuby": "JLPT<ruby>試験<rt>しけん</rt></ruby>の<ruby>受験<rt>じゅけん</rt></ruby>をインターネットで<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>んだ。",
-    "exampleMeaning": "JLPT စာမေးပွဲဖြေဆိုရန် အင်တာနက်မှ လျှောက်ထားခဲ့သည်။"
+    "exampleMeaning": "JLPT စာမေးပွဲဖြေဆိုရန် အင်တာနက်မှ လျှောက်ထားခဲ့သည်။",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true
   },
   {
     "word": "思い出す",
@@ -38,7 +512,9 @@ const N3_VOCAB_DATA = [
     "meaning": "သတိရသည် / ပြန်လည်စဉ်းစားမိသည်",
     "example": "子どものころの写真を見て、昔のことを思い出した。",
     "exampleRuby": "<ruby>子<rt>こ</rt></ruby>どものころの<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>昔<rt>むかし</rt></ruby>のことを<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>した。",
-    "exampleMeaning": "ငယ်စဉ်က ဓာတ်ပုံများကိုကြည့်ပြီး အတိတ်ကအကြောင်းများကို သတိရမိခဲ့သည်။"
+    "exampleMeaning": "ငယ်စဉ်က ဓာတ်ပုံများကိုကြည့်ပြီး အတိတ်ကအကြောင်းများကို သတိရမိခဲ့သည်။",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true
   },
   {
     "word": "引き受ける",
@@ -48,27 +524,9 @@ const N3_VOCAB_DATA = [
     "meaning": "တာဝန်ယူ လက်ခံသည်",
     "example": "忙しかったが、先輩に頼まれて仕事を引き受けた。",
     "exampleRuby": "<ruby>忙<rt>いそが</rt></ruby>しかったが、<ruby>先輩<rt>せんぱい</rt></ruby>に<ruby>頼<rt>たの</rt></ruby>まれて<ruby>仕事<rt>しごと</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>き<ruby>受<rt>う</rt></ruby>けた。",
-    "exampleMeaning": "အလုပ်များနေသော်လည်း စီနီယာက အကူအညီတောင်းသဖြင့် အလုပ်ကို တာဝန်ယူလက်ခံခဲ့သည်။"
-  },
-  {
-    "word": "見直す",
-    "reading": "みなおす",
-    "romaji": "minaosu",
-    "category": "compound",
-    "meaning": "ပြန်လည်စစ်ဆေးသည် / အမြင်သစ်ဖြင့် ပြန်ကြည့်သည်",
-    "example": "テストを提出する前にもう一度見直してください。",
-    "exampleRuby": "テストを<ruby>提出<rt>ていしゅつ</rt></ruby>する<ruby>前<rt>まえ</rt></ruby>にもう<ruby>一度<rt>いちど</rt></ruby><ruby>見<rt>み</rt></ruby><ruby>直<rt>なお</rt></ruby>してください。",
-    "exampleMeaning": "စာမေးပွဲအဖြေလွှာ မတင်မီ နောက်တစ်ကြိမ် ပြန်လည်စစ်ဆေးပါ။"
-  },
-  {
-    "word": "取り消す",
-    "reading": "とりけす",
-    "romaji": "torikesu",
-    "category": "compound",
-    "meaning": "ပယ်ဖျက်သည် / Cancel လုပ်သည်",
-    "example": "急用ができたので、ホテルの予約を取り消した。",
-    "exampleRuby": "<ruby>急用<rt>きゅうよう</rt></ruby>ができたので、ホテルの<ruby>予約<rt>よやく</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>消<rt>け</rt></ruby>した。",
-    "exampleMeaning": "အရေးပေါ်ကိစ္စပေါ်လာသဖြင့် ဟိုတယ်ဘိုကင်ကို ပယ်ဖျက်လိုက်သည်။"
+    "exampleMeaning": "အလုပ်များနေသော်လည်း စီနီယာက အကူအညီတောင်းသဖြင့် အလုပ်ကို တာဝန်ယူလက်ခံခဲ့သည်။",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true
   },
   {
     "word": "間に合う",
@@ -78,7 +536,21 @@ const N3_VOCAB_DATA = [
     "meaning": "အချိန်မီသည်",
     "example": "走ったので、始発電車に間に合った。",
     "exampleRuby": "<ruby>走<rt>hashi</rt></ruby>ったので、<ruby>始発<rt>しはつ</rt></ruby><ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>った。",
-    "exampleMeaning": "ပြေးသွားခဲ့သဖြင့် ပထမဆုံးရထားကို အချိန်မီခဲ့သည်။"
+    "exampleMeaning": "ပြေးသွားခဲ့သဖြင့် ပထမဆုံးရထားကို အချိန်မီခဲ့သည်။",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true
+  },
+  {
+    "word": "追いつく",
+    "reading": "おいつく",
+    "romaji": "oitsuku",
+    "category": "compound",
+    "meaning": "အမှီလိုက်နိုင်သည်",
+    "example": "毎日勉強して、クラスのトップに追いつきたい。",
+    "exampleRuby": "<ruby>毎日<rt>まいにち</rt></ruby><ruby>勉強<rt>べんきょう</rt></ruby>して、クラスのトップに<ruby>追<rt>お</rt></ruby>いつきたい。",
+    "exampleMeaning": "နေ့စဉ်စာကျက်ပြီး အတန်းထဲက ထိပ်ဆုံးလူကို အမှီလိုက်ချင်သည်။",
+    "tag": "★ မေးခွန်းဟောင်း စံပြ",
+    "isHot": true
   },
   {
     "word": "立ち直る",
@@ -89,16 +561,6 @@ const N3_VOCAB_DATA = [
     "example": "失敗したが、友人の励ましですぐに立ち直った。",
     "exampleRuby": "<ruby>失敗<rt>しっぱい</rt></ruby>したが、<ruby>友人<rt>ゆうじん</rt></ruby>の<ruby>励<rt>はげ</rt></ruby>ましですぐに<ruby>立<rt>た</rt></ruby>ち<ruby>直<rt>なお</rt></ruby>った。",
     "exampleMeaning": "ကျရှုံးခဲ့သော်လည်း သူငယ်ချင်း၏ အားပေးမှုကြောင့် ချက်ချင်း စိတ်ပြန်လည်နလန်ထူခဲ့သည်။"
-  },
-  {
-    "word": "追いつく",
-    "reading": "おいつく",
-    "romaji": "oitsuku",
-    "category": "compound",
-    "meaning": "အမှီလိုက်နိုင်သည်",
-    "example": "毎日勉強して、クラスのトップに追いつきたい。",
-    "exampleRuby": "<ruby>毎日<rt>まいにち</rt></ruby><ruby>勉強<rt>べんきょう</rt></ruby>して、クラスのトップに<ruby>追<rt>お</rt></ruby>いつきたい。",
-    "exampleMeaning": "နေ့စဉ်စာကျက်ပြီး အတန်းထဲက ထိပ်ဆုံးလူကို အမှီလိုက်ချင်သည်။"
   },
   {
     "word": "乗り過ごす",
@@ -301,36 +763,6 @@ const N3_VOCAB_DATA = [
     "exampleMeaning": "လေ့ကျင့်ခန်းကို အကြိမ်ကြိမ် ထပ်ခါတလဲလဲ လုပ်ခြင်းဖြင့် တိုးတက်လာမည်။"
   },
   {
-    "word": "うっかり",
-    "reading": "うっかり",
-    "romaji": "ukkari",
-    "category": "adverb",
-    "meaning": "သတိလက်လွတ် မရည်ရွယ်ဘဲ ဖြစ်မိသော",
-    "example": "うっかり大切な書類を家に忘れてしまった。",
-    "exampleRuby": "うっかり<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>書類<rt>しょるい</rt></ruby>を<ruby>家<rt>いえ</rt></ruby>に<ruby>忘<rt>わす</rt></ruby>れてしまった。",
-    "exampleMeaning": "သတိလက်လွတ်ဖြစ်ပြီး အရေးကြီးသော စာရွက်စာတမ်းကို အိမ်မှာ မေ့ကျန်ခဲ့သည်။"
-  },
-  {
-    "word": "すっきり",
-    "reading": "すっきり",
-    "romaji": "sukkiri",
-    "category": "adverb",
-    "meaning": "စိတ်ပေါ့ပါးလန်းဆန်းသွားသော",
-    "example": "シャワーを浴びて、気分がすっきりした。",
-    "exampleRuby": "シャワーを<ruby>浴<rt>あ</rt></ruby>びて、<ruby>気分<rt>きぶん</rt></ruby>がすっきりした。",
-    "exampleMeaning": "ရေချိုးလိုက်ပြီးနောက် စိတ်ပေါ့ပါးလန်းဆန်းသွားခဲ့သည်။"
-  },
-  {
-    "word": "ぐっすり",
-    "reading": "ぐっすり",
-    "romaji": "gussuri",
-    "category": "adverb",
-    "meaning": "နှစ်နှစ်ခြိုက်ခြိုက် (အိပ်ပျော်သည်)",
-    "example": "昨夜は疲れていたので、朝までぐっすり眠った。",
-    "exampleRuby": "<ruby>昨夜<rt>さくや</rt></ruby>は<ruby>疲<rt>つか</rt></ruby>れていたので、<ruby>朝<rt>あさ</rt></ruby>までぐっすり<ruby>眠<rt>ねむ</rt></ruby>った。",
-    "exampleMeaning": "မနေ့ညက မောပန်းနေသဖြင့် မနက်အထိ နှစ်နှစ်ခြိုက်ခြိုက် အိပ်ပျော်သွားခဲ့သည်။"
-  },
-  {
     "word": "はっきり",
     "reading": "はっきり",
     "romaji": "hakkiri",
@@ -339,16 +771,6 @@ const N3_VOCAB_DATA = [
     "example": "遠くの山がはっきりと見えた。",
     "exampleRuby": "<ruby>遠<rt>とお</rt></ruby>くの<ruby>山<rt>やま</rt></ruby>がはっきりと<ruby>見<rt>み</rt></ruby>えた。",
     "exampleMeaning": "ဝေးလံသော တောင်တန်းကြီးကို ရှင်းရှင်းလင်းလင်း မြင်တွေ့ခဲ့ရသည်။"
-  },
-  {
-    "word": "ぴったり",
-    "reading": "ぴったり",
-    "romaji": "pittari",
-    "category": "adverb",
-    "meaning": "ကွက်တိ / အတိအကျ လိုက်ဖက်သော",
-    "example": "この靴は私の足のサイズにぴったりだ。",
-    "exampleRuby": "この<ruby>靴<rt>くつ</rt></ruby>は<ruby>私<rt>わたし</rt></ruby>の<ruby>足<rt>あし</rt></ruby>のサイズにぴったりだ。",
-    "exampleMeaning": "ဤဖိနပ်သည် ကျွန်ုပ်၏ ခြေထောက်ဆိုဒ်နှင့် ကွက်တိပင်ဖြစ်သည်။"
   },
   {
     "word": "ぼんやり",
@@ -379,16 +801,6 @@ const N3_VOCAB_DATA = [
     "example": "期待していた試合に負けて、がっかりした。",
     "exampleRuby": "<ruby>期待<rt>きたい</rt></ruby>していた<ruby>試合<rt>しあい</rt></ruby>に<ruby>負<rt>ま</rt></ruby>けて、がっかりした。",
     "exampleMeaning": "မျှော်လင့်ထားသော ပွဲစဉ်တွင် ရှုံးနိမ့်ခဲ့သဖြင့် စိတ်ပျက်အားလျော့သွားခဲ့သည်။"
-  },
-  {
-    "word": "そっくり",
-    "reading": "そっくり",
-    "romaji": "sokkuri",
-    "category": "adverb",
-    "meaning": "တစ်ပုံစံတည်း တူညီသော",
-    "example": "彼は父親に顔も声もそっくりだ。",
-    "exampleRuby": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>父親<rt>ちちおや</rt></ruby>に<ruby>顔<rt>かお</rt></ruby>も<ruby>声<rt>こえ</rt></ruby>もそっくりだ。",
-    "exampleMeaning": "သူသည် ဖခင်ဖြစ်သူနှင့် မျက်နှာရော အသံပါ တစ်ပုံစံတည်း တူသည်။"
   },
   {
     "word": "ぎっしり",
@@ -451,16 +863,6 @@ const N3_VOCAB_DATA = [
     "exampleMeaning": "လပေါင်းများစွာ သုတေသနပြုပြီးနောက် နောက်ဆုံးတွင် ဆေးဝါးသစ်ကို တီထွင်နိုင်ခဲ့သည်။"
   },
   {
-    "word": "偶然",
-    "reading": "ぐうぜん",
-    "romaji": "guuzen",
-    "category": "adverb",
-    "meaning": "မတော်တဆ / မမျှော်လင့်ဘဲ",
-    "example": "街を歩いていたら、偶然昔の同級生に会った。",
-    "exampleRuby": "<ruby>街<rt>まち</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いていたら、<ruby>偶然<rt>ぐうぜん</rt></ruby><ruby>昔<rt>むかし</rt></ruby>の<ruby>同級生<rt>どうきゅうせい</rt></ruby>に<ruby>会<rt>あ</rt></ruby>った。",
-    "exampleMeaning": "လမ်းလျှောက်နေစဉ် မတော်တဆ အတန်းဖော်ဟောင်းနှင့် ဆုံတွေ့ခဲ့သည်။"
-  },
-  {
     "word": "突然",
     "reading": "とつぜん",
     "romaji": "totsuzen",
@@ -489,26 +891,6 @@ const N3_VOCAB_DATA = [
     "example": "映画の結末を見て、思わず涙を流した。",
     "exampleRuby": "<ruby>映画<rt>えいが</rt></ruby>の<ruby>結末<rt>けつまつ</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>思<rt>おも</rt></ruby>わず<ruby>涙<rt>なみだ</rt></ruby>を<ruby>流<rt>なが</rt></ruby>した。",
     "exampleMeaning": "ရုပ်ရှင်ဇာတ်သိမ်းကိုကြည့်ရင်း မသိစိတ်ဖြင့် မျက်ရည်ကျမိခဲ့သည်။"
-  },
-  {
-    "word": "わざわざ",
-    "reading": "わざわざ",
-    "romaji": "wazawaza",
-    "category": "adverb",
-    "meaning": "သီးသန့် အပင်ပန်းခံ၍",
-    "example": "忙しいのに、わざわざ空港まで見送りに来てくれた。",
-    "exampleRuby": "<ruby>忙<rt>いそが</rt></ruby>しいのに、わざわざ<ruby>空港<rt>くうこう</rt></ruby>まで<ruby>見送<rt>みおく</rt></ruby>りに<ruby>来<rt>き</rt></ruby>てくれた。",
-    "exampleMeaning": "အလုပ်များနေပါလျက်နှင့် သီးသန့် အပင်ပန်းခံပြီး လေဆိပ်အထိ လာပို့ပေးခဲ့သည်။"
-  },
-  {
-    "word": "せっかく",
-    "reading": "せっかく",
-    "romaji": "sekkaku",
-    "category": "adverb",
-    "meaning": "ခဲရာခဲဆစ် အခွင့်အရေးရပါလျက်နှင့်",
-    "example": "せっかく日本に来たのだから、富士山に登りたい。",
-    "exampleRuby": "せっかく<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>き</rt></ruby>たのだから、<ruby>富士山<rt>ふじさん</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>りたい。",
-    "exampleMeaning": "ဂျပန်ကို ခဲရာခဲဆစ် ရောက်လာခဲ့တာဖြစ်လို့ ဖူဂျီတောင်ကို တက်ချင်သည်။"
   },
   {
     "word": "直ちに",
@@ -591,16 +973,6 @@ const N3_VOCAB_DATA = [
     "exampleMeaning": "ဘူတာရုံ၏ အသံလွှင့်ကြေညာချက်ကို သေချာနားထောင်ပြီးမှ ရထားစီးခဲ့သည်။"
   },
   {
-    "word": "アドバイス",
-    "reading": "アドバイス",
-    "romaji": "adobaisu",
-    "category": "katakana",
-    "meaning": "အကြံပေးချက် (Advice)",
-    "example": "先輩からのアドバイスのおかげで問題が解決した。",
-    "exampleRuby": "<ruby>先輩<rt>せんぱい</rt></ruby>からのアドバイスのおかげで<ruby>問題<rt>もんだい</rt></ruby>が<ruby>解決<rt>かいけつ</rt></ruby>した。",
-    "exampleMeaning": "စီနီယာ၏ အကြံပေးချက်ကြောင့် ပြဿနာ ပြေလည်သွားခဲ့သည်။"
-  },
-  {
     "word": "インタビュー",
     "reading": "インタビュー",
     "romaji": "intabyuu",
@@ -621,16 +993,6 @@ const N3_VOCAB_DATA = [
     "exampleMeaning": "နေရောင်ခြည်စွမ်းအင်သည် သဘာဝပတ်ဝန်းကျင်နှင့် ညီညွတ်သော သန့်ရှင်းစွမ်းအင်ဖြစ်သည်။"
   },
   {
-    "word": "キャンセル",
-    "reading": "キャンセル",
-    "romaji": "kyanseru",
-    "category": "katakana",
-    "meaning": "ဖျက်သိမ်းခြင်း (Cancel)",
-    "example": "体調を崩したため、旅行をキャンセルした。",
-    "exampleRuby": "<ruby>体調<rt>たいちょう</rt></ruby>を<ruby>崩<rt>くず</rt></ruby>したため、<ruby>旅行<rt>りょこう</rt></ruby>をキャンセルした。",
-    "exampleMeaning": "နေမကောင်းဖြစ်သဖြင့် ခရီးစဉ်ကို ဖျက်သိမ်းခဲ့သည်။"
-  },
-  {
     "word": "キャリア",
     "reading": "キャリア",
     "romaji": "kyaria",
@@ -639,26 +1001,6 @@ const N3_VOCAB_DATA = [
     "example": "IT業界で長いキャリアを積んできた。",
     "exampleRuby": "IT<ruby>業界<rt>ぎょうかい</rt></ruby>で<ruby>長<rt>なが</rt></ruby>いキャリアを<ruby>積<rt>つ</rt></ruby>んできた。",
     "exampleMeaning": "IT နယ်ပယ်တွင် လုပ်သက်အတွေ့အကြုံများစွာ စုဆောင်းခဲ့သည်။"
-  },
-  {
-    "word": "コミュニケーション",
-    "reading": "コミュニケーション",
-    "romaji": "komyunikeeshon",
-    "category": "katakana",
-    "meaning": "အပြန်အလှန် ဆက်သွယ်ပြောဆိုမှု (Communication)",
-    "example": "職場では同僚とのコミュニケーションが重要だ。",
-    "exampleRuby": "<ruby>職場<rt>しょくば</rt></ruby>では<ruby>同僚<rt>どうりょう</rt></ruby>とのコミュニケーションが<ruby>重要<rt>じゅうよう</rt></ruby>だ。",
-    "exampleMeaning": "လုပ်ငန်းခွင်တွင် လုပ်ဖော်ကိုင်ဖက်များနှင့် အပြန်အလှန် ဆက်သွယ်ပြောဆိုမှုသည် အရေးကြီးသည်။"
-  },
-  {
-    "word": "スケジュール",
-    "reading": "スケジュール",
-    "romaji": "sukejuuru",
-    "category": "katakana",
-    "meaning": "အချိန်ဇယား / အစီအစဉ် (Schedule)",
-    "example": "試験までのスケジュールを手帳に書き込んだ。",
-    "exampleRuby": "<ruby>試験<rt>しけん</rt></ruby>までのスケジュールを<ruby>手帳<rt>てちょう</rt></ruby>に<ruby>書<rt>か</rt></ruby>き<ruby>込<rt>こ</rt></ruby>んだ。",
-    "exampleMeaning": "စာမေးပွဲအထိ အချိန်ဇယားကို မှတ်စုစာအုပ်ထဲတွင် ရေးမှတ်ထားခဲ့သည်။"
   },
   {
     "word": "ストレス",

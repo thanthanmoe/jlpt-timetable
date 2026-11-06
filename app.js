@@ -1462,7 +1462,7 @@ let vocabDisplayLimit = 36;
 function setVocabFilter(filterName) {
   currentVocabFilter = filterName;
   vocabDisplayLimit = 36;
-  const chips = ['chipVocabAll', 'chipVocabCompound', 'chipVocabAdverb', 'chipVocabKatakana', 'chipVocabVerbAdj'];
+  const chips = ['chipVocabAll', 'chipVocabHot', 'chipVocabCompound', 'chipVocabAdverb', 'chipVocabKatakana', 'chipVocabVerbAdj'];
   chips.forEach(id => {
     const el = document.getElementById(id);
     if (el) el.classList.remove('active');
@@ -1470,6 +1470,7 @@ function setVocabFilter(filterName) {
 
   const activeMap = {
     all: 'chipVocabAll',
+    hot: 'chipVocabHot',
     compound: 'chipVocabCompound',
     adverb: 'chipVocabAdverb',
     katakana: 'chipVocabKatakana',
@@ -1502,7 +1503,8 @@ function renderVocabSection() {
   if (!container || typeof N3_VOCAB_DATA === 'undefined') return;
 
   const filtered = N3_VOCAB_DATA.filter(item => {
-    if (currentVocabFilter !== 'all' && item.category !== currentVocabFilter) return false;
+    if (currentVocabFilter === 'hot' && !item.isHot) return false;
+    if (currentVocabFilter !== 'all' && currentVocabFilter !== 'hot' && item.category !== currentVocabFilter) return false;
     if (!vocabSearchQuery) return true;
     return item.word.toLowerCase().includes(vocabSearchQuery) ||
            item.reading.toLowerCase().includes(vocabSearchQuery) ||
@@ -1531,9 +1533,12 @@ function renderVocabSection() {
         <div class="study-card" id="vocab-card-${idx}">
           <div class="study-card-header">
             <div class="study-card-word-group">
-              <span class="study-main-word" onclick="speakJapanese('${item.word.replace(/'/g, "\'")}')" style="cursor:pointer;" title="အသံထွက် နားထောင်ရန်">
-                ${item.word}
-              </span>
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="study-main-word" onclick="speakJapanese('${item.word.replace(/'/g, "\'")}')" style="cursor:pointer;" title="အသံထွက် နားထောင်ရန်">
+                  ${item.word}
+                </span>
+                ${item.tag ? `<span class="study-badge-hot">${item.tag}</span>` : ''}
+              </div>
               <span class="study-reading">${item.reading} (${item.romaji})</span>
             </div>
             <button class="kanji-audio-btn" onclick="speakJapanese('${item.word.replace(/'/g, "\'")}')">
@@ -1662,7 +1667,7 @@ let grammarDisplayLimit = 30;
 function setGrammarFilter(filterName) {
   currentGrammarFilter = filterName;
   grammarDisplayLimit = 30;
-  const chips = ['chipGrammarAll', 'chipGrammarLogic', 'chipGrammarRules', 'chipGrammarRelation', 'chipGrammarContrast', 'chipGrammarTime', 'chipGrammarImpression'];
+  const chips = ['chipGrammarAll', 'chipGrammarHot', 'chipGrammarLogic', 'chipGrammarRules', 'chipGrammarRelation', 'chipGrammarContrast', 'chipGrammarTime', 'chipGrammarImpression'];
   chips.forEach(id => {
     const el = document.getElementById(id);
     if (el) el.classList.remove('active');
@@ -1670,6 +1675,7 @@ function setGrammarFilter(filterName) {
 
   const activeMap = {
     all: 'chipGrammarAll',
+    hot: 'chipGrammarHot',
     logic: 'chipGrammarLogic',
     rules: 'chipGrammarRules',
     relation: 'chipGrammarRelation',
@@ -1704,7 +1710,8 @@ function renderGrammarSection() {
   if (!container || typeof N3_GRAMMAR_DATA === 'undefined') return;
 
   const filtered = N3_GRAMMAR_DATA.filter(item => {
-    if (currentGrammarFilter !== 'all' && item.category !== currentGrammarFilter) return false;
+    if (currentGrammarFilter === 'hot' && !item.isHot) return false;
+    if (currentGrammarFilter !== 'all' && currentGrammarFilter !== 'hot' && item.category !== currentGrammarFilter) return false;
     if (!grammarSearchQuery) return true;
     return item.pattern.toLowerCase().includes(grammarSearchQuery) ||
            item.meaning.toLowerCase().includes(grammarSearchQuery) ||
@@ -1731,7 +1738,10 @@ function renderGrammarSection() {
       ${visibleItems.map((item, idx) => `
         <div class="study-card">
           <div class="study-card-header">
-            <span class="grammar-pattern-title">${item.pattern}</span>
+            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <span class="grammar-pattern-title">${item.pattern}</span>
+              ${item.tag ? `<span class="study-badge-hot">${item.tag}</span>` : ''}
+            </div>
             <button class="kanji-audio-btn" onclick="speakJapanese('${item.pattern.replace(/〜/g, '').replace(/'/g, "\'")}')">
               🔊 အသံ
             </button>
