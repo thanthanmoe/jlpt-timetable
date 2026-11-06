@@ -1,9 +1,9 @@
-// Service Worker for JLPT Timetable App (v4 with Full 336 Soumatome Kanji)
-const CACHE_NAME = 'jlpt-timetable-v4';
+// Service Worker for JLPT Timetable App (v5 with Redmi Pad SE 11" & Tablet Responsive Layout)
+const CACHE_NAME = 'jlpt-timetable-v5';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
-  './styles.css?v=2.2',
+  './styles.css?v=2.3',
   './kanji_data.js?v=2.2',
   './app.js?v=2.2',
   './manifest.json',
