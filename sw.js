@@ -1,14 +1,14 @@
-// Service Worker for JLPT Timetable App (v7 with JLPT Past Exam Ranked Grammar & Vocab)
-const CACHE_NAME = 'jlpt-timetable-v7';
+// Service Worker for JLPT Timetable App (v8 with N3 Hot Kanji & 75 Same-Meaning Pairs)
+const CACHE_NAME = 'jlpt-timetable-v8';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
-  './styles.css?v=2.5',
-  './kanji_data.js?v=2.2',
-  './n3_vocab_data.js?v=2.5',
-  './n3_samemeaning_data.js?v=2.4',
-  './n3_grammar_data.js?v=2.5',
-  './app.js?v=2.5',
+  './styles.css?v=2.6',
+  './kanji_data.js?v=2.6',
+  './n3_vocab_data.js?v=2.6',
+  './n3_samemeaning_data.js?v=2.6',
+  './n3_grammar_data.js?v=2.6',
+  './app.js?v=2.6',
   './manifest.json',
   './icon-192.png',
   './icon-512.png'

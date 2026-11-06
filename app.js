@@ -1182,7 +1182,7 @@ let kanjiDisplayLimit = 40;
 function setKanjiFilter(filterName) {
   currentKanjiFilter = filterName;
   kanjiDisplayLimit = 40;
-  ['chipHiragana', 'chipKatakana', 'chipN5', 'chipN4', 'chipN3'].forEach(id => {
+  ['chipHiragana', 'chipKatakana', 'chipN5', 'chipN4', 'chipN3Hot', 'chipN3'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.classList.remove('active');
   });
@@ -1191,6 +1191,7 @@ function setKanjiFilter(filterName) {
   if (filterName === 'katakana') document.getElementById('chipKatakana')?.classList.add('active');
   if (filterName === 'n5') document.getElementById('chipN5')?.classList.add('active');
   if (filterName === 'n4') document.getElementById('chipN4')?.classList.add('active');
+  if (filterName === 'n3_hot') document.getElementById('chipN3Hot')?.classList.add('active');
   if (filterName === 'n3') document.getElementById('chipN3')?.classList.add('active');
 
   renderKanjiSection();
@@ -1247,10 +1248,11 @@ function renderKanjiSection() {
     return;
   }
 
-  // Kanji: N5, N4, N3
+  // Kanji: N5, N4, N3, N3 Hot
   let sourceKanji = [];
   if (currentKanjiFilter === 'n5' && typeof N5_KANJI !== 'undefined') sourceKanji = N5_KANJI;
   else if (currentKanjiFilter === 'n4' && typeof N4_KANJI !== 'undefined') sourceKanji = N4_KANJI;
+  else if (currentKanjiFilter === 'n3_hot' && typeof N3_KANJI !== 'undefined') sourceKanji = N3_KANJI.filter(k => k.isHot);
   else if (currentKanjiFilter === 'n3' && typeof N3_KANJI !== 'undefined') sourceKanji = N3_KANJI;
 
   const filtered = sourceKanji.filter(item => {
@@ -1292,7 +1294,7 @@ function renderKanjiSection() {
               <span class="kanji-reading-hiragana" id="reading-${idx}" style="${isTestMode ? 'filter: blur(5px); cursor: pointer;' : ''}" onclick="this.style.filter='none'">
                 ${item.hiragana}
               </span>
-              ${item.tag ? `<span style="font-size: 0.68rem; color: #38bdf8; background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.25); padding: 2px 7px; border-radius: 9999px; font-weight: 500; margin-left: 6px; white-space: nowrap;">${item.tag}</span>` : ''}
+              ${item.hotTag ? `<span class="study-badge-hot">${item.hotTag}</span>` : (item.tag ? `<span style="font-size: 0.68rem; color: #38bdf8; background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.25); padding: 2px 7px; border-radius: 9999px; font-weight: 500; margin-left: 6px; white-space: nowrap;">${item.tag}</span>` : '')}
               <button class="kanji-audio-btn" onclick="speakJapanese('${item.kanji}')">
                 🔊 အသံ
               </button>
@@ -1570,9 +1572,28 @@ function renderVocabSection() {
 // =============================================================
 // N3 SAME MEANING SECTION (類義語・言い換え - JLPT 問題４)
 // =============================================================
+let currentSameMeaningFilter = 'all';
 let sameMeaningSearchQuery = '';
 let isSameMeaningQuiz = false;
 let sameMeaningDisplayLimit = 36;
+
+function setSameMeaningFilter(filterName) {
+  currentSameMeaningFilter = filterName;
+  sameMeaningDisplayLimit = 36;
+  const chips = ['chipSameMeaningAll', 'chipSameMeaningHot'];
+  chips.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.remove('active');
+  });
+
+  const activeMap = {
+    all: 'chipSameMeaningAll',
+    hot: 'chipSameMeaningHot'
+  };
+  const activeEl = document.getElementById(activeMap[filterName]);
+  if (activeEl) activeEl.classList.add('active');
+  renderSameMeaningSection();
+}
 
 function onSameMeaningSearch(query) {
   sameMeaningSearchQuery = (query || '').trim().toLowerCase();
@@ -1596,6 +1617,7 @@ function renderSameMeaningSection() {
   if (!container || typeof N3_SAMEMEANING_DATA === 'undefined') return;
 
   const filtered = N3_SAMEMEANING_DATA.filter(item => {
+    if (currentSameMeaningFilter === 'hot' && !item.isHot) return false;
     if (!sameMeaningSearchQuery) return true;
     return item.word.toLowerCase().includes(sameMeaningSearchQuery) ||
            item.reading.toLowerCase().includes(sameMeaningSearchQuery) ||
@@ -1623,6 +1645,14 @@ function renderSameMeaningSection() {
     <div class="same-meaning-cards-list">
       ${visibleItems.map((item, idx) => `
         <div class="study-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <div>
+              ${item.tag ? `<span class="study-badge-hot">${item.tag}</span>` : '<span style="font-size:0.75rem; color:#64748b;">類義語・言い換え</span>'}
+            </div>
+            <button class="kanji-audio-btn" onclick="speakJapanese('${item.word.replace(/'/g, "\'")}')" title="အသံထွက် နားထောင်ရန်">
+              🔊 အသံ
+            </button>
+          </div>
           <div class="same-meaning-pair-row">
             <div class="same-meaning-item" onclick="speakJapanese('${item.word.replace(/'/g, "\'")}')" style="cursor:pointer;">
               <span class="same-meaning-word">${item.word}</span>

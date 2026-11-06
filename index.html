@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" href="./icon-192.png">
   <link rel="manifest" href="./manifest.json">
 
-  <link rel="stylesheet" href="./styles.css?v=2.5">
+  <link rel="stylesheet" href="./styles.css?v=2.6">
 </head>
 
 <body>
@@ -232,6 +232,7 @@
         <button class="kanji-filter-chip" id="chipKatakana" onclick="setKanjiFilter('katakana')">ア Katakana (၄၆ လုံး)</button>
         <button class="kanji-filter-chip" id="chipN5" onclick="setKanjiFilter('n5')">N5 (Minna 1: ၁၁၄ လုံး)</button>
         <button class="kanji-filter-chip" id="chipN4" onclick="setKanjiFilter('n4')">N4 (Minna 2: ၁၈၆ လုံး)</button>
+        <button class="kanji-filter-chip" id="chipN3Hot" onclick="setKanjiFilter('n3_hot')" style="color:#f87171; border-color:rgba(239,68,68,0.4); font-weight:700;">🔥 N3 အမေးများဆုံး (၉၈ လုံး)</button>
         <button class="kanji-filter-chip" id="chipN3" onclick="setKanjiFilter('n3')">N3 (Soumatome: ၃၃၆ လုံး အပြည့်)</button>
       </div>
 
@@ -294,6 +295,12 @@
         <div style="font-size: 0.82rem; color: #94a3b8;">
           စာမေးပွဲတွင် မျက်စိလည်စေတတ်သော အဓိပ္ပာယ်တူ စကားလုံးတွဲများ (類義語) ဖြစ်ပြီး ဥပမာစာကြောင်းတိုင်းတွင် Furigana တင်ပေးထားပါသည်။
         </div>
+      </div>
+
+      <!-- Filter Chips -->
+      <div class="kanji-filter-bar">
+        <button class="kanji-filter-chip active" id="chipSameMeaningAll" onclick="setSameMeaningFilter('all')">အားလုံး (All)</button>
+        <button class="kanji-filter-chip" id="chipSameMeaningHot" onclick="setSameMeaningFilter('hot')" style="color:#f87171; border-color:rgba(239,68,68,0.4); font-weight:700;">🔥 မေးခွန်းဟောင်း အမေးဆုံး</button>
       </div>
 
       <!-- Search Input -->
@@ -512,11 +519,11 @@
     </div>
   </div>
 
-  <script src="./kanji_data.js?v=2.2"></script>
-  <script src="./n3_vocab_data.js?v=2.5"></script>
-  <script src="./n3_samemeaning_data.js?v=2.4"></script>
-  <script src="./n3_grammar_data.js?v=2.5"></script>
-  <script src="./app.js?v=2.5"></script>
+  <script src="./kanji_data.js?v=2.6"></script>
+  <script src="./n3_vocab_data.js?v=2.6"></script>
+  <script src="./n3_samemeaning_data.js?v=2.6"></script>
+  <script src="./n3_grammar_data.js?v=2.6"></script>
+  <script src="./app.js?v=2.6"></script>
 </body>
 
 </html>

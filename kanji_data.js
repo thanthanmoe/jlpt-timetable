@@ -6454,154 +6454,6 @@ const N4_KANJI = [
 
 const N3_KANJI = [
   {
-    "kanji": "駐",
-    "hiragana": "ちゅう",
-    "romaji": "chuu",
-    "meaning": "ကားရပ်နားသည်",
-    "tag": "第1週1日目",
-    "examples": [
-      {
-        "word": "駐車場",
-        "reading": "ちゅうしゃじょう",
-        "mean": "ကားပါကင်"
-      },
-      {
-        "word": "駐車",
-        "reading": "ちゅうしゃ",
-        "mean": "ကားရပ်ခြင်း"
-      }
-    ]
-  },
-  {
-    "kanji": "無",
-    "hiragana": "な(い) / む / ぶ",
-    "romaji": "mu / bu",
-    "meaning": "မရှိသော / အခမဲ့",
-    "tag": "第1週1日目",
-    "examples": [
-      {
-        "word": "無料",
-        "reading": "むりょう",
-        "mean": "အခမဲ့"
-      },
-      {
-        "word": "無理",
-        "reading": "むり",
-        "mean": "မဖြစ်နိုင်သော"
-      },
-      {
-        "word": "無休",
-        "reading": "むきゅう",
-        "mean": "ပိတ်ရက်မရှိ"
-      }
-    ]
-  },
-  {
-    "kanji": "満",
-    "hiragana": "み(ちる) / まん",
-    "romaji": "man",
-    "meaning": "ပြည့်လျှံသော",
-    "tag": "第1週1日目",
-    "examples": [
-      {
-        "word": "満車",
-        "reading": "まんしゃ",
-        "mean": "ကားအပြည့်"
-      },
-      {
-        "word": "満員",
-        "reading": "まんいん",
-        "mean": "လူပြည့်"
-      },
-      {
-        "word": "満足",
-        "reading": "まんぞく",
-        "mean": "ကျေနပ်အားရမှု"
-      }
-    ]
-  },
-  {
-    "kanji": "向",
-    "hiragana": "む(かう) / む(く) / こう",
-    "romaji": "muka(u) / kou",
-    "meaning": "ဦးတည်သည် / မျက်နှာမူသည်",
-    "tag": "第1週1日目",
-    "examples": [
-      {
-        "word": "向かう",
-        "reading": "むかう",
-        "mean": "ဦးတည်သွားသည်"
-      },
-      {
-        "word": "方向",
-        "reading": "ほうこう",
-        "mean": "ဦးတည်ရာ"
-      }
-    ]
-  },
-  {
-    "kanji": "禁",
-    "hiragana": "きん",
-    "romaji": "kin",
-    "meaning": "တားမြစ်သည်",
-    "tag": "第1週1日目",
-    "examples": [
-      {
-        "word": "禁止",
-        "reading": "きんし",
-        "mean": "တားမြစ်ချက်"
-      },
-      {
-        "word": "禁煙",
-        "reading": "きんえん",
-        "mean": "ဆေးလိပ်မသောက်ရ"
-      }
-    ]
-  },
-  {
-    "kanji": "関",
-    "hiragana": "せき / かん",
-    "romaji": "kan",
-    "meaning": "ပတ်သက်သည်",
-    "tag": "第1週1日目",
-    "examples": [
-      {
-        "word": "関心",
-        "reading": "かんしん",
-        "mean": "စိတ်ဝင်စားမှု"
-      },
-      {
-        "word": "関係",
-        "reading": "かんけい",
-        "mean": "ပတ်သက်မှု"
-      },
-      {
-        "word": "関する",
-        "reading": "かんする",
-        "mean": "နှင့်ပတ်သက်သော"
-      }
-    ]
-  },
-  {
-    "kanji": "係",
-    "hiragana": "かかり / けい",
-    "romaji": "kakari / kei",
-    "meaning": "တာဝန်ကျသူ / ဆက်နွှယ်မှု",
-    "tag": "第1週1日目",
-    "examples": [
-      {
-        "word": "係員",
-        "reading": "かかりいん",
-        "mean": "တာဝန်ကျဝန်ထမ်း"
-      },
-      {
-        "word": "関係",
-        "reading": "かんけい",
-        "mean": "ဆက်ဆံရေး"
-      }
-    ]
-  },
-  {
     "kanji": "断",
     "hiragana": "ことわ(る) / た(つ) / だん",
     "romaji": "kotowa(ru) / dan",
@@ -6618,112 +6470,9 @@ const N3_KANJI = [
         "reading": "おうだんほどう",
         "mean": "လူကူးမျဉ်းကျား"
       }
-    ]
-  },
-  {
-    "kanji": "横",
-    "hiragana": "よこ / おう",
-    "romaji": "yoko / ou",
-    "meaning": "ဘေးတိုက် / ကန့်လန့်",
-    "tag": "第1週2日目",
-    "examples": [
-      {
-        "word": "横断歩道",
-        "reading": "おうだんほどう",
-        "mean": "လူကူးမျဉ်းကျား"
-      },
-      {
-        "word": "横",
-        "reading": "よこ",
-        "mean": "ဘေးဘက်"
-      }
-    ]
-  },
-  {
-    "kanji": "押",
-    "hiragana": "お(す) / お(さえる)",
-    "romaji": "o(su)",
-    "meaning": "တွန်းသည် / နှိပ်သည်",
-    "tag": "第1週2日目",
-    "examples": [
-      {
-        "word": "押す",
-        "reading": "おす",
-        "mean": "တွန်းသည်"
-      },
-      {
-        "word": "押し入れ",
-        "reading": "おしいれ",
-        "mean": "နံရံကပ်ဗီရို"
-      }
-    ]
-  },
-  {
-    "kanji": "式",
-    "hiragana": "しき",
-    "romaji": "shiki",
-    "meaning": "အခမ်းအနား / ပုံစံ",
-    "tag": "第1週2日目",
-    "examples": [
-      {
-        "word": "結婚式",
-        "reading": "けっこんしき",
-        "mean": "မင်္ဂလာဆောင်"
-      },
-      {
-        "word": "入学式",
-        "reading": "にゅうがくしき",
-        "mean": "ကျောင်းဝင်ပွဲ"
-      },
-      {
-        "word": "数式",
-        "reading": "すうしき",
-        "mean": "သင်္ချာညီမျှခြင်း"
-      }
-    ]
-  },
-  {
-    "kanji": "信",
-    "hiragana": "しん",
-    "romaji": "shin",
-    "meaning": "ယုံကြည်သည် / ဆက်သွယ်သည်",
-    "tag": "第1週2日目",
-    "examples": [
-      {
-        "word": "信じる",
-        "reading": "しんじる",
-        "mean": "ယုံသည်"
-      },
-      {
-        "word": "信用",
-        "reading": "しんよう",
-        "mean": "ယုံကြည်ကိုးစားမှု"
-      },
-      {
-        "word": "自信",
-        "reading": "じしん",
-        "mean": "မိမိကိုယ်ကိုယုံကြည်မှု"
-      }
-    ]
-  },
-  {
-    "kanji": "号",
-    "hiragana": "ごう",
-    "romaji": "gou",
-    "meaning": "နံပါတ် / သင်္ကေတ",
-    "tag": "第1週2日目",
-    "examples": [
-      {
-        "word": "信号",
-        "reading": "しんごう",
-        "mean": "မီးပွိုင့်"
-      },
-      {
-        "word": "番号",
-        "reading": "ばんごう",
-        "mean": "နံပါတ်"
-      }
-    ]
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
   },
   {
     "kanji": "確",
@@ -6747,7 +6496,9 @@ const N3_KANJI = [
         "reading": "たしかめる",
         "mean": "သေချာအောင်စစ်သည်"
       }
-    ]
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
   },
   {
     "kanji": "認",
@@ -6766,121 +6517,9 @@ const N3_KANJI = [
         "reading": "かくにん",
         "mean": "စစ်ဆေးအတည်ပြုခြင်း"
       }
-    ]
-  },
-  {
-    "kanji": "飛",
-    "hiragana": "と(ぶ) / ひ",
-    "romaji": "to(bu) / hi",
-    "meaning": "ပျံသန်းသည်",
-    "tag": "第1週2日目",
-    "examples": [
-      {
-        "word": "飛ぶ",
-        "reading": "とぶ",
-        "mean": "ပျံသည်"
-      },
-      {
-        "word": "飛行場",
-        "reading": "ひこうじょう",
-        "mean": "လေဆိပ်"
-      }
-    ]
-  },
-  {
-    "kanji": "非",
-    "hiragana": "ひ",
-    "romaji": "hi",
-    "meaning": "မဟုတ်သော / အမှား",
-    "tag": "第1週3日目",
-    "examples": [
-      {
-        "word": "非常",
-        "reading": "ひじょう",
-        "mean": "အရေးပေါ် / အလွန်"
-      },
-      {
-        "word": "非難",
-        "reading": "ひなん",
-        "mean": "ဝေဖန်ပြစ်တင်မှု"
-      }
-    ]
-  },
-  {
-    "kanji": "常",
-    "hiragana": "つね / じょう",
-    "romaji": "tsune / jou",
-    "meaning": "အမြဲတမ်း / ပုံမှန်",
-    "tag": "第1週3日目",
-    "examples": [
-      {
-        "word": "日常",
-        "reading": "にちじょう",
-        "mean": "နေ့စဉ်ပုံမှန်"
-      },
-      {
-        "word": "非常口",
-        "reading": "ひじょうぐち",
-        "mean": "အရေးပေါ်ထွက်ပေါက်"
-      }
-    ]
-  },
-  {
-    "kanji": "階",
-    "hiragana": "かい",
-    "romaji": "kai",
-    "meaning": "အထပ်",
-    "tag": "第1週3日目",
-    "examples": [
-      {
-        "word": "階段",
-        "reading": "かいだん",
-        "mean": "လှေကား"
-      },
-      {
-        "word": "二階",
-        "reading": "にかい",
-        "mean": "ဒုတိယထပ်"
-      }
-    ]
-  },
-  {
-    "kanji": "段",
-    "hiragana": "だん",
-    "romaji": "dan",
-    "meaning": "အဆင့် / လှေကားထစ်",
-    "tag": "第1週3日目",
-    "examples": [
-      {
-        "word": "階段",
-        "reading": "かいだん",
-        "mean": "လှေကား"
-      },
-      {
-        "word": "値段",
-        "reading": "ねだん",
-        "mean": "စျေးနှုန်း"
-      }
-    ]
-  },
-  {
-    "kanji": "箱",
-    "hiragana": "はこ / ばこ",
-    "romaji": "hako / bako",
-    "meaning": "သေတ္တာ / ပုံး",
-    "tag": "第1週3日目",
-    "examples": [
-      {
-        "word": "ゴミ箱",
-        "reading": "ごみばこ",
-        "mean": "အမှိုက်ပုံး"
-      },
-      {
-        "word": "本箱",
-        "reading": "ほんばこ",
-        "mean": "စာအုပ်စင်"
-      }
-    ]
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
   },
   {
     "kanji": "危",
@@ -6899,7 +6538,9 @@ const N3_KANJI = [
         "reading": "きき",
         "mean": "အကျပ်အတည်း"
       }
-    ]
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
   },
   {
     "kanji": "険",
@@ -6913,7 +6554,9 @@ const N3_KANJI = [
         "reading": "ほけん",
         "mean": "အာမခံ"
       }
-    ]
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
   },
   {
     "kanji": "捨",
@@ -6932,45 +6575,9 @@ const N3_KANJI = [
         "reading": "ししゃごにゅう",
         "mean": "ဒသမဖြတ်ခြင်း"
       }
-    ]
-  },
-  {
-    "kanji": "線",
-    "hiragana": "せん",
-    "romaji": "sen",
-    "meaning": "မျဉ်း / ရထားလိုင်း",
-    "tag": "第1週4日目",
-    "examples": [
-      {
-        "word": "線",
-        "reading": "せん",
-        "mean": "လိုင်း"
-      },
-      {
-        "word": "新幹線",
-        "reading": "しんかんせん",
-        "mean": "ကျည်ဆန်ရထား"
-      }
-    ]
-  },
-  {
-    "kanji": "面",
-    "hiragana": "おもて / つら / めん",
-    "romaji": "omote / men",
-    "meaning": "မျက်နှာပြင် / ဘက်ခြမ်း",
-    "tag": "第1週4日目",
-    "examples": [
-      {
-        "word": "面白い",
-        "reading": "おもしろい",
-        "mean": "စိတ်ဝင်စားဖွယ်"
-      },
-      {
-        "word": "面接",
-        "reading": "めんせつ",
-        "mean": "လူတွေ့စစ်ဆေးခြင်း (Interview)"
-      }
-    ]
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
   },
   {
     "kanji": "普",
@@ -6989,7 +6596,2475 @@ const N3_KANJI = [
         "reading": "ふきゅう",
         "mean": "ကျယ်ပြန့်လာခြင်း"
       }
-    ]
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "過",
+    "hiragana": "す(ぎる) / す(ごす) / か",
+    "romaji": "su(giru) / ka",
+    "meaning": "လွန်မြောက်သည် / ဖြတ်သန်းသည်",
+    "tag": "第1週4日目",
+    "examples": [
+      {
+        "word": "通過",
+        "reading": "つうか",
+        "mean": "ဖြတ်သန်းသွားခြင်း"
+      },
+      {
+        "word": "過去",
+        "reading": "かこ",
+        "mean": "အတိတ်ကာလ"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "整",
+    "hiragana": "ととの(える) / ととの(う) / せい",
+    "romaji": "totono(eru) / sei",
+    "meaning": "သပ်ရပ်အောင်စီစဉ်သည် / အဆင်သင့်ဖြစ်သည်",
+    "tag": "第1週6日目",
+    "examples": [
+      {
+        "word": "整理",
+        "reading": "せいり",
+        "mean": "ရှင်းလင်းသပ်ရပ်စေခြင်း"
+      },
+      {
+        "word": "調整",
+        "reading": "ちょうせい",
+        "mean": "ညှိနှိုင်းချိန်ညှိခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "替",
+    "hiragana": "か(える) / か(わる) / たい",
+    "romaji": "ka(eru) / tai",
+    "meaning": "လဲလှယ်သည်",
+    "tag": "第1週6日目",
+    "examples": [
+      {
+        "word": "乗り替える",
+        "reading": "のりかえる",
+        "mean": "ရထားပြောင်းစီးသည်"
+      },
+      {
+        "word": "両替",
+        "reading": "りょうがえ",
+        "mean": "ငွေလဲလှယ်ခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "備",
+    "hiragana": "そな(える) / び",
+    "romaji": "sona(eru) / bi",
+    "meaning": "ကြိုတင်ပြင်ဆင်သည် / တပ်ဆင်သည်",
+    "tag": "第2週1日目",
+    "examples": [
+      {
+        "word": "準備",
+        "reading": "じゅんび",
+        "mean": "ပြင်ဆင်ခြင်း"
+      },
+      {
+        "word": "設備",
+        "reading": "せつび",
+        "mean": "စက်ကိရိယာတပ်ဆင်မှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "解",
+    "hiragana": "と(く) / わか(る) / かい",
+    "romaji": "to(ku) / kai",
+    "meaning": "ဖြေရှင်းသည် / နားလည်သည်",
+    "tag": "第2週2日目",
+    "examples": [
+      {
+        "word": "理解",
+        "reading": "りかい",
+        "mean": "နားလည်သဘောပေါက်မှု"
+      },
+      {
+        "word": "解答",
+        "reading": "かいとう",
+        "mean": "အဖြေ"
+      },
+      {
+        "word": "解説",
+        "reading": "かいせつ",
+        "mean": "ရှင်းလင်းချက်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "協",
+    "hiragana": "きょう",
+    "romaji": "kyou",
+    "meaning": "ပူးပေါင်းဆောင်ရွက်သည်",
+    "tag": "第2週2日目",
+    "examples": [
+      {
+        "word": "協力",
+        "reading": "きょうりょく",
+        "mean": "ပူးပေါင်းဆောင်ရွက်မှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "差",
+    "hiragana": "さ(す) / さ",
+    "romaji": "sa",
+    "meaning": "ခြားနားချက် / ညွှန်ပြသည်",
+    "tag": "第2週4日目",
+    "examples": [
+      {
+        "word": "交差点",
+        "reading": "こうさてん",
+        "mean": "လမ်းဆုံ"
+      },
+      {
+        "word": "時差",
+        "reading": "じさ",
+        "mean": "စံတော်ချိန်ကွာခြားချက်"
+      },
+      {
+        "word": "差別",
+        "reading": "さべつ",
+        "mean": "ခွဲခြားဆက်ဆံမှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "折",
+    "hiragana": "お(る) / お(れる) / せつ",
+    "romaji": "o(ru) / setsu",
+    "meaning": "ချိုးဖဲ့သည် / ခေါက်သည်",
+    "tag": "第2週5日目",
+    "examples": [
+      {
+        "word": "折る",
+        "reading": "おる",
+        "mean": "ချိုးသည်"
+      },
+      {
+        "word": "骨折",
+        "reading": "こっせつ",
+        "mean": "အရိုးကျိုးသည်"
+      },
+      {
+        "word": "右折",
+        "reading": "うせつ",
+        "mean": "ညာကွေ့"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "消",
+    "hiragana": "しょう",
+    "romaji": "shou",
+    "meaning": "စားသုံးသည် / ကုန်ဆုံးသည်",
+    "tag": "第2週6日目",
+    "examples": [
+      {
+        "word": "消費",
+        "reading": "しょうひ",
+        "mean": "စားသုံးမှု"
+      },
+      {
+        "word": "消化",
+        "reading": "しょうか",
+        "mean": "အစာကြေညက်ခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "防",
+    "hiragana": "ふせ(ぐ) / ぼう",
+    "romaji": "fuse(gu) / bou",
+    "meaning": "ကာကွယ်သည်",
+    "tag": "第2週6日目",
+    "examples": [
+      {
+        "word": "予防",
+        "reading": "よぼう",
+        "mean": "ကြိုတင်ကာကွယ်ခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "救",
+    "hiragana": "すく(う) / きゅう",
+    "romaji": "suku(u) / kyuu",
+    "meaning": "ကယ်ဆယ်သည်",
+    "tag": "第2週6日目",
+    "examples": [
+      {
+        "word": "救う",
+        "reading": "すくう",
+        "mean": "ကယ်တင်သည်"
+      },
+      {
+        "word": "救急車",
+        "reading": "きゅうきゅうしゃ",
+        "mean": "လူနာတင်ယာဉ်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "警",
+    "hiragana": "けい",
+    "romaji": "kei",
+    "meaning": "သတိပေးသည် / ရဲတပ်ဖွဲ့",
+    "tag": "第2週6日目",
+    "examples": [
+      {
+        "word": "警察",
+        "reading": "けいさつ",
+        "mean": "ရဲတပ်ဖွဲ့"
+      },
+      {
+        "word": "警告",
+        "reading": "けいこく",
+        "mean": "သတိပေးချက်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "察",
+    "hiragana": "さつ",
+    "romaji": "satsu",
+    "meaning": "စုံစမ်းထောက်လှမ်းသည်",
+    "tag": "第2週6日目",
+    "examples": [
+      {
+        "word": "警察",
+        "reading": "けいさつ",
+        "mean": "ရဲတပ်ဖွဲ့"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "故",
+    "hiragana": "こ",
+    "romaji": "ko",
+    "meaning": "ဖြစ်ရပ် / အကြောင်းရင်း",
+    "tag": "第2週6日目",
+    "examples": [
+      {
+        "word": "事故",
+        "reading": "じこ",
+        "mean": "ယာဉ်မတော်တဆမှု"
+      },
+      {
+        "word": "故障",
+        "reading": "こしょう",
+        "mean": "စက်ပျက်ခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "渡",
+    "hiragana": "わた(る) / わた(す)",
+    "romaji": "wata(ru) / wata(su)",
+    "meaning": "ဖြတ်ကူးသည် / လွှဲပြောင်းပေးသည်",
+    "tag": "第2週7日目",
+    "examples": [
+      {
+        "word": "渡る",
+        "reading": "わたる",
+        "mean": "ဖြတ်ကူးသည်"
+      },
+      {
+        "word": "渡す",
+        "reading": "わたす",
+        "mean": "ကမ်းပေးသည်/လွှဲပေးသည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "冷",
+    "hiragana": "つめ(たい) / ひ(やす) / れい",
+    "romaji": "tsume(tai) / rei",
+    "meaning": "အေးစက်သော",
+    "tag": "第3週1日目",
+    "examples": [
+      {
+        "word": "冷たい",
+        "reading": "つめたい",
+        "mean": "အေးသော"
+      },
+      {
+        "word": "冷房",
+        "reading": "れいぼう",
+        "mean": "လေအေးပေးစက်"
+      },
+      {
+        "word": "冷蔵庫",
+        "reading": "れいぞうこ",
+        "mean": "ရေခဲသေတ္တာ"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "蔵",
+    "hiragana": "ぞう / くら",
+    "romaji": "zou",
+    "meaning": "သိုလှောင်ရုံ",
+    "tag": "第3週1日目",
+    "examples": [
+      {
+        "word": "冷蔵庫",
+        "reading": "れいぞうこ",
+        "mean": "ရေခဲသေတ္တာ"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "庫",
+    "hiragana": "こ",
+    "romaji": "ko",
+    "meaning": "ဂိုဒေါင်",
+    "tag": "第3週1日目",
+    "examples": [
+      {
+        "word": "金庫",
+        "reading": "きんこ",
+        "mean": "သံမဏိသေတ္တာ"
+      },
+      {
+        "word": "車庫",
+        "reading": "しゃこ",
+        "mean": "ကားဂိုဒေါင်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "存",
+    "hiragana": "そん / ぞん",
+    "romaji": "son",
+    "meaning": "တည်ရှိသည်",
+    "tag": "第3週1日目",
+    "examples": [
+      {
+        "word": "存在",
+        "reading": "そんざい",
+        "mean": "တည်ရှိမှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "費",
+    "hiragana": "つい(やす) / ひ",
+    "romaji": "tsui(yasu) / hi",
+    "meaning": "ကုန်ကျစရိတ် / အသုံးပြုသည်",
+    "tag": "第3週2日目",
+    "examples": [
+      {
+        "word": "費用",
+        "reading": "ひよう",
+        "mean": "ကုန်ကျစရိတ်"
+      },
+      {
+        "word": "交通費",
+        "reading": "こうつうひ",
+        "mean": "လမ်းစရိတ်"
+      },
+      {
+        "word": "学費",
+        "reading": "がくひ",
+        "mean": "ကျောင်းစရိတ်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "期",
+    "hiragana": "き",
+    "romaji": "ki",
+    "meaning": "ကာလ / အချိန်ပိုင်း",
+    "tag": "第3週2日目",
+    "examples": [
+      {
+        "word": "期間",
+        "reading": "きかん",
+        "mean": "ကာလ"
+      },
+      {
+        "word": "定期券",
+        "reading": "ていきけん",
+        "mean": "ရာသီလက်မှတ်"
+      },
+      {
+        "word": "期待",
+        "reading": "きたい",
+        "mean": "မျှော်လင့်ချက်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "限",
+    "hiragana": "かぎ(る) / げん",
+    "romaji": "kagi(ru) / gen",
+    "meaning": "ကန့်သတ်သည် / အကန့်အသတ်",
+    "tag": "第3週2日目",
+    "examples": [
+      {
+        "word": "限る",
+        "reading": "かぎる",
+        "mean": "ကန့်သတ်သည်"
+      },
+      {
+        "word": "限界",
+        "reading": "げんかい",
+        "mean": "အတိုင်းအတာအကန့်အသတ်"
+      },
+      {
+        "word": "期限",
+        "reading": "きげん",
+        "mean": "သတ်မှတ်ရက်စွဲ"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "製",
+    "hiragana": "せい",
+    "romaji": "sei",
+    "meaning": "ထုတ်လုပ်သည် / ထုတ်ကုန်",
+    "tag": "第3週2日目",
+    "examples": [
+      {
+        "word": "製品",
+        "reading": "せいひん",
+        "mean": "ကုန်ထုတ်ပစ္စည်း"
+      },
+      {
+        "word": "日本製",
+        "reading": "にほんせい",
+        "mean": "ဂျပန်နိုင်ငံထုတ်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "造",
+    "hiragana": "つく(る) / ぞう",
+    "romaji": "tsuku(ru) / zou",
+    "meaning": "တည်ဆောက်ထုတ်လုပ်သည်",
+    "tag": "第3週2日目",
+    "examples": [
+      {
+        "word": "製造",
+        "reading": "せいぞう",
+        "mean": "ထုတ်လုပ်ခြင်း"
+      },
+      {
+        "word": "造船",
+        "reading": "ぞうせん",
+        "mean": "သင်္ဘောတည်ဆောက်မှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "賞",
+    "hiragana": "しょう",
+    "romaji": "shou",
+    "meaning": "ဆုလာဘ် / ဆုကြေး",
+    "tag": "第3週2日目",
+    "examples": [
+      {
+        "word": "賞味期限",
+        "reading": "しょうみきげん",
+        "mean": "သက်တမ်းကုန်ရက်"
+      },
+      {
+        "word": "賞金",
+        "reading": "しょうきん",
+        "mean": "ဆုငွေ"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "増",
+    "hiragana": "ふ(える) / ぞう",
+    "romaji": "fu(eru) / zou",
+    "meaning": "တိုးပွားသည်",
+    "tag": "第3週3日目",
+    "examples": [
+      {
+        "word": "増加",
+        "reading": "ぞうか",
+        "mean": "တိုးပွားခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "減",
+    "hiragana": "へ(る) / げん",
+    "romaji": "he(ru) / gen",
+    "meaning": "လျော့နည်းသည်",
+    "tag": "第3週3日目",
+    "examples": [
+      {
+        "word": "減少",
+        "reading": "げんしょう",
+        "mean": "လျော့နည်းခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "返",
+    "hiragana": "へん / かえ(す)",
+    "romaji": "hen / kae(su)",
+    "meaning": "ပြန်ပေးသည် / ပြန်လည်",
+    "tag": "第3週3日目",
+    "examples": [
+      {
+        "word": "返事",
+        "reading": "へんじ",
+        "mean": "အကြောင်းပြန်ကြားချက်"
+      },
+      {
+        "word": "返却",
+        "reading": "へんきゃく",
+        "mean": "ပြန်အပ်ခြင်း"
+      },
+      {
+        "word": "返す",
+        "reading": "かえす",
+        "mean": "ပြန်ပေးသည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "混",
+    "hiragana": "ま(ぜる) / こ(む) / こん",
+    "romaji": "ma(zeru) / kon",
+    "meaning": "ရောနှောသည် / ပြည့်ကျပ်သည်",
+    "tag": "第3週4日目",
+    "examples": [
+      {
+        "word": "混雑",
+        "reading": "こんざつ",
+        "mean": "လူကြပ်တည်းပြွမ်းတီးခြင်း"
+      },
+      {
+        "word": "混乱",
+        "reading": "こんらん",
+        "mean": "ရုန်းရင်းဆန်ခတ်ဖြစ်ခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "表",
+    "hiragana": "おもて / あらわ(す) / ひょう",
+    "romaji": "omote / hyou",
+    "meaning": "ဇယား / မျက်နှာပြင် / ဖော်ပြသည်",
+    "tag": "第3週4日目",
+    "examples": [
+      {
+        "word": "表",
+        "reading": "ひょう",
+        "mean": "ဇယား"
+      },
+      {
+        "word": "発表",
+        "reading": "はっぴょう",
+        "mean": "တင်ပြချက်"
+      },
+      {
+        "word": "代表",
+        "reading": "だいひょう",
+        "mean": "ကိုယ်စားလှယ်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "裏",
+    "hiragana": "うら / り",
+    "romaji": "ura",
+    "meaning": "ကျောဘက် / အတွင်းဘက်",
+    "tag": "第3週4日目",
+    "examples": [
+      {
+        "word": "裏",
+        "reading": "うら",
+        "mean": "နောက်ကျောဘက်"
+      },
+      {
+        "word": "裏口",
+        "reading": "うらぐち",
+        "mean": "အနောက်ပေါက်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "留",
+    "hiragana": "と(める) / とど(まる) / りゅう / る",
+    "romaji": "tome(ru) / ryuu",
+    "meaning": "ကျန်ရစ်သည် / တားဆီးသည် / မှတ်ထားသည်",
+    "tag": "第3週5日目",
+    "examples": [
+      {
+        "word": "留学",
+        "reading": "りゅうがく",
+        "mean": "နိုင်ငံခြားပညာသင်"
+      },
+      {
+        "word": "留守",
+        "reading": "るす",
+        "mean": "အိမ်မှာလူမရှိခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "守",
+    "hiragana": "まも(る) / しゅ / す",
+    "romaji": "mamo(ru) / shu",
+    "meaning": "ကာကွယ်သည် / စောင့်ရှောက်သည် / စည်းကမ်းစောင့်သည်",
+    "tag": "第3週5日目",
+    "examples": [
+      {
+        "word": "守る",
+        "reading": "まもる",
+        "mean": "စောင့်ထိန်းသည်"
+      },
+      {
+        "word": "留守",
+        "reading": "るす",
+        "mean": "အိမ်စောင့်/လူမရှိ"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "続",
+    "hiragana": "ぞく / つづ(く) / つづ(ける)",
+    "romaji": "zoku / tsuzu(ku)",
+    "meaning": "ဆက်တိုက်ဖြစ်သည် / ဆက်လုပ်သည်",
+    "tag": "第3週6日目",
+    "examples": [
+      {
+        "word": "接続",
+        "reading": "せつぞく",
+        "mean": "ချိတ်ဆက်ခြင်း"
+      },
+      {
+        "word": "続く",
+        "reading": "つづく",
+        "mean": "ဆက်ဖြစ်သည်"
+      },
+      {
+        "word": "続ける",
+        "reading": "つづける",
+        "mean": "ဆက်လုပ်သည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "示",
+    "hiragana": "じ / し / しめ(す)",
+    "romaji": "ji / shime(su)",
+    "meaning": "ညွှန်ပြသည် / ဖော်ပြသည်",
+    "tag": "第3週6日目",
+    "examples": [
+      {
+        "word": "表示",
+        "reading": "ひょうじ",
+        "mean": "ဖော်ပြချက်"
+      },
+      {
+        "word": "指示",
+        "reading": "しじ",
+        "mean": "ညွှန်ကြားချက်"
+      },
+      {
+        "word": "示す",
+        "reading": "しめす",
+        "mean": "ပြသသည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "戻",
+    "hiragana": "もど(る) / もど(す)",
+    "romaji": "modo(ru) / modo(su)",
+    "meaning": "ပြန်လာသည် / မူလအတိုင်းပြန်ထားသည်",
+    "tag": "第3週6日目",
+    "examples": [
+      {
+        "word": "戻る",
+        "reading": "もどる",
+        "mean": "ပြန်လာသည်"
+      },
+      {
+        "word": "戻す",
+        "reading": "もどす",
+        "mean": "ပြန်ထားသည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "完",
+    "hiragana": "かん",
+    "romaji": "kan",
+    "meaning": "ပြီးပြည့်စုံသော",
+    "tag": "第3週6日目",
+    "examples": [
+      {
+        "word": "完了",
+        "reading": "かんりょう",
+        "mean": "ပြီးစီးခြင်း"
+      },
+      {
+        "word": "完全",
+        "reading": "かんぜん",
+        "mean": "ပြီးပြည့်စုံသော"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "了",
+    "hiragana": "りょう",
+    "romaji": "ryou",
+    "meaning": "ပြီးဆုံးခြင်း / နားလည်ခြင်း",
+    "tag": "第3週6日目",
+    "examples": [
+      {
+        "word": "了解",
+        "reading": "りょうかい",
+        "mean": "သဘောပေါက်နားလည်ခြင်း"
+      },
+      {
+        "word": "終了",
+        "reading": "しゅうりょう",
+        "mean": "ပြီးဆုံးခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "種",
+    "hiragana": "しゅ / たね",
+    "romaji": "shu / tane",
+    "meaning": "အမျိုးအစား / မျိုးစေ့",
+    "tag": "第3週7日目",
+    "examples": [
+      {
+        "word": "種類",
+        "reading": "しゅるい",
+        "mean": "အမျိုးအစား"
+      },
+      {
+        "word": "種",
+        "reading": "たね",
+        "mean": "အစေ့/မျိုးစေ့"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "類",
+    "hiragana": "るい",
+    "romaji": "rui",
+    "meaning": "အုပ်စု / အမျိုးအစား",
+    "tag": "第3週7日目",
+    "examples": [
+      {
+        "word": "書類",
+        "reading": "しょるい",
+        "mean": "စာရွက်စာတမ်း"
+      },
+      {
+        "word": "分類",
+        "reading": "ぶんるい",
+        "mean": "အမျိုးအစားခွဲခြားခြင်း"
+      },
+      {
+        "word": "人類",
+        "reading": "じんるい",
+        "mean": "လူသားမျိုးနွယ်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "割",
+    "hiragana": "わ(る) / わ(れる) / わり / かつ",
+    "romaji": "wa(ru) / wari",
+    "meaning": "ခွဲစိတ်သည် / လျှော့စျေး / အချိုးအစား",
+    "tag": "第4週2日目",
+    "examples": [
+      {
+        "word": "割る",
+        "reading": "わる",
+        "mean": "ခွဲသည်"
+      },
+      {
+        "word": "割引",
+        "reading": "わりびき",
+        "mean": "လျှော့စျေး"
+      },
+      {
+        "word": "一割",
+        "reading": "いちわり",
+        "mean": "၁၀ ရာခိုင်နှုန်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "倍",
+    "hiragana": "ばい",
+    "romaji": "bai",
+    "meaning": "ဆ (Times)",
+    "tag": "第4週2日目",
+    "examples": [
+      {
+        "word": "二倍",
+        "reading": "にばい",
+        "mean": "နှစ်ဆ"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "支",
+    "hiragana": "ささ(える) / し",
+    "romaji": "sasa(eru) / shi",
+    "meaning": "ထောက်ပံ့သည် / ငွေချေသည်",
+    "tag": "第4週2日目",
+    "examples": [
+      {
+        "word": "支払う",
+        "reading": "しはらう",
+        "mean": "ငွေချေသည်"
+      },
+      {
+        "word": "支店",
+        "reading": "してん",
+        "mean": "ဘဏ်/ဆိုင်ခွဲ"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "払",
+    "hiragana": "はら(う)",
+    "romaji": "hara(u)",
+    "meaning": "ငွေချေသည်",
+    "tag": "第4週2日目",
+    "examples": [
+      {
+        "word": "払う",
+        "reading": "はらう",
+        "mean": "ရှင်းသည်"
+      },
+      {
+        "word": "払い戻し",
+        "reading": "はらいもどし",
+        "mean": "ငွေပြန်အမ်းခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "性",
+    "hiragana": "せい / しょう",
+    "romaji": "sei / shou",
+    "meaning": "လိင် / သဘာဝစရိုက်",
+    "tag": "第4週4日目",
+    "examples": [
+      {
+        "word": "性別",
+        "reading": "せいべつ",
+        "mean": "ကျား/မ လိင်ခွဲခြားခြင်း"
+      },
+      {
+        "word": "性格",
+        "reading": "せいかく",
+        "mean": "စိတ်နေစိတ်ထား"
+      },
+      {
+        "word": "女性",
+        "reading": "じょせい",
+        "mean": "အမျိုးသမီး"
+      },
+      {
+        "word": "男性",
+        "reading": "だんせい",
+        "mean": "အမျိုးသား"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "届",
+    "hiragana": "とど(ける) / とど(く)",
+    "romaji": "todo(keru) / todo(ku)",
+    "meaning": "ပို့ဆောင်သည် / ရောက်ရှိသည်",
+    "tag": "第4週5日目",
+    "examples": [
+      {
+        "word": "届ける",
+        "reading": "とどける",
+        "mean": "ပို့ပေးသည်"
+      },
+      {
+        "word": "届く",
+        "reading": "とどく",
+        "mean": "ရောက်ရှိသည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "配",
+    "hiragana": "はい / くば(る)",
+    "romaji": "hai / kuba(ru)",
+    "meaning": "ဝေငှသည် / ဖြန့်ဝေသည်",
+    "tag": "第4週5日目",
+    "examples": [
+      {
+        "word": "配達",
+        "reading": "はいたつ",
+        "mean": "ပို့ဆောင်ခြင်း"
+      },
+      {
+        "word": "配送料",
+        "reading": "はいそうりょう",
+        "mean": "ပို့ဆောင်ခ"
+      },
+      {
+        "word": "心配",
+        "reading": "しんぱい",
+        "mean": "စိတ်ပူပန်ခြင်း"
+      },
+      {
+        "word": "配る",
+        "reading": "くばる",
+        "mean": "ဝေငှသည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "換",
+    "hiragana": "かん / か(える)",
+    "romaji": "kan / ka(eru)",
+    "meaning": "လဲလှယ်သည် / ပြောင်းလဲသည်",
+    "tag": "第4週5日目",
+    "examples": [
+      {
+        "word": "交換",
+        "reading": "こうかん",
+        "mean": "အပြန်အလှန်လဲလှယ်ခြင်း"
+      },
+      {
+        "word": "乗り換える",
+        "reading": "のりかえる",
+        "mean": "ရထား/ဘတ်စ်ကား ပြောင်းစီးသည်"
+      },
+      {
+        "word": "代金引換",
+        "reading": "だいきんひきかえ",
+        "mean": "ပစ္စည်းရောက်မှ ငွေချေစနစ်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "預",
+    "hiragana": "あず(ける) / あず(かる) / よ",
+    "romaji": "azu(keru) / yo",
+    "meaning": "အပ်နှံသည် / ထိန်းသိမ်းပေးသည်",
+    "tag": "第4週6日目",
+    "examples": [
+      {
+        "word": "預ける",
+        "reading": "あずける",
+        "mean": "အပ်သည်"
+      },
+      {
+        "word": "預金",
+        "reading": "よきん",
+        "mean": "ဘဏ်အပ်ငွေ"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "勤",
+    "hiragana": "きん / つと(める)",
+    "romaji": "kin / tsuto(meru)",
+    "meaning": "အလုပ်လုပ်သည် / တာဝန်ထမ်းဆောင်သည်",
+    "tag": "第4週6日目",
+    "examples": [
+      {
+        "word": "通勤",
+        "reading": "つうきん",
+        "mean": "အလုပ်အသွားအပြန်"
+      },
+      {
+        "word": "勤める",
+        "reading": "つとめる",
+        "mean": "အလုပ်ထမ်းဆောင်သည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "帯",
+    "hiragana": "たい / おび",
+    "romaji": "tai / obi",
+    "meaning": "ခါးပတ် / အပိုင်းအခြား",
+    "tag": "第4週6日目",
+    "examples": [
+      {
+        "word": "携帯電話",
+        "reading": "けいたいでんわ",
+        "mean": "လက်ကိုင်ဖုန်း"
+      },
+      {
+        "word": "時間帯",
+        "reading": "じかんたい",
+        "mean": "သတ်မှတ်အချိန်ကာလ"
+      },
+      {
+        "word": "帯",
+        "reading": "おび",
+        "mean": "ဂျပန်ဝတ်စုံခါးပတ်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "遅",
+    "hiragana": "おそ(い) / おく(れる) / ち",
+    "romaji": "oso(i) / chi",
+    "meaning": "နှေးကွေးသော / နောက်ကျသော",
+    "tag": "第5週1日目",
+    "examples": [
+      {
+        "word": "遅い",
+        "reading": "おそい",
+        "mean": "နှေးသော"
+      },
+      {
+        "word": "遅れる",
+        "reading": "おくれる",
+        "mean": "နောက်ကျသည်"
+      },
+      {
+        "word": "遅刻",
+        "reading": "ちこく",
+        "mean": "အချိန်နောက်ကျခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "失",
+    "hiragana": "うしな(う) / しつ",
+    "romaji": "shitsu",
+    "meaning": "ဆုံးရှုံးသည် / အမှား",
+    "tag": "第5週1日目",
+    "examples": [
+      {
+        "word": "失礼",
+        "reading": "しつれい",
+        "mean": "ရိုင်းပျမှု/ခွင့်ပြုပါ"
+      },
+      {
+        "word": "失敗",
+        "reading": "しっぱい",
+        "mean": "ကျရှုံးမှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "調",
+    "hiragana": "しら(べる) / ととの(う) / ちょう",
+    "romaji": "shira(beru) / chou",
+    "meaning": "စုံစမ်းစစ်ဆေးသည် / ညှိနှိုင်းသည်",
+    "tag": "第5週2日目",
+    "examples": [
+      {
+        "word": "調べる",
+        "reading": "しらべる",
+        "mean": "ရှာဖွေစစ်ဆေးသည်"
+      },
+      {
+        "word": "調子",
+        "reading": "ちょうし",
+        "mean": "အခြေအနေ/စည်းချက်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "査",
+    "hiragana": "さ",
+    "romaji": "sa",
+    "meaning": "စစ်ဆေးသည်",
+    "tag": "第5週2日目",
+    "examples": [
+      {
+        "word": "調査",
+        "reading": "ちょうさ",
+        "mean": "စုံစမ်းစစ်ဆေးမှု"
+      },
+      {
+        "word": "検査",
+        "reading": "けんさ",
+        "mean": "စစ်ဆေးမှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "移",
+    "hiragana": "い / うつ(る) / うつ(す)",
+    "romaji": "i / utsu(ru)",
+    "meaning": "ပြောင်းရွှေ့သည် / ကူးစက်သည်",
+    "tag": "第5週2日目",
+    "examples": [
+      {
+        "word": "移動",
+        "reading": "いどう",
+        "mean": "ရွှေ့ပြောင်းသွားလာခြင်း"
+      },
+      {
+        "word": "移る",
+        "reading": "うつる",
+        "mean": "ကူးပြောင်းသည်"
+      },
+      {
+        "word": "移す",
+        "reading": "うつす",
+        "mean": "ရွှေ့ပြောင်းသည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "難",
+    "hiragana": "なん / むずか(しい)",
+    "romaji": "nan / muzuka(shii)",
+    "meaning": "ခက်ခဲသော / ဘေးဒုက္ခ",
+    "tag": "第5週2日目",
+    "examples": [
+      {
+        "word": "困難",
+        "reading": "こんなん",
+        "mean": "ခက်ခဲမှု"
+      },
+      {
+        "word": "難問",
+        "reading": "なんもん",
+        "mean": "ခက်ခဲသောပုစ္ဆာ"
+      },
+      {
+        "word": "難しい",
+        "reading": "むずかしい",
+        "mean": "ခက်ခဲသော"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "適",
+    "hiragana": "てき",
+    "romaji": "teki",
+    "meaning": "သင့်တော်သော",
+    "tag": "第5週3日目",
+    "examples": [
+      {
+        "word": "適当",
+        "reading": "てきとう",
+        "mean": "သင့်လျော်သော"
+      },
+      {
+        "word": "快適",
+        "reading": "かいてき",
+        "mean": "သက်တောင့်သက်သာရှိသော"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "選",
+    "hiragana": "えら(ぶ) / せん",
+    "romaji": "era(bu) / sen",
+    "meaning": "ရွေးချယ်သည်",
+    "tag": "第5週3日目",
+    "examples": [
+      {
+        "word": "選ぶ",
+        "reading": "えらぶ",
+        "mean": "ရွေးသည်"
+      },
+      {
+        "word": "選手",
+        "reading": "せんしゅ",
+        "mean": "အားကစားသမား"
+      },
+      {
+        "word": "選挙",
+        "reading": "せんきょ",
+        "mean": "ရွေးကောက်ပွဲ"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "違",
+    "hiragana": "ちが(う) / ちが(える) / い",
+    "romaji": "chiga(u) / chiga(eru)",
+    "meaning": "ကွဲပြားသည် / မှားယွင်းသည်",
+    "tag": "第5週3日目",
+    "examples": [
+      {
+        "word": "違う",
+        "reading": "ちがう",
+        "mean": "မတူညီ/မှားယွင်းသည်"
+      },
+      {
+        "word": "間違い",
+        "reading": "まちがい",
+        "mean": "အမှား"
+      },
+      {
+        "word": "間違える",
+        "reading": "まちがえる",
+        "mean": "မှားလုပ်မိသည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "直",
+    "hiragana": "ちょく / じき / なお(る) / なお(す)",
+    "romaji": "choku / jiki / nao(ru)",
+    "meaning": "တည့်မတ်သော / ပြင်ဆင်သည်",
+    "tag": "第5週3日目",
+    "examples": [
+      {
+        "word": "直線",
+        "reading": "ちょくせん",
+        "mean": "မျဉ်းဖြောင့်"
+      },
+      {
+        "word": "直接",
+        "reading": "ちょくせつ",
+        "mean": "တိုက်ရိုက်"
+      },
+      {
+        "word": "直る",
+        "reading": "なおる",
+        "mean": "ကောင်းမွန်သွားသည်"
+      },
+      {
+        "word": "直す",
+        "reading": "なおす",
+        "mean": "ပြင်ဆင်သည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "復",
+    "hiragana": "ふく",
+    "romaji": "fuku",
+    "meaning": "ပြန်လည် / ထပ်မံ",
+    "tag": "第5週3日目",
+    "examples": [
+      {
+        "word": "復習",
+        "reading": "ふくしゅう",
+        "mean": "စာပြန်နွှေးခြင်း"
+      },
+      {
+        "word": "往復",
+        "reading": "おうふく",
+        "mean": "အသွားအပြန်"
+      },
+      {
+        "word": "回復",
+        "reading": "かいふく",
+        "mean": "ပြန်လည်သက်သာလာခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "宿",
+    "hiragana": "しゅく / やど",
+    "romaji": "shuku / yado",
+    "meaning": "တည်းခိုသည် / တည်းခိုခန်း",
+    "tag": "第5週3日目",
+    "examples": [
+      {
+        "word": "宿題",
+        "reading": "しゅくだい",
+        "mean": "အိမ်စာ"
+      },
+      {
+        "word": "下宿",
+        "reading": "げしゅく",
+        "mean": "အဆောင်ငှားနေထိုင်ခြင်း"
+      },
+      {
+        "word": "宿",
+        "reading": "やど",
+        "mean": "တည်းခိုခန်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "治",
+    "hiragana": "じ / ち",
+    "romaji": "ji / chi",
+    "meaning": "အုပ်ချုပ်သည် / ပျောက်ကင်းသည်",
+    "tag": "第5週5日目",
+    "examples": [
+      {
+        "word": "政治",
+        "reading": "せいじ",
+        "mean": "နိုင်ငံရေး"
+      },
+      {
+        "word": "治療",
+        "reading": "ちりょう",
+        "mean": "ကုသမှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "求",
+    "hiragana": "きゅう / もと(める)",
+    "romaji": "kyuu / moto(meru)",
+    "meaning": "တောင်းဆိုသည် / ရှာဖွေလိုလားသည်",
+    "tag": "第6週2日目",
+    "examples": [
+      {
+        "word": "要求",
+        "reading": "ようきゅう",
+        "mean": "တောင်းဆိုချက်"
+      },
+      {
+        "word": "求人",
+        "reading": "きゅうじん",
+        "mean": "အလုပ်ခေါ်ယူခြင်း"
+      },
+      {
+        "word": "請求書",
+        "reading": "せいきゅうしょ",
+        "mean": "ငွေတောင်းခံလွှာ"
+      },
+      {
+        "word": "求める",
+        "reading": "もとめる",
+        "mean": "တောင်းဆိုလိုလားသည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "募",
+    "hiragana": "ぼ / つの(る)",
+    "romaji": "bo / tsuno(ru)",
+    "meaning": "ခေါ်ယူစုဆောင်းသည်",
+    "tag": "第6週2日目",
+    "examples": [
+      {
+        "word": "募集",
+        "reading": "ぼしゅう",
+        "mean": "လျှောက်လွှာခေါ်ယူခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "容",
+    "hiragana": "よう",
+    "romaji": "you",
+    "meaning": "ပါဝင်မှု / ရုပ်သွင်",
+    "tag": "第6週2日目",
+    "examples": [
+      {
+        "word": "美容院",
+        "reading": "びよういん",
+        "mean": "အလှပြင်ဆိုင်"
+      },
+      {
+        "word": "内容",
+        "reading": "ないよう",
+        "mean": "အကြောင်းအရာ/ပါဝင်မှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "勝",
+    "hiragana": "しょう / か(つ) / まさ(る)",
+    "romaji": "shou / ka(tsu)",
+    "meaning": "အနိုင်ရသည်",
+    "tag": "第6週3日目",
+    "examples": [
+      {
+        "word": "優勝",
+        "reading": "ゆうしょう",
+        "mean": "ဗိုလ်စွဲခြင်း/ပထမရရှိခြင်း"
+      },
+      {
+        "word": "決勝",
+        "reading": "けっしょう",
+        "mean": "ဗိုလ်လုပွဲ"
+      },
+      {
+        "word": "勝つ",
+        "reading": "かつ",
+        "mean": "အနိုင်ရသည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "負",
+    "hiragana": "ふ / ま(ける) / お(う)",
+    "romaji": "fu / ma(keru)",
+    "meaning": "ရှုံးနိမ့်သည် / သယ်ဆောင်သည်",
+    "tag": "第6週3日目",
+    "examples": [
+      {
+        "word": "勝負",
+        "reading": "しょうぶ",
+        "mean": "အရှုံးအနိုင်အပြိုင်"
+      },
+      {
+        "word": "負ける",
+        "reading": "まける",
+        "mean": "ရှုံးသည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "投",
+    "hiragana": "とう / な(げる)",
+    "romaji": "tou / na(geru)",
+    "meaning": "ပစ်ပေါက်သည် / ပစ်ချသည်",
+    "tag": "第6週3日目",
+    "examples": [
+      {
+        "word": "投手",
+        "reading": "とうしゅ",
+        "mean": "ဘေ့စ်ဘောပစ်သူ(pitcher)"
+      },
+      {
+        "word": "投げる",
+        "reading": "なげる",
+        "mean": "ပစ်ပေါက်သည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "経",
+    "hiragana": "けい",
+    "romaji": "kei",
+    "meaning": "ဖြတ်သန်းသည် / စီးပွားရေး",
+    "tag": "第6週4日目",
+    "examples": [
+      {
+        "word": "経済",
+        "reading": "けいざい",
+        "mean": "စီးပွားရေး"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "済",
+    "hiragana": "ざい / さい",
+    "romaji": "zai / sai",
+    "meaning": "ပြီးစီးသည်",
+    "tag": "第6週4日目",
+    "examples": [
+      {
+        "word": "経済",
+        "reading": "けいざい",
+        "mean": "စီးပွားရေး"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "貿",
+    "hiragana": "ぼう",
+    "romaji": "bou",
+    "meaning": "ကုန်သွယ်မှု",
+    "tag": "第6週4日目",
+    "examples": [
+      {
+        "word": "貿易",
+        "reading": "ぼうえき",
+        "mean": "နိုင်ငံတကာကုန်သွယ်မှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "易",
+    "hiragana": "やさ(しい) / えき / い",
+    "romaji": "yasa(shii) / eki / i",
+    "meaning": "လွယ်ကူသော / ကုန်သွယ်သည်",
+    "tag": "第6週4日目",
+    "examples": [
+      {
+        "word": "貿易",
+        "reading": "ぼうえき",
+        "mean": "ကုန်သွယ်ရေး"
+      },
+      {
+        "word": "容易な",
+        "reading": "よういな",
+        "mean": "လွယ်ကူသော"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "因",
+    "hiragana": "いん / よ(る)",
+    "romaji": "in / yo(ru)",
+    "meaning": "အကြောင်းတရား",
+    "tag": "第6週5日目",
+    "examples": [
+      {
+        "word": "原因",
+        "reading": "げんいん",
+        "mean": "အကြောင်းရင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "際",
+    "hiragana": "さい / きわ",
+    "romaji": "sai / kiwa",
+    "meaning": "အခါသမယ / နယ်နိမိတ်",
+    "tag": "第6週5日目",
+    "examples": [
+      {
+        "word": "国際",
+        "reading": "こくさい",
+        "mean": "နိုင်ငံတကာ"
+      },
+      {
+        "word": "交際",
+        "reading": "こうさい",
+        "mean": "တွဲခေါ်ပေါင်းသင်းခြင်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "議",
+    "hiragana": "ぎ",
+    "romaji": "gi",
+    "meaning": "ဆွေးနွေးတိုင်ပင်သည်",
+    "tag": "第6週5日目",
+    "examples": [
+      {
+        "word": "会議",
+        "reading": "かいぎ",
+        "mean": "အစည်းအဝေး"
+      },
+      {
+        "word": "議員",
+        "reading": "ぎいん",
+        "mean": "လွှတ်တော်အမတ်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "活",
+    "hiragana": "かつ",
+    "romaji": "katsu",
+    "meaning": "တက်ကြွသော / အသက်ဝင်သော",
+    "tag": "第6週5日目",
+    "examples": [
+      {
+        "word": "生活",
+        "reading": "せいかつ",
+        "mean": "လူနေမှုဘဝ"
+      },
+      {
+        "word": "活動",
+        "reading": "かつどう",
+        "mean": "လှုပ်ရှားဆောင်ရွက်မှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "変",
+    "hiragana": "へん / か(わる) / か(える)",
+    "romaji": "hen / ka(waru)",
+    "meaning": "ပြောင်းလဲသည် / ထူးဆန်းသော",
+    "tag": "第6週5日目",
+    "examples": [
+      {
+        "word": "大変",
+        "reading": "たいへん",
+        "mean": "ပင်ပန်းခက်ခဲသော"
+      },
+      {
+        "word": "変化",
+        "reading": "へんか",
+        "mean": "ပြောင်းလဲခြင်း"
+      },
+      {
+        "word": "変わる",
+        "reading": "かわる",
+        "mean": "ပြောင်းလဲသည်"
+      },
+      {
+        "word": "変える",
+        "reading": "かえる",
+        "mean": "ပြောင်းလဲစေသည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "政",
+    "hiragana": "せい",
+    "romaji": "sei",
+    "meaning": "နိုင်ငံရေး",
+    "tag": "第6週6日目",
+    "examples": [
+      {
+        "word": "政治",
+        "reading": "せいじ",
+        "mean": "နိုင်ငံရေး"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "府",
+    "hiragana": "ふ",
+    "romaji": "fu",
+    "meaning": "အစိုးရ / မြို့တော်စီရင်စု",
+    "tag": "第6週6日目",
+    "examples": [
+      {
+        "word": "政府",
+        "reading": "せいふ",
+        "mean": "အစိုးရ"
+      },
+      {
+        "word": "都道府県",
+        "reading": "とどうふけん",
+        "mean": "ဂျပန်စီရင်စုများ"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "改",
+    "hiragana": "かい / あらた(める)",
+    "romaji": "kai / arata(meru)",
+    "meaning": "ပြုပြင်ပြောင်းလဲသည်",
+    "tag": "第6週6日目",
+    "examples": [
+      {
+        "word": "改正",
+        "reading": "かいせい",
+        "mean": "ပြင်ဆင်သတ်မှတ်ခြင်း"
+      },
+      {
+        "word": "改札口",
+        "reading": "かいさつぐち",
+        "mean": "လက်မှတ်စစ်ဂိတ်"
+      },
+      {
+        "word": "改める",
+        "reading": "あらためる",
+        "mean": "ပြုပြင်သည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "否",
+    "hiragana": "ひ / いな",
+    "romaji": "hi / ina",
+    "meaning": "ငြင်းပယ်သည် / မဟုတ်မမှန်",
+    "tag": "第6週6日目",
+    "examples": [
+      {
+        "word": "否定",
+        "reading": "ひてい",
+        "mean": "ငြင်းပယ်ခြင်း"
+      },
+      {
+        "word": "否定的",
+        "reading": "ひていてき",
+        "mean": "အဆိုးမြင်ငြင်းပယ်သော"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "実",
+    "hiragana": "じつ / み / みの(る)",
+    "romaji": "jitsu / mi",
+    "meaning": "အမှန်တရား / အသီးအပွင့်",
+    "tag": "第6週6日目",
+    "examples": [
+      {
+        "word": "実際に",
+        "reading": "じっさいに",
+        "mean": "လက်တွေ့အားဖြင့်"
+      },
+      {
+        "word": "実は",
+        "reading": "じつは",
+        "mean": "အမှန်တကယ်တော့"
+      },
+      {
+        "word": "実験",
+        "reading": "じっけん",
+        "mean": "လက်တွေ့စမ်းသပ်မှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "欠",
+    "hiragana": "けつ / か(ける)",
+    "romaji": "ketsu / ka(keru)",
+    "meaning": "ချို့ယွင်းချက် / ပျက်ကွက်သည်",
+    "tag": "第6週6日目",
+    "examples": [
+      {
+        "word": "欠点",
+        "reading": "けってん",
+        "mean": "အားနည်းချက်"
+      },
+      {
+        "word": "欠席",
+        "reading": "けっせき",
+        "mean": "ပျက်ကွက်ခြင်း"
+      },
+      {
+        "word": "欠ける",
+        "reading": "かける",
+        "mean": "လိုအပ်ချို့ယွင်းသည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "亡",
+    "hiragana": "ぼう / な(くなる)",
+    "romaji": "bou / na(kunaru)",
+    "meaning": "ကွယ်လွန်သည် / မရှိတော့သော",
+    "tag": "第6週7日目",
+    "examples": [
+      {
+        "word": "死亡",
+        "reading": "しぼう",
+        "mean": "သေဆုံးခြင်း"
+      },
+      {
+        "word": "亡くなる",
+        "reading": "なくなる",
+        "mean": "ကွယ်လွန်သည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "忘",
+    "hiragana": "ぼう / わす(れる)",
+    "romaji": "bou / wasu(reru)",
+    "meaning": "မေ့လျော့သည်",
+    "tag": "第6週7日目",
+    "examples": [
+      {
+        "word": "忘年会",
+        "reading": "ぼうねんかい",
+        "mean": "နှစ်ကုန်နှုတ်ဆက်ညစာစားပွဲ"
+      },
+      {
+        "word": "忘れる",
+        "reading": "わすれる",
+        "mean": "မေ့သွားသည်"
+      },
+      {
+        "word": "忘れ物",
+        "reading": "わすれもの",
+        "mean": "ကျန်ခဲ့သောပစ္စည်း"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "労",
+    "hiragana": "ろう",
+    "romaji": "rou",
+    "meaning": "လုပ်အား / ပင်ပန်းမှု",
+    "tag": "第6週7日目",
+    "examples": [
+      {
+        "word": "労働",
+        "reading": "ろうどう",
+        "mean": "ကာယ/ဉာဏလုပ်အား"
+      },
+      {
+        "word": "苦労",
+        "reading": "くろう",
+        "mean": "ပင်ပန်းဆင်းရဲမှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "加",
+    "hiragana": "か / くわ(える) / くわ(わる)",
+    "romaji": "ka / kuwa(eru)",
+    "meaning": "ပေါင်းထည့်သည် / တိုးပွားသည်",
+    "tag": "第6週7日目",
+    "examples": [
+      {
+        "word": "参加",
+        "reading": "さんか",
+        "mean": "ပါဝင်ခြင်း"
+      },
+      {
+        "word": "増加",
+        "reading": "ぞうか",
+        "mean": "တိုးပွားလာခြင်း"
+      },
+      {
+        "word": "加える",
+        "reading": "くわえる",
+        "mean": "ပေါင်းထည့်သည်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "情",
+    "hiragana": "じょう / せい / なさ(け)",
+    "romaji": "jou / nasa(ke)",
+    "meaning": "သတင်းအချက်အလက် / ခံစားချက် / စာနာမှု",
+    "tag": "第6週7日目",
+    "examples": [
+      {
+        "word": "情報",
+        "reading": "じょうほう",
+        "mean": "သတင်းအချက်အလက်"
+      },
+      {
+        "word": "表情",
+        "reading": "ひょうじょう",
+        "mean": "မျက်နှာအမူအရာ"
+      },
+      {
+        "word": "事情",
+        "reading": "じじょう",
+        "mean": "အခြေအနေအကြောင်းရင်း"
+      },
+      {
+        "word": "感情",
+        "reading": "かんじょう",
+        "mean": "ခံစားချက်"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "反",
+    "hiragana": "はん / たん / そ(る)",
+    "romaji": "han / tan",
+    "meaning": "ဆန့်ကျင်ဘက် / ကန့်ကွက်သည်",
+    "tag": "第6週7日目",
+    "examples": [
+      {
+        "word": "反対",
+        "reading": "はんたい",
+        "mean": "ဆန့်ကျင်ကန့်ကွက်ခြင်း"
+      },
+      {
+        "word": "違反",
+        "reading": "いはん",
+        "mean": "ဖောက်ဖျက်မှု"
+      }
+    ],
+    "isHot": true,
+    "hotTag": "🔥 မေးခွန်းဟောင်း အမေးဆုံး"
+  },
+  {
+    "kanji": "駐",
+    "hiragana": "ちゅう",
+    "romaji": "chuu",
+    "meaning": "ကားရပ်နားသည်",
+    "tag": "第1週1日目",
+    "examples": [
+      {
+        "word": "駐車場",
+        "reading": "ちゅうしゃじょう",
+        "mean": "ကားပါကင်"
+      },
+      {
+        "word": "駐車",
+        "reading": "ちゅうしゃ",
+        "mean": "ကားရပ်ခြင်း"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "無",
+    "hiragana": "な(い) / む / ぶ",
+    "romaji": "mu / bu",
+    "meaning": "မရှိသော / အခမဲ့",
+    "tag": "第1週1日目",
+    "examples": [
+      {
+        "word": "無料",
+        "reading": "むりょう",
+        "mean": "အခမဲ့"
+      },
+      {
+        "word": "無理",
+        "reading": "むり",
+        "mean": "မဖြစ်နိုင်သော"
+      },
+      {
+        "word": "無休",
+        "reading": "むきゅう",
+        "mean": "ပိတ်ရက်မရှိ"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "満",
+    "hiragana": "み(ちる) / まん",
+    "romaji": "man",
+    "meaning": "ပြည့်လျှံသော",
+    "tag": "第1週1日目",
+    "examples": [
+      {
+        "word": "満車",
+        "reading": "まんしゃ",
+        "mean": "ကားအပြည့်"
+      },
+      {
+        "word": "満員",
+        "reading": "まんいん",
+        "mean": "လူပြည့်"
+      },
+      {
+        "word": "満足",
+        "reading": "まんぞく",
+        "mean": "ကျေနပ်အားရမှု"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "向",
+    "hiragana": "む(かう) / む(く) / こう",
+    "romaji": "muka(u) / kou",
+    "meaning": "ဦးတည်သည် / မျက်နှာမူသည်",
+    "tag": "第1週1日目",
+    "examples": [
+      {
+        "word": "向かう",
+        "reading": "むかう",
+        "mean": "ဦးတည်သွားသည်"
+      },
+      {
+        "word": "方向",
+        "reading": "ほうこう",
+        "mean": "ဦးတည်ရာ"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "禁",
+    "hiragana": "きん",
+    "romaji": "kin",
+    "meaning": "တားမြစ်သည်",
+    "tag": "第1週1日目",
+    "examples": [
+      {
+        "word": "禁止",
+        "reading": "きんし",
+        "mean": "တားမြစ်ချက်"
+      },
+      {
+        "word": "禁煙",
+        "reading": "きんえん",
+        "mean": "ဆေးလိပ်မသောက်ရ"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "関",
+    "hiragana": "せき / かん",
+    "romaji": "kan",
+    "meaning": "ပတ်သက်သည်",
+    "tag": "第1週1日目",
+    "examples": [
+      {
+        "word": "関心",
+        "reading": "かんしん",
+        "mean": "စိတ်ဝင်စားမှု"
+      },
+      {
+        "word": "関係",
+        "reading": "かんけい",
+        "mean": "ပတ်သက်မှု"
+      },
+      {
+        "word": "関する",
+        "reading": "かんする",
+        "mean": "နှင့်ပတ်သက်သော"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "係",
+    "hiragana": "かかり / けい",
+    "romaji": "kakari / kei",
+    "meaning": "တာဝန်ကျသူ / ဆက်နွှယ်မှု",
+    "tag": "第1週1日目",
+    "examples": [
+      {
+        "word": "係員",
+        "reading": "かかりいん",
+        "mean": "တာဝန်ကျဝန်ထမ်း"
+      },
+      {
+        "word": "関係",
+        "reading": "かんけい",
+        "mean": "ဆက်ဆံရေး"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "横",
+    "hiragana": "よこ / おう",
+    "romaji": "yoko / ou",
+    "meaning": "ဘေးတိုက် / ကန့်လန့်",
+    "tag": "第1週2日目",
+    "examples": [
+      {
+        "word": "横断歩道",
+        "reading": "おうだんほどう",
+        "mean": "လူကူးမျဉ်းကျား"
+      },
+      {
+        "word": "横",
+        "reading": "よこ",
+        "mean": "ဘေးဘက်"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "押",
+    "hiragana": "お(す) / お(さえる)",
+    "romaji": "o(su)",
+    "meaning": "တွန်းသည် / နှိပ်သည်",
+    "tag": "第1週2日目",
+    "examples": [
+      {
+        "word": "押す",
+        "reading": "おす",
+        "mean": "တွန်းသည်"
+      },
+      {
+        "word": "押し入れ",
+        "reading": "おしいれ",
+        "mean": "နံရံကပ်ဗီရို"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "式",
+    "hiragana": "しき",
+    "romaji": "shiki",
+    "meaning": "အခမ်းအနား / ပုံစံ",
+    "tag": "第1週2日目",
+    "examples": [
+      {
+        "word": "結婚式",
+        "reading": "けっこんしき",
+        "mean": "မင်္ဂလာဆောင်"
+      },
+      {
+        "word": "入学式",
+        "reading": "にゅうがくしき",
+        "mean": "ကျောင်းဝင်ပွဲ"
+      },
+      {
+        "word": "数式",
+        "reading": "すうしき",
+        "mean": "သင်္ချာညီမျှခြင်း"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "信",
+    "hiragana": "しん",
+    "romaji": "shin",
+    "meaning": "ယုံကြည်သည် / ဆက်သွယ်သည်",
+    "tag": "第1週2日目",
+    "examples": [
+      {
+        "word": "信じる",
+        "reading": "しんじる",
+        "mean": "ယုံသည်"
+      },
+      {
+        "word": "信用",
+        "reading": "しんよう",
+        "mean": "ယုံကြည်ကိုးစားမှု"
+      },
+      {
+        "word": "自信",
+        "reading": "じしん",
+        "mean": "မိမိကိုယ်ကိုယုံကြည်မှု"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "号",
+    "hiragana": "ごう",
+    "romaji": "gou",
+    "meaning": "နံပါတ် / သင်္ကေတ",
+    "tag": "第1週2日目",
+    "examples": [
+      {
+        "word": "信号",
+        "reading": "しんごう",
+        "mean": "မီးပွိုင့်"
+      },
+      {
+        "word": "番号",
+        "reading": "ばんごう",
+        "mean": "နံပါတ်"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "飛",
+    "hiragana": "と(ぶ) / ひ",
+    "romaji": "to(bu) / hi",
+    "meaning": "ပျံသန်းသည်",
+    "tag": "第1週2日目",
+    "examples": [
+      {
+        "word": "飛ぶ",
+        "reading": "とぶ",
+        "mean": "ပျံသည်"
+      },
+      {
+        "word": "飛行場",
+        "reading": "ひこうじょう",
+        "mean": "လေဆိပ်"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "非",
+    "hiragana": "ひ",
+    "romaji": "hi",
+    "meaning": "မဟုတ်သော / အမှား",
+    "tag": "第1週3日目",
+    "examples": [
+      {
+        "word": "非常",
+        "reading": "ひじょう",
+        "mean": "အရေးပေါ် / အလွန်"
+      },
+      {
+        "word": "非難",
+        "reading": "ひなん",
+        "mean": "ဝေဖန်ပြစ်တင်မှု"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "常",
+    "hiragana": "つね / じょう",
+    "romaji": "tsune / jou",
+    "meaning": "အမြဲတမ်း / ပုံမှန်",
+    "tag": "第1週3日目",
+    "examples": [
+      {
+        "word": "日常",
+        "reading": "にちじょう",
+        "mean": "နေ့စဉ်ပုံမှန်"
+      },
+      {
+        "word": "非常口",
+        "reading": "ひじょうぐち",
+        "mean": "အရေးပေါ်ထွက်ပေါက်"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "階",
+    "hiragana": "かい",
+    "romaji": "kai",
+    "meaning": "အထပ်",
+    "tag": "第1週3日目",
+    "examples": [
+      {
+        "word": "階段",
+        "reading": "かいだん",
+        "mean": "လှေကား"
+      },
+      {
+        "word": "二階",
+        "reading": "にかい",
+        "mean": "ဒုတိယထပ်"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "段",
+    "hiragana": "だん",
+    "romaji": "dan",
+    "meaning": "အဆင့် / လှေကားထစ်",
+    "tag": "第1週3日目",
+    "examples": [
+      {
+        "word": "階段",
+        "reading": "かいだん",
+        "mean": "လှေကား"
+      },
+      {
+        "word": "値段",
+        "reading": "ねだん",
+        "mean": "စျေးနှုန်း"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "箱",
+    "hiragana": "はこ / ばこ",
+    "romaji": "hako / bako",
+    "meaning": "သေတ္တာ / ပုံး",
+    "tag": "第1週3日目",
+    "examples": [
+      {
+        "word": "ゴミ箱",
+        "reading": "ごみばこ",
+        "mean": "အမှိုက်ပုံး"
+      },
+      {
+        "word": "本箱",
+        "reading": "ほんばこ",
+        "mean": "စာအုပ်စင်"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "線",
+    "hiragana": "せん",
+    "romaji": "sen",
+    "meaning": "မျဉ်း / ရထားလိုင်း",
+    "tag": "第1週4日目",
+    "examples": [
+      {
+        "word": "線",
+        "reading": "せん",
+        "mean": "လိုင်း"
+      },
+      {
+        "word": "新幹線",
+        "reading": "しんかんせん",
+        "mean": "ကျည်ဆန်ရထား"
+      }
+    ],
+    "isHot": false
+  },
+  {
+    "kanji": "面",
+    "hiragana": "おもて / つら / めん",
+    "romaji": "omote / men",
+    "meaning": "မျက်နှာပြင် / ဘက်ခြမ်း",
+    "tag": "第1週4日目",
+    "examples": [
+      {
+        "word": "面白い",
+        "reading": "おもしろい",
+        "mean": "စိတ်ဝင်စားဖွယ်"
+      },
+      {
+        "word": "面接",
+        "reading": "めんせつ",
+        "mean": "လူတွေ့စစ်ဆေးခြင်း (Interview)"
+      }
+    ],
+    "isHot": false
   },
   {
     "kanji": "各",
@@ -7008,7 +9083,8 @@ const N3_KANJI = [
         "reading": "かくえきていしゃ",
         "mean": "ဘူတာတိုင်းရပ်ရထား"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "次",
@@ -7027,7 +9103,8 @@ const N3_KANJI = [
         "reading": "もくじ",
         "mean": "မာတိကာ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "快",
@@ -7046,7 +9123,8 @@ const N3_KANJI = [
         "reading": "かいせい",
         "mean": "သာယာကြည်လင်သောမိုးလေဝသ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "速",
@@ -7070,26 +9148,8 @@ const N3_KANJI = [
         "reading": "さっそく",
         "mean": "ချက်ချင်း"
       }
-    ]
-  },
-  {
-    "kanji": "過",
-    "hiragana": "す(ぎる) / す(ごす) / か",
-    "romaji": "su(giru) / ka",
-    "meaning": "လွန်မြောက်သည် / ဖြတ်သန်းသည်",
-    "tag": "第1週4日目",
-    "examples": [
-      {
-        "word": "通過",
-        "reading": "つうか",
-        "mean": "ဖြတ်သန်းသွားခြင်း"
-      },
-      {
-        "word": "過去",
-        "reading": "かこ",
-        "mean": "အတိတ်ကာလ"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "鉄",
@@ -7108,7 +9168,8 @@ const N3_KANJI = [
         "reading": "てつどう",
         "mean": "မီးရထားလမ်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "指",
@@ -7127,7 +9188,8 @@ const N3_KANJI = [
         "reading": "していせき",
         "mean": "ဘိုကင်ထိုင်ခုံ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "定",
@@ -7146,7 +9208,8 @@ const N3_KANJI = [
         "reading": "よてい",
         "mean": "အစီအစဉ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "席",
@@ -7170,7 +9233,8 @@ const N3_KANJI = [
         "reading": "じゆうせき",
         "mean": "လွတ်လပ်စွာထိုင်နိုင်သောခုံ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "由",
@@ -7189,7 +9253,8 @@ const N3_KANJI = [
         "reading": "りゆう",
         "mean": "အကြောင်းပြချက်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "番",
@@ -7208,7 +9273,8 @@ const N3_KANJI = [
         "reading": "こうばん",
         "mean": "ရဲကင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "窓",
@@ -7227,7 +9293,8 @@ const N3_KANJI = [
         "reading": "まどぐち",
         "mean": "ကောင်တာပေါက်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "側",
@@ -7246,7 +9313,8 @@ const N3_KANJI = [
         "reading": "そくめん",
         "mean": "ဘေးမျက်နှာပြင်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "路",
@@ -7265,7 +9333,8 @@ const N3_KANJI = [
         "reading": "せんろ",
         "mean": "ရထားသံလမ်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "停",
@@ -7289,26 +9358,8 @@ const N3_KANJI = [
         "reading": "ていでん",
         "mean": "မီးပျက်ခြင်း"
       }
-    ]
-  },
-  {
-    "kanji": "整",
-    "hiragana": "ととの(える) / ととの(う) / せい",
-    "romaji": "totono(eru) / sei",
-    "meaning": "သပ်ရပ်အောင်စီစဉ်သည် / အဆင်သင့်ဖြစ်သည်",
-    "tag": "第1週6日目",
-    "examples": [
-      {
-        "word": "整理",
-        "reading": "せいり",
-        "mean": "ရှင်းလင်းသပ်ရပ်စေခြင်း"
-      },
-      {
-        "word": "調整",
-        "reading": "ちょうせい",
-        "mean": "ညှိနှိုင်းချိန်ညှိခြင်း"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "券",
@@ -7332,7 +9383,8 @@ const N3_KANJI = [
         "reading": "りょけん",
         "mean": "ပတ်စပို့"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "現",
@@ -7356,7 +9408,8 @@ const N3_KANJI = [
         "reading": "げんだい",
         "mean": "မျက်မှောက်ခေတ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "両",
@@ -7380,26 +9433,8 @@ const N3_KANJI = [
         "reading": "りょうしん",
         "mean": "မိဘနှစ်ပါး"
       }
-    ]
-  },
-  {
-    "kanji": "替",
-    "hiragana": "か(える) / か(わる) / たい",
-    "romaji": "ka(eru) / tai",
-    "meaning": "လဲလှယ်သည်",
-    "tag": "第1週6日目",
-    "examples": [
-      {
-        "word": "乗り替える",
-        "reading": "のりかえる",
-        "mean": "ရထားပြောင်းစီးသည်"
-      },
-      {
-        "word": "両替",
-        "reading": "りょうがえ",
-        "mean": "ငွေလဲလှယ်ခြင်း"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "優",
@@ -7423,7 +9458,8 @@ const N3_KANJI = [
         "reading": "じょゆう",
         "mean": "မင်းသမီး"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "座",
@@ -7447,7 +9483,8 @@ const N3_KANJI = [
         "reading": "こうざ",
         "mean": "ဘဏ်စာရင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "降",
@@ -7471,7 +9508,8 @@ const N3_KANJI = [
         "reading": "いこう",
         "mean": "နောက်ပိုင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "未",
@@ -7495,7 +9533,8 @@ const N3_KANJI = [
         "reading": "みまん",
         "mean": "မပြည့်မီ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "末",
@@ -7519,7 +9558,8 @@ const N3_KANJI = [
         "reading": "げつまつ",
         "mean": "လကုန်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "若",
@@ -7533,7 +9573,8 @@ const N3_KANJI = [
         "reading": "わかい",
         "mean": "ငယ်ရွယ်သော"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "晩",
@@ -7562,7 +9603,8 @@ const N3_KANJI = [
         "reading": "まいばん",
         "mean": "ညတိုင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "島",
@@ -7581,7 +9623,8 @@ const N3_KANJI = [
         "reading": "はんとう",
         "mean": "ကျွန်းဆွယ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "皿",
@@ -7600,7 +9643,8 @@ const N3_KANJI = [
         "reading": "はいざら",
         "mean": "ဆေးလိပ်ပြာခွက်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "血",
@@ -7619,7 +9663,8 @@ const N3_KANJI = [
         "reading": "ち",
         "mean": "သွေး"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "助",
@@ -7638,7 +9683,8 @@ const N3_KANJI = [
         "reading": "たすける",
         "mean": "ကူညီကယ်ဆယ်သည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "準",
@@ -7657,26 +9703,8 @@ const N3_KANJI = [
         "reading": "じゅんきゅう",
         "mean": "တစ်ပိုင်းအမြန်ရထား"
       }
-    ]
-  },
-  {
-    "kanji": "備",
-    "hiragana": "そな(える) / び",
-    "romaji": "sona(eru) / bi",
-    "meaning": "ကြိုတင်ပြင်ဆင်သည် / တပ်ဆင်သည်",
-    "tag": "第2週1日目",
-    "examples": [
-      {
-        "word": "準備",
-        "reading": "じゅんび",
-        "mean": "ပြင်ဆင်ခြင်း"
-      },
-      {
-        "word": "設備",
-        "reading": "せつび",
-        "mean": "စက်ကိရိယာတပ်ဆင်မှု"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "営",
@@ -7695,7 +9723,8 @@ const N3_KANJI = [
         "reading": "けいえい",
         "mean": "စီမံခန့်ခွဲမှု"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "閉",
@@ -7714,7 +9743,8 @@ const N3_KANJI = [
         "reading": "へいかい",
         "mean": "အစည်းအဝေးပိတ်ခြင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "案",
@@ -7733,7 +9763,8 @@ const N3_KANJI = [
         "reading": "あん",
         "mean": "အစီအစဉ်/အကြံ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "内",
@@ -7757,7 +9788,8 @@ const N3_KANJI = [
         "reading": "いない",
         "mean": "အတွင်း/အောက်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "予",
@@ -7781,7 +9813,8 @@ const N3_KANJI = [
         "reading": "よやく",
         "mean": "ဘိုကင်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "約",
@@ -7800,7 +9833,8 @@ const N3_KANJI = [
         "reading": "やくそく",
         "mean": "ကတိ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "煙",
@@ -7819,7 +9853,8 @@ const N3_KANJI = [
         "reading": "きんえん",
         "mean": "ဆေးလိပ်မသောက်ရ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "当",
@@ -7843,7 +9878,8 @@ const N3_KANJI = [
         "reading": "とうじ",
         "mean": "ထိုအချိန်တုန်းက"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "全",
@@ -7867,7 +9903,8 @@ const N3_KANJI = [
         "reading": "ぜんいん",
         "mean": "လူအားလုံး"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "客",
@@ -7886,7 +9923,8 @@ const N3_KANJI = [
         "reading": "じょうきゃく",
         "mean": "ခရီးသည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "様",
@@ -7905,45 +9943,8 @@ const N3_KANJI = [
         "reading": "ようす",
         "mean": "အခြေအနေ"
       }
-    ]
-  },
-  {
-    "kanji": "解",
-    "hiragana": "と(く) / わか(る) / かい",
-    "romaji": "to(ku) / kai",
-    "meaning": "ဖြေရှင်းသည် / နားလည်သည်",
-    "tag": "第2週2日目",
-    "examples": [
-      {
-        "word": "理解",
-        "reading": "りかい",
-        "mean": "နားလည်သဘောပေါက်မှု"
-      },
-      {
-        "word": "解答",
-        "reading": "かいとう",
-        "mean": "အဖြေ"
-      },
-      {
-        "word": "解説",
-        "reading": "かいせつ",
-        "mean": "ရှင်းလင်းချက်"
-      }
-    ]
-  },
-  {
-    "kanji": "協",
-    "hiragana": "きょう",
-    "romaji": "kyou",
-    "meaning": "ပူးပေါင်းဆောင်ရွက်သည်",
-    "tag": "第2週2日目",
-    "examples": [
-      {
-        "word": "協力",
-        "reading": "きょうりょく",
-        "mean": "ပူးပေါင်းဆောင်ရွက်မှု"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "願",
@@ -7962,7 +9963,8 @@ const N3_KANJI = [
         "reading": "おねがいします",
         "mean": "ကျေးဇူးပြု၍"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "観",
@@ -7981,7 +9983,8 @@ const N3_KANJI = [
         "reading": "かんきゃく",
         "mean": "ပရိသတ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "園",
@@ -8000,7 +10003,8 @@ const N3_KANJI = [
         "reading": "こうえん",
         "mean": "ပန်းခြံ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "港",
@@ -8019,7 +10023,8 @@ const N3_KANJI = [
         "reading": "くうこう",
         "mean": "လေဆိပ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "遊",
@@ -8038,7 +10043,8 @@ const N3_KANJI = [
         "reading": "ゆうえんち",
         "mean": "ကစားကွင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "美",
@@ -8062,7 +10068,8 @@ const N3_KANJI = [
         "reading": "びじん",
         "mean": "အမျိုးသမီးလှ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "術",
@@ -8081,7 +10088,8 @@ const N3_KANJI = [
         "reading": "しゅじゅつ",
         "mean": "ခွဲစိတ်မှု"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "神",
@@ -8100,7 +10108,8 @@ const N3_KANJI = [
         "reading": "かみさま",
         "mean": "ဘုရားသခင်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "寺",
@@ -8114,7 +10123,8 @@ const N3_KANJI = [
         "reading": "おてら",
         "mean": "ဘုန်းကြီးကျောင်း/ဘုရားကျောင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "役",
@@ -8138,7 +10148,8 @@ const N3_KANJI = [
         "reading": "やくわり",
         "mean": "အခန်းကဏ္ဍ/တာဝန်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "郵",
@@ -8157,7 +10168,8 @@ const N3_KANJI = [
         "reading": "ゆうそう",
         "mean": "စာတိုက်မှပို့ခြင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "局",
@@ -8176,7 +10188,8 @@ const N3_KANJI = [
         "reading": "けっきょく",
         "mean": "အဆုံးစွန်တွင်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "交",
@@ -8200,31 +10213,8 @@ const N3_KANJI = [
         "reading": "こうかん",
         "mean": "ဖလှယ်ခြင်း"
       }
-    ]
-  },
-  {
-    "kanji": "差",
-    "hiragana": "さ(す) / さ",
-    "romaji": "sa",
-    "meaning": "ခြားနားချက် / ညွှန်ပြသည်",
-    "tag": "第2週4日目",
-    "examples": [
-      {
-        "word": "交差点",
-        "reading": "こうさてん",
-        "mean": "လမ်းဆုံ"
-      },
-      {
-        "word": "時差",
-        "reading": "じさ",
-        "mean": "စံတော်ချိန်ကွာခြားချက်"
-      },
-      {
-        "word": "差別",
-        "reading": "さべつ",
-        "mean": "ခွဲခြားဆက်ဆံမှု"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "点",
@@ -8248,7 +10238,8 @@ const N3_KANJI = [
         "reading": "けってん",
         "mean": "အားနည်းချက်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "橋",
@@ -8267,7 +10258,8 @@ const N3_KANJI = [
         "reading": "ほどうきょう",
         "mean": "လူကူးတံတား"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "公",
@@ -8286,7 +10278,8 @@ const N3_KANJI = [
         "reading": "こうむいん",
         "mean": "နိုင်ငံ့ဝန်ထမ်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "受",
@@ -8305,7 +10298,8 @@ const N3_KANJI = [
         "reading": "うける",
         "mean": "စာမေးပွဲဖြေသည်/လက်ခံသည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "付",
@@ -8324,7 +10318,8 @@ const N3_KANJI = [
         "reading": "かたづける",
         "mean": "သိမ်းဆည်းသပ်ရပ်စေသည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "科",
@@ -8348,7 +10343,8 @@ const N3_KANJI = [
         "reading": "きょうかしょ",
         "mean": "ပြဋ္ဌာန်းစာအုပ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "鼻",
@@ -8367,7 +10363,8 @@ const N3_KANJI = [
         "reading": "はな",
         "mean": "နှာခေါင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "婦",
@@ -8386,7 +10383,8 @@ const N3_KANJI = [
         "reading": "しゅふ",
         "mean": "အိမ်ရှင်မ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "形",
@@ -8420,7 +10418,8 @@ const N3_KANJI = [
         "reading": "かたち",
         "mean": "ပုံသဏ္ဌာန်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "骨",
@@ -8439,31 +10438,8 @@ const N3_KANJI = [
         "reading": "こっせつ",
         "mean": "အရိုးကျိုးခြင်း"
       }
-    ]
-  },
-  {
-    "kanji": "折",
-    "hiragana": "お(る) / お(れる) / せつ",
-    "romaji": "o(ru) / setsu",
-    "meaning": "ချိုးဖဲ့သည် / ခေါက်သည်",
-    "tag": "第2週5日目",
-    "examples": [
-      {
-        "word": "折る",
-        "reading": "おる",
-        "mean": "ချိုးသည်"
-      },
-      {
-        "word": "骨折",
-        "reading": "こっせつ",
-        "mean": "အရိုးကျိုးသည်"
-      },
-      {
-        "word": "右折",
-        "reading": "うせつ",
-        "mean": "ညာကွေ့"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "困",
@@ -8482,111 +10458,8 @@ const N3_KANJI = [
         "reading": "こんなん",
         "mean": "အခက်အခဲ"
       }
-    ]
-  },
-  {
-    "kanji": "消",
-    "hiragana": "しょう",
-    "romaji": "shou",
-    "meaning": "စားသုံးသည် / ကုန်ဆုံးသည်",
-    "tag": "第2週6日目",
-    "examples": [
-      {
-        "word": "消費",
-        "reading": "しょうひ",
-        "mean": "စားသုံးမှု"
-      },
-      {
-        "word": "消化",
-        "reading": "しょうか",
-        "mean": "အစာကြေညက်ခြင်း"
-      }
-    ]
-  },
-  {
-    "kanji": "防",
-    "hiragana": "ふせ(ぐ) / ぼう",
-    "romaji": "fuse(gu) / bou",
-    "meaning": "ကာကွယ်သည်",
-    "tag": "第2週6日目",
-    "examples": [
-      {
-        "word": "予防",
-        "reading": "よぼう",
-        "mean": "ကြိုတင်ကာကွယ်ခြင်း"
-      }
-    ]
-  },
-  {
-    "kanji": "救",
-    "hiragana": "すく(う) / きゅう",
-    "romaji": "suku(u) / kyuu",
-    "meaning": "ကယ်ဆယ်သည်",
-    "tag": "第2週6日目",
-    "examples": [
-      {
-        "word": "救う",
-        "reading": "すくう",
-        "mean": "ကယ်တင်သည်"
-      },
-      {
-        "word": "救急車",
-        "reading": "きゅうきゅうしゃ",
-        "mean": "လူနာတင်ယာဉ်"
-      }
-    ]
-  },
-  {
-    "kanji": "警",
-    "hiragana": "けい",
-    "romaji": "kei",
-    "meaning": "သတိပေးသည် / ရဲတပ်ဖွဲ့",
-    "tag": "第2週6日目",
-    "examples": [
-      {
-        "word": "警察",
-        "reading": "けいさつ",
-        "mean": "ရဲတပ်ဖွဲ့"
-      },
-      {
-        "word": "警告",
-        "reading": "けいこく",
-        "mean": "သတိပေးချက်"
-      }
-    ]
-  },
-  {
-    "kanji": "察",
-    "hiragana": "さつ",
-    "romaji": "satsu",
-    "meaning": "စုံစမ်းထောက်လှမ်းသည်",
-    "tag": "第2週6日目",
-    "examples": [
-      {
-        "word": "警察",
-        "reading": "けいさつ",
-        "mean": "ရဲတပ်ဖွဲ့"
-      }
-    ]
-  },
-  {
-    "kanji": "故",
-    "hiragana": "こ",
-    "romaji": "ko",
-    "meaning": "ဖြစ်ရပ် / အကြောင်းရင်း",
-    "tag": "第2週6日目",
-    "examples": [
-      {
-        "word": "事故",
-        "reading": "じこ",
-        "mean": "ယာဉ်မတော်တဆမှု"
-      },
-      {
-        "word": "故障",
-        "reading": "こしょう",
-        "mean": "စက်ပျက်ခြင်း"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "伝",
@@ -8610,7 +10483,8 @@ const N3_KANJI = [
         "reading": "でんごん",
         "mean": "မှာစကား"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "黄",
@@ -8629,7 +10503,8 @@ const N3_KANJI = [
         "reading": "きいろい",
         "mean": "ဝါသော"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "絵",
@@ -8653,7 +10528,8 @@ const N3_KANJI = [
         "reading": "えほん",
         "mean": "ရုပ်ပြပုံပြင်စာအုပ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "組",
@@ -8672,7 +10548,8 @@ const N3_KANJI = [
         "reading": "くみたてる",
         "mean": "တပ်ဆင်သည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "束",
@@ -8691,7 +10568,8 @@ const N3_KANJI = [
         "reading": "はなたば",
         "mean": "ပန်းစည်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "授",
@@ -8710,26 +10588,8 @@ const N3_KANJI = [
         "reading": "きょうじゅ",
         "mean": "ပါမောက္ခ"
       }
-    ]
-  },
-  {
-    "kanji": "渡",
-    "hiragana": "わた(る) / わた(す)",
-    "romaji": "wata(ru) / wata(su)",
-    "meaning": "ဖြတ်ကူးသည် / လွှဲပြောင်းပေးသည်",
-    "tag": "第2週7日目",
-    "examples": [
-      {
-        "word": "渡る",
-        "reading": "わたる",
-        "mean": "ဖြတ်ကူးသည်"
-      },
-      {
-        "word": "渡す",
-        "reading": "わたす",
-        "mean": "ကမ်းပေးသည်/လွှဲပေးသည်"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "昔",
@@ -8743,7 +10603,8 @@ const N3_KANJI = [
         "reading": "むかし",
         "mean": "ရှေးယခင်က"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "要",
@@ -8762,45 +10623,8 @@ const N3_KANJI = [
         "reading": "じゅうよう",
         "mean": "အရေးကြီးသော"
       }
-    ]
-  },
-  {
-    "kanji": "冷",
-    "hiragana": "つめ(たい) / ひ(やす) / れい",
-    "romaji": "tsume(tai) / rei",
-    "meaning": "အေးစက်သော",
-    "tag": "第3週1日目",
-    "examples": [
-      {
-        "word": "冷たい",
-        "reading": "つめたい",
-        "mean": "အေးသော"
-      },
-      {
-        "word": "冷房",
-        "reading": "れいぼう",
-        "mean": "လေအေးပေးစက်"
-      },
-      {
-        "word": "冷蔵庫",
-        "reading": "れいぞうこ",
-        "mean": "ရေခဲသေတ္တာ"
-      }
-    ]
-  },
-  {
-    "kanji": "蔵",
-    "hiragana": "ぞう / くら",
-    "romaji": "zou",
-    "meaning": "သိုလှောင်ရုံ",
-    "tag": "第3週1日目",
-    "examples": [
-      {
-        "word": "冷蔵庫",
-        "reading": "れいぞうこ",
-        "mean": "ရေခဲသေတ္တာ"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "凍",
@@ -8819,26 +10643,8 @@ const N3_KANJI = [
         "reading": "れいとうこ",
         "mean": "ရေခဲအေးခဲခန်း"
       }
-    ]
-  },
-  {
-    "kanji": "庫",
-    "hiragana": "こ",
-    "romaji": "ko",
-    "meaning": "ဂိုဒေါင်",
-    "tag": "第3週1日目",
-    "examples": [
-      {
-        "word": "金庫",
-        "reading": "きんこ",
-        "mean": "သံမဏိသေတ္တာ"
-      },
-      {
-        "word": "車庫",
-        "reading": "しゃこ",
-        "mean": "ကားဂိုဒေါင်"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "召",
@@ -8852,7 +10658,8 @@ const N3_KANJI = [
         "reading": "めしあがる",
         "mean": "သုံးဆောင်ပါ (စားပါ)"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "保",
@@ -8871,21 +10678,8 @@ const N3_KANJI = [
         "reading": "ほぞん",
         "mean": "သိမ်းဆည်းထားခြင်း"
       }
-    ]
-  },
-  {
-    "kanji": "存",
-    "hiragana": "そん / ぞん",
-    "romaji": "son",
-    "meaning": "တည်ရှိသည်",
-    "tag": "第3週1日目",
-    "examples": [
-      {
-        "word": "存在",
-        "reading": "そんざい",
-        "mean": "တည်ရှိမှု"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "必",
@@ -8904,136 +10698,8 @@ const N3_KANJI = [
         "reading": "ひつよう",
         "mean": "လိုအပ်ချက်"
       }
-    ]
-  },
-  {
-    "kanji": "費",
-    "hiragana": "つい(やす) / ひ",
-    "romaji": "tsui(yasu) / hi",
-    "meaning": "ကုန်ကျစရိတ် / အသုံးပြုသည်",
-    "tag": "第3週2日目",
-    "examples": [
-      {
-        "word": "費用",
-        "reading": "ひよう",
-        "mean": "ကုန်ကျစရိတ်"
-      },
-      {
-        "word": "交通費",
-        "reading": "こうつうひ",
-        "mean": "လမ်းစရိတ်"
-      },
-      {
-        "word": "学費",
-        "reading": "がくひ",
-        "mean": "ကျောင်းစရိတ်"
-      }
-    ]
-  },
-  {
-    "kanji": "期",
-    "hiragana": "き",
-    "romaji": "ki",
-    "meaning": "ကာလ / အချိန်ပိုင်း",
-    "tag": "第3週2日目",
-    "examples": [
-      {
-        "word": "期間",
-        "reading": "きかん",
-        "mean": "ကာလ"
-      },
-      {
-        "word": "定期券",
-        "reading": "ていきけん",
-        "mean": "ရာသီလက်မှတ်"
-      },
-      {
-        "word": "期待",
-        "reading": "きたい",
-        "mean": "မျှော်လင့်ချက်"
-      }
-    ]
-  },
-  {
-    "kanji": "限",
-    "hiragana": "かぎ(る) / げん",
-    "romaji": "kagi(ru) / gen",
-    "meaning": "ကန့်သတ်သည် / အကန့်အသတ်",
-    "tag": "第3週2日目",
-    "examples": [
-      {
-        "word": "限る",
-        "reading": "かぎる",
-        "mean": "ကန့်သတ်သည်"
-      },
-      {
-        "word": "限界",
-        "reading": "げんかい",
-        "mean": "အတိုင်းအတာအကန့်အသတ်"
-      },
-      {
-        "word": "期限",
-        "reading": "きげん",
-        "mean": "သတ်မှတ်ရက်စွဲ"
-      }
-    ]
-  },
-  {
-    "kanji": "製",
-    "hiragana": "せい",
-    "romaji": "sei",
-    "meaning": "ထုတ်လုပ်သည် / ထုတ်ကုန်",
-    "tag": "第3週2日目",
-    "examples": [
-      {
-        "word": "製品",
-        "reading": "せいひん",
-        "mean": "ကုန်ထုတ်ပစ္စည်း"
-      },
-      {
-        "word": "日本製",
-        "reading": "にほんせい",
-        "mean": "ဂျပန်နိုင်ငံထုတ်"
-      }
-    ]
-  },
-  {
-    "kanji": "造",
-    "hiragana": "つく(る) / ぞう",
-    "romaji": "tsuku(ru) / zou",
-    "meaning": "တည်ဆောက်ထုတ်လုပ်သည်",
-    "tag": "第3週2日目",
-    "examples": [
-      {
-        "word": "製造",
-        "reading": "せいぞう",
-        "mean": "ထုတ်လုပ်ခြင်း"
-      },
-      {
-        "word": "造船",
-        "reading": "ぞうせん",
-        "mean": "သင်္ဘောတည်ဆောက်မှု"
-      }
-    ]
-  },
-  {
-    "kanji": "賞",
-    "hiragana": "しょう",
-    "romaji": "shou",
-    "meaning": "ဆုလာဘ် / ဆုကြေး",
-    "tag": "第3週2日目",
-    "examples": [
-      {
-        "word": "賞味期限",
-        "reading": "しょうみきげん",
-        "mean": "သက်တမ်းကုန်ရက်"
-      },
-      {
-        "word": "賞金",
-        "reading": "しょうきん",
-        "mean": "ဆုငွေ"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "法",
@@ -9057,7 +10723,8 @@ const N3_KANJI = [
         "reading": "ほうりつ",
         "mean": "ဥပဒေ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "温",
@@ -9081,7 +10748,8 @@ const N3_KANJI = [
         "reading": "おんせん",
         "mean": "ရေပူစမ်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "販",
@@ -9100,7 +10768,8 @@ const N3_KANJI = [
         "reading": "しはん",
         "mean": "စျေးကွက်တင်ရောင်းချမှု"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "機",
@@ -9124,35 +10793,8 @@ const N3_KANJI = [
         "reading": "きかい",
         "mean": "အခွင့်အရေး"
       }
-    ]
-  },
-  {
-    "kanji": "増",
-    "hiragana": "ふ(える) / ぞう",
-    "romaji": "fu(eru) / zou",
-    "meaning": "တိုးပွားသည်",
-    "tag": "第3週3日目",
-    "examples": [
-      {
-        "word": "増加",
-        "reading": "ぞうか",
-        "mean": "တိုးပွားခြင်း"
-      }
-    ]
-  },
-  {
-    "kanji": "減",
-    "hiragana": "へ(る) / げん",
-    "romaji": "he(ru) / gen",
-    "meaning": "လျော့နည်းသည်",
-    "tag": "第3週3日目",
-    "examples": [
-      {
-        "word": "減少",
-        "reading": "げんしょう",
-        "mean": "လျော့နည်းခြင်း"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "量",
@@ -9171,7 +10813,8 @@ const N3_KANJI = [
         "reading": "たいりょう",
         "mean": "အများအပြား"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "氷",
@@ -9185,31 +10828,8 @@ const N3_KANJI = [
         "reading": "こおり",
         "mean": "ရေခဲ"
       }
-    ]
-  },
-  {
-    "kanji": "返",
-    "hiragana": "へん / かえ(す)",
-    "romaji": "hen / kae(su)",
-    "meaning": "ပြန်ပေးသည် / ပြန်လည်",
-    "tag": "第3週3日目",
-    "examples": [
-      {
-        "word": "返事",
-        "reading": "へんじ",
-        "mean": "အကြောင်းပြန်ကြားချက်"
-      },
-      {
-        "word": "返却",
-        "reading": "へんきゃく",
-        "mean": "ပြန်အပ်ခြင်း"
-      },
-      {
-        "word": "返す",
-        "reading": "かえす",
-        "mean": "ပြန်ပေးသည်"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "湯",
@@ -9228,7 +10848,8 @@ const N3_KANJI = [
         "reading": "ゆぶね",
         "mean": "ရေချိုးကန်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "材",
@@ -9247,7 +10868,8 @@ const N3_KANJI = [
         "reading": "もくざい",
         "mean": "သစ်သား"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "卵",
@@ -9261,7 +10883,8 @@ const N3_KANJI = [
         "reading": "たまご",
         "mean": "ကြက်ဥ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "乳",
@@ -9280,7 +10903,8 @@ const N3_KANJI = [
         "reading": "にゅうせいひん",
         "mean": "နို့ထွက်ပစ္စည်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "粉",
@@ -9299,7 +10923,8 @@ const N3_KANJI = [
         "reading": "ふんまつ",
         "mean": "အမှုန့်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "袋",
@@ -9323,26 +10948,8 @@ const N3_KANJI = [
         "reading": "ごみぶくろ",
         "mean": "အမှိုက်အိတ်"
       }
-    ]
-  },
-  {
-    "kanji": "混",
-    "hiragana": "ま(ぜる) / こ(む) / こん",
-    "romaji": "ma(zeru) / kon",
-    "meaning": "ရောနှောသည် / ပြည့်ကျပ်သည်",
-    "tag": "第3週4日目",
-    "examples": [
-      {
-        "word": "混雑",
-        "reading": "こんざつ",
-        "mean": "လူကြပ်တည်းပြွမ်းတီးခြင်း"
-      },
-      {
-        "word": "混乱",
-        "reading": "こんらん",
-        "mean": "ရုန်းရင်းဆန်ခတ်ဖြစ်ခြင်း"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "焼",
@@ -9361,88 +10968,8 @@ const N3_KANJI = [
         "reading": "ひやけ",
         "mean": "နေလောင်ခြင်း"
       }
-    ]
-  },
-  {
-    "kanji": "表",
-    "hiragana": "おもて / あらわ(す) / ひょう",
-    "romaji": "omote / hyou",
-    "meaning": "ဇယား / မျက်နှာပြင် / ဖော်ပြသည်",
-    "tag": "第3週4日目",
-    "examples": [
-      {
-        "word": "表",
-        "reading": "ひょう",
-        "mean": "ဇယား"
-      },
-      {
-        "word": "発表",
-        "reading": "はっぴょう",
-        "mean": "တင်ပြချက်"
-      },
-      {
-        "word": "代表",
-        "reading": "だいひょう",
-        "mean": "ကိုယ်စားလှယ်"
-      }
-    ]
-  },
-  {
-    "kanji": "裏",
-    "hiragana": "うら / り",
-    "romaji": "ura",
-    "meaning": "ကျောဘက် / အတွင်းဘက်",
-    "tag": "第3週4日目",
-    "examples": [
-      {
-        "word": "裏",
-        "reading": "うら",
-        "mean": "နောက်ကျောဘက်"
-      },
-      {
-        "word": "裏口",
-        "reading": "うらぐち",
-        "mean": "အနောက်ပေါက်"
-      }
-    ]
-  },
-  {
-    "kanji": "留",
-    "hiragana": "と(める) / とど(まる) / りゅう / る",
-    "romaji": "tome(ru) / ryuu",
-    "meaning": "ကျန်ရစ်သည် / တားဆီးသည် / မှတ်ထားသည်",
-    "tag": "第3週5日目",
-    "examples": [
-      {
-        "word": "留学",
-        "reading": "りゅうがく",
-        "mean": "နိုင်ငံခြားပညာသင်"
-      },
-      {
-        "word": "留守",
-        "reading": "るす",
-        "mean": "အိမ်မှာလူမရှိခြင်း"
-      }
-    ]
-  },
-  {
-    "kanji": "守",
-    "hiragana": "まも(る) / しゅ / す",
-    "romaji": "mamo(ru) / shu",
-    "meaning": "ကာကွယ်သည် / စောင့်ရှောက်သည် / စည်းကမ်းစောင့်သည်",
-    "tag": "第3週5日目",
-    "examples": [
-      {
-        "word": "守る",
-        "reading": "まもる",
-        "mean": "စောင့်ထိန်းသည်"
-      },
-      {
-        "word": "留守",
-        "reading": "るす",
-        "mean": "အိမ်စောင့်/လူမရှိ"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "濃",
@@ -9456,7 +10983,8 @@ const N3_KANJI = [
         "reading": "こい",
         "mean": "ပြင်းသော/ပျစ်သော"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "薄",
@@ -9470,7 +10998,8 @@ const N3_KANJI = [
         "reading": "うすい",
         "mean": "ပါးလွှာသော/ဖျော့သော"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "部",
@@ -9499,7 +11028,8 @@ const N3_KANJI = [
         "reading": "へや",
         "mean": "အခန်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "数",
@@ -9528,7 +11058,8 @@ const N3_KANJI = [
         "reading": "かぞえる",
         "mean": "ရေတွက်သည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "件",
@@ -9552,7 +11083,8 @@ const N3_KANJI = [
         "reading": "ようけん",
         "mean": "ပြောစရာကိစ္စ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "再",
@@ -9576,7 +11108,8 @@ const N3_KANJI = [
         "reading": "さらいしゅう",
         "mean": "နောက်တစ်ပတ်ကျော်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "接",
@@ -9595,112 +11128,8 @@ const N3_KANJI = [
         "reading": "ちょくせつ",
         "mean": "တိုက်ရိုက်"
       }
-    ]
-  },
-  {
-    "kanji": "続",
-    "hiragana": "ぞく / つづ(く) / つづ(ける)",
-    "romaji": "zoku / tsuzu(ku)",
-    "meaning": "ဆက်တိုက်ဖြစ်သည် / ဆက်လုပ်သည်",
-    "tag": "第3週6日目",
-    "examples": [
-      {
-        "word": "接続",
-        "reading": "せつぞく",
-        "mean": "ချိတ်ဆက်ခြင်း"
-      },
-      {
-        "word": "続く",
-        "reading": "つづく",
-        "mean": "ဆက်ဖြစ်သည်"
-      },
-      {
-        "word": "続ける",
-        "reading": "つづける",
-        "mean": "ဆက်လုပ်သည်"
-      }
-    ]
-  },
-  {
-    "kanji": "示",
-    "hiragana": "じ / し / しめ(す)",
-    "romaji": "ji / shime(su)",
-    "meaning": "ညွှန်ပြသည် / ဖော်ပြသည်",
-    "tag": "第3週6日目",
-    "examples": [
-      {
-        "word": "表示",
-        "reading": "ひょうじ",
-        "mean": "ဖော်ပြချက်"
-      },
-      {
-        "word": "指示",
-        "reading": "しじ",
-        "mean": "ညွှန်ကြားချက်"
-      },
-      {
-        "word": "示す",
-        "reading": "しめす",
-        "mean": "ပြသသည်"
-      }
-    ]
-  },
-  {
-    "kanji": "戻",
-    "hiragana": "もど(る) / もど(す)",
-    "romaji": "modo(ru) / modo(su)",
-    "meaning": "ပြန်လာသည် / မူလအတိုင်းပြန်ထားသည်",
-    "tag": "第3週6日目",
-    "examples": [
-      {
-        "word": "戻る",
-        "reading": "もどる",
-        "mean": "ပြန်လာသည်"
-      },
-      {
-        "word": "戻す",
-        "reading": "もどす",
-        "mean": "ပြန်ထားသည်"
-      }
-    ]
-  },
-  {
-    "kanji": "完",
-    "hiragana": "かん",
-    "romaji": "kan",
-    "meaning": "ပြီးပြည့်စုံသော",
-    "tag": "第3週6日目",
-    "examples": [
-      {
-        "word": "完了",
-        "reading": "かんりょう",
-        "mean": "ပြီးစီးခြင်း"
-      },
-      {
-        "word": "完全",
-        "reading": "かんぜん",
-        "mean": "ပြီးပြည့်စုံသော"
-      }
-    ]
-  },
-  {
-    "kanji": "了",
-    "hiragana": "りょう",
-    "romaji": "ryou",
-    "meaning": "ပြီးဆုံးခြင်း / နားလည်ခြင်း",
-    "tag": "第3週6日目",
-    "examples": [
-      {
-        "word": "了解",
-        "reading": "りょうかい",
-        "mean": "သဘောပေါက်နားလည်ခြင်း"
-      },
-      {
-        "word": "終了",
-        "reading": "しゅうりょう",
-        "mean": "ပြီးဆုံးခြင်း"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "登",
@@ -9724,7 +11153,8 @@ const N3_KANJI = [
         "reading": "とざん",
         "mean": "တောင်တက်ခြင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "録",
@@ -9743,7 +11173,8 @@ const N3_KANJI = [
         "reading": "ろくおん",
         "mean": "အသံသွင်းခြင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "育",
@@ -9757,50 +11188,8 @@ const N3_KANJI = [
         "reading": "きょういく",
         "mean": "ပညာရေး"
       }
-    ]
-  },
-  {
-    "kanji": "種",
-    "hiragana": "しゅ / たね",
-    "romaji": "shu / tane",
-    "meaning": "အမျိုးအစား / မျိုးစေ့",
-    "tag": "第3週7日目",
-    "examples": [
-      {
-        "word": "種類",
-        "reading": "しゅるい",
-        "mean": "အမျိုးအစား"
-      },
-      {
-        "word": "種",
-        "reading": "たね",
-        "mean": "အစေ့/မျိုးစေ့"
-      }
-    ]
-  },
-  {
-    "kanji": "類",
-    "hiragana": "るい",
-    "romaji": "rui",
-    "meaning": "အုပ်စု / အမျိုးအစား",
-    "tag": "第3週7日目",
-    "examples": [
-      {
-        "word": "書類",
-        "reading": "しょるい",
-        "mean": "စာရွက်စာတမ်း"
-      },
-      {
-        "word": "分類",
-        "reading": "ぶんるい",
-        "mean": "အမျိုးအစားခွဲခြားခြင်း"
-      },
-      {
-        "word": "人類",
-        "reading": "じんるい",
-        "mean": "လူသားမျိုးနွယ်"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "師",
@@ -9824,7 +11213,8 @@ const N3_KANJI = [
         "reading": "かんごし",
         "mean": "သူနာပြု"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "妻",
@@ -9843,7 +11233,8 @@ const N3_KANJI = [
         "reading": "つま",
         "mean": "ဇနီး"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "馬",
@@ -9862,7 +11253,8 @@ const N3_KANJI = [
         "reading": "じょうば",
         "mean": "မြင်းစီးခြင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "石",
@@ -9886,7 +11278,8 @@ const N3_KANJI = [
         "reading": "せきゆ",
         "mean": "ရေနံ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "砂",
@@ -9905,7 +11298,8 @@ const N3_KANJI = [
         "reading": "すな",
         "mean": "သဲပြင်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "塩",
@@ -9924,7 +11318,8 @@ const N3_KANJI = [
         "reading": "しょくえん",
         "mean": "စားပွဲတင်ဆား"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "油",
@@ -9948,7 +11343,8 @@ const N3_KANJI = [
         "reading": "せきゆ",
         "mean": "ရေနံ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "緑",
@@ -9967,7 +11363,8 @@ const N3_KANJI = [
         "reading": "りょくちゃ",
         "mean": "လက်ဖက်ရည်စိမ်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "紅",
@@ -9986,7 +11383,8 @@ const N3_KANJI = [
         "reading": "くちべに",
         "mean": "နှုတ်ခမ်းနီ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "冊",
@@ -10005,7 +11403,8 @@ const N3_KANJI = [
         "reading": "さっすう",
         "mean": "စာအုပ်အရေအတွက်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "個",
@@ -10024,7 +11423,8 @@ const N3_KANJI = [
         "reading": "こじん",
         "mean": "တစ်ဦးချင်းစီ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "枚",
@@ -10043,7 +11443,8 @@ const N3_KANJI = [
         "reading": "まいすう",
         "mean": "ရွက်ရေ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "告",
@@ -10062,7 +11463,8 @@ const N3_KANJI = [
         "reading": "ほうこく",
         "mean": "အစီရင်ခံစာ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "利",
@@ -10081,45 +11483,8 @@ const N3_KANJI = [
         "reading": "りよう",
         "mean": "အသုံးချခြင်း"
       }
-    ]
-  },
-  {
-    "kanji": "割",
-    "hiragana": "わ(る) / わ(れる) / わり / かつ",
-    "romaji": "wa(ru) / wari",
-    "meaning": "ခွဲစိတ်သည် / လျှော့စျေး / အချိုးအစား",
-    "tag": "第4週2日目",
-    "examples": [
-      {
-        "word": "割る",
-        "reading": "わる",
-        "mean": "ခွဲသည်"
-      },
-      {
-        "word": "割引",
-        "reading": "わりびき",
-        "mean": "လျှော့စျေး"
-      },
-      {
-        "word": "一割",
-        "reading": "いちわり",
-        "mean": "၁၀ ရာခိုင်နှုန်း"
-      }
-    ]
-  },
-  {
-    "kanji": "倍",
-    "hiragana": "ばい",
-    "romaji": "bai",
-    "meaning": "ဆ (Times)",
-    "tag": "第4週2日目",
-    "examples": [
-      {
-        "word": "二倍",
-        "reading": "にばい",
-        "mean": "နှစ်ဆ"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "値",
@@ -10138,7 +11503,8 @@ const N3_KANJI = [
         "reading": "ねさげ",
         "mean": "စျေးလျှော့ခြင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "商",
@@ -10157,45 +11523,8 @@ const N3_KANJI = [
         "reading": "しょうてん",
         "mean": "စျေးဆိုင်"
       }
-    ]
-  },
-  {
-    "kanji": "支",
-    "hiragana": "ささ(える) / し",
-    "romaji": "sasa(eru) / shi",
-    "meaning": "ထောက်ပံ့သည် / ငွေချေသည်",
-    "tag": "第4週2日目",
-    "examples": [
-      {
-        "word": "支払う",
-        "reading": "しはらう",
-        "mean": "ငွေချေသည်"
-      },
-      {
-        "word": "支店",
-        "reading": "してん",
-        "mean": "ဘဏ်/ဆိုင်ခွဲ"
-      }
-    ]
-  },
-  {
-    "kanji": "払",
-    "hiragana": "はら(う)",
-    "romaji": "hara(u)",
-    "meaning": "ငွေချေသည်",
-    "tag": "第4週2日目",
-    "examples": [
-      {
-        "word": "払う",
-        "reading": "はらう",
-        "mean": "ရှင်းသည်"
-      },
-      {
-        "word": "払い戻し",
-        "reading": "はらいもどし",
-        "mean": "ငွေပြန်အမ်းခြင်း"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "米",
@@ -10214,7 +11543,8 @@ const N3_KANJI = [
         "reading": "こめ",
         "mean": "ဆန်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "級",
@@ -10238,7 +11568,8 @@ const N3_KANJI = [
         "reading": "じょうきゅう",
         "mean": "အထက်တန်းအဆင့်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "残",
@@ -10267,7 +11598,8 @@ const N3_KANJI = [
         "reading": "のこす",
         "mean": "ချန်ထားသည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "型",
@@ -10291,7 +11623,8 @@ const N3_KANJI = [
         "reading": "しんがた",
         "mean": "မော်ဒယ်သစ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "税",
@@ -10315,7 +11648,8 @@ const N3_KANJI = [
         "reading": "ひかぜい",
         "mean": "အခွန်လွတ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "込",
@@ -10334,7 +11668,8 @@ const N3_KANJI = [
         "reading": "ひとごみ",
         "mean": "လူအုပ်ကြီး"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "価",
@@ -10353,7 +11688,8 @@ const N3_KANJI = [
         "reading": "ていか",
         "mean": "သတ်မှတ်ဈေး"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "格",
@@ -10372,7 +11708,8 @@ const N3_KANJI = [
         "reading": "かくやす",
         "mean": "ဈေးအထူးချိုသာသော"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "申",
@@ -10396,7 +11733,8 @@ const N3_KANJI = [
         "reading": "しんせい",
         "mean": "တရားဝင်လျှောက်ထားမှု"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "記",
@@ -10425,7 +11763,8 @@ const N3_KANJI = [
         "reading": "きごう",
         "mean": "သင်္ကေတ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "例",
@@ -10444,7 +11783,8 @@ const N3_KANJI = [
         "reading": "たとえば",
         "mean": "ဥပမာအားဖြင့်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "齢",
@@ -10463,7 +11803,8 @@ const N3_KANJI = [
         "reading": "こうれい",
         "mean": "သက်ကြီးရွယ်အို"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "歳",
@@ -10482,36 +11823,8 @@ const N3_KANJI = [
         "reading": "はたち",
         "mean": "အသက် ၂၀"
       }
-    ]
-  },
-  {
-    "kanji": "性",
-    "hiragana": "せい / しょう",
-    "romaji": "sei / shou",
-    "meaning": "လိင် / သဘာဝစရိုက်",
-    "tag": "第4週4日目",
-    "examples": [
-      {
-        "word": "性別",
-        "reading": "せいべつ",
-        "mean": "ကျား/မ လိင်ခွဲခြားခြင်း"
-      },
-      {
-        "word": "性格",
-        "reading": "せいかく",
-        "mean": "စိတ်နေစိတ်ထား"
-      },
-      {
-        "word": "女性",
-        "reading": "じょせい",
-        "mean": "အမျိုးသမီး"
-      },
-      {
-        "word": "男性",
-        "reading": "だんせい",
-        "mean": "အမျိုးသား"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "連",
@@ -10535,7 +11848,8 @@ const N3_KANJI = [
         "reading": "つれてくる",
         "mean": "ခေါ်ဆောင်လာသည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "絡",
@@ -10549,26 +11863,8 @@ const N3_KANJI = [
         "reading": "れんらく",
         "mean": "အဆက်အသွယ်ပြုလုပ်ခြင်း"
       }
-    ]
-  },
-  {
-    "kanji": "届",
-    "hiragana": "とど(ける) / とど(く)",
-    "romaji": "todo(keru) / todo(ku)",
-    "meaning": "ပို့ဆောင်သည် / ရောက်ရှိသည်",
-    "tag": "第4週5日目",
-    "examples": [
-      {
-        "word": "届ける",
-        "reading": "とどける",
-        "mean": "ပို့ပေးသည်"
-      },
-      {
-        "word": "届く",
-        "reading": "とどく",
-        "mean": "ရောက်ရှိသည်"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "宅",
@@ -10592,36 +11888,8 @@ const N3_KANJI = [
         "reading": "おたく",
         "mean": "သင့်အိမ်"
       }
-    ]
-  },
-  {
-    "kanji": "配",
-    "hiragana": "はい / くば(る)",
-    "romaji": "hai / kuba(ru)",
-    "meaning": "ဝေငှသည် / ဖြန့်ဝေသည်",
-    "tag": "第4週5日目",
-    "examples": [
-      {
-        "word": "配達",
-        "reading": "はいたつ",
-        "mean": "ပို့ဆောင်ခြင်း"
-      },
-      {
-        "word": "配送料",
-        "reading": "はいそうりょう",
-        "mean": "ပို့ဆောင်ခ"
-      },
-      {
-        "word": "心配",
-        "reading": "しんぱい",
-        "mean": "စိတ်ပူပန်ခြင်း"
-      },
-      {
-        "word": "配る",
-        "reading": "くばる",
-        "mean": "ဝေငှသည်"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "希",
@@ -10635,7 +11903,8 @@ const N3_KANJI = [
         "reading": "きぼう",
         "mean": "မျှော်လင့်တောင့်တချက်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "望",
@@ -10654,7 +11923,8 @@ const N3_KANJI = [
         "reading": "のぞむ",
         "mean": "မျှော်လင့်သည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "荷",
@@ -10683,31 +11953,8 @@ const N3_KANJI = [
         "reading": "てにもつ",
         "mean": "လက်ဆွဲအိတ်"
       }
-    ]
-  },
-  {
-    "kanji": "換",
-    "hiragana": "かん / か(える)",
-    "romaji": "kan / ka(eru)",
-    "meaning": "လဲလှယ်သည် / ပြောင်းလဲသည်",
-    "tag": "第4週5日目",
-    "examples": [
-      {
-        "word": "交換",
-        "reading": "こうかん",
-        "mean": "အပြန်အလှန်လဲလှယ်ခြင်း"
-      },
-      {
-        "word": "乗り換える",
-        "reading": "のりかえる",
-        "mean": "ရထား/ဘတ်စ်ကား ပြောင်းစီးသည်"
-      },
-      {
-        "word": "代金引換",
-        "reading": "だいきんひきかえ",
-        "mean": "ပစ္စည်းရောက်မှ ငွေချေစနစ်"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "額",
@@ -10726,7 +11973,8 @@ const N3_KANJI = [
         "reading": "はんがく",
         "mean": "တစ်ဝက်စျေး"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "在",
@@ -10745,7 +11993,8 @@ const N3_KANJI = [
         "reading": "げんざい",
         "mean": "မျက်မှောက်ကာလ/လက်ရှိ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "取",
@@ -10769,26 +12018,8 @@ const N3_KANJI = [
         "reading": "うけとりにん",
         "mean": "လက်ခံသူ"
       }
-    ]
-  },
-  {
-    "kanji": "預",
-    "hiragana": "あず(ける) / あず(かる) / よ",
-    "romaji": "azu(keru) / yo",
-    "meaning": "အပ်နှံသည် / ထိန်းသိမ်းပေးသည်",
-    "tag": "第4週6日目",
-    "examples": [
-      {
-        "word": "預ける",
-        "reading": "あずける",
-        "mean": "အပ်သည်"
-      },
-      {
-        "word": "預金",
-        "reading": "よきん",
-        "mean": "ဘဏ်အပ်ငွေ"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "衣",
@@ -10807,7 +12038,8 @@ const N3_KANJI = [
         "reading": "いふく",
         "mean": "အဝတ်အစား"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "参",
@@ -10831,7 +12063,8 @@ const N3_KANJI = [
         "reading": "まいる",
         "mean": "သွားသည်/လာသည် (နှိမ့်ချစကား)"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "達",
@@ -10855,50 +12088,8 @@ const N3_KANJI = [
         "reading": "ともだち",
         "mean": "သူငယ်ချင်း"
       }
-    ]
-  },
-  {
-    "kanji": "勤",
-    "hiragana": "きん / つと(める)",
-    "romaji": "kin / tsuto(meru)",
-    "meaning": "အလုပ်လုပ်သည် / တာဝန်ထမ်းဆောင်သည်",
-    "tag": "第4週6日目",
-    "examples": [
-      {
-        "word": "通勤",
-        "reading": "つうきん",
-        "mean": "အလုပ်အသွားအပြန်"
-      },
-      {
-        "word": "勤める",
-        "reading": "つとめる",
-        "mean": "အလုပ်ထမ်းဆောင်သည်"
-      }
-    ]
-  },
-  {
-    "kanji": "帯",
-    "hiragana": "たい / おび",
-    "romaji": "tai / obi",
-    "meaning": "ခါးပတ် / အပိုင်းအခြား",
-    "tag": "第4週6日目",
-    "examples": [
-      {
-        "word": "携帯電話",
-        "reading": "けいたいでんわ",
-        "mean": "လက်ကိုင်ဖုန်း"
-      },
-      {
-        "word": "時間帯",
-        "reading": "じかんたい",
-        "mean": "သတ်မှတ်အချိန်ကာလ"
-      },
-      {
-        "word": "帯",
-        "reading": "おび",
-        "mean": "ဂျပန်ဝတ်စုံခါးပတ်"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "細",
@@ -10917,7 +12108,8 @@ const N3_KANJI = [
         "reading": "こまかい",
         "mean": "အသေးစိတ်ကျသော/အကြွေ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "戸",
@@ -10941,7 +12133,8 @@ const N3_KANJI = [
         "reading": "とだな",
         "mean": "ဗီရို/စင်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "湖",
@@ -10960,7 +12153,8 @@ const N3_KANJI = [
         "reading": "みずうみ",
         "mean": "ရေကန်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "船",
@@ -10989,7 +12183,8 @@ const N3_KANJI = [
         "reading": "ふなびん",
         "mean": "သင်္ဘောချောတိုက်ပို့စနစ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "角",
@@ -11018,7 +12213,8 @@ const N3_KANJI = [
         "reading": "かど",
         "mean": "လမ်းထောင့်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "夫",
@@ -11042,7 +12238,8 @@ const N3_KANJI = [
         "reading": "おっと",
         "mean": "ခင်ပွန်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "苦",
@@ -11066,7 +12263,8 @@ const N3_KANJI = [
         "reading": "にがて",
         "mean": "အားနည်းသော"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "礼",
@@ -11085,7 +12283,8 @@ const N3_KANJI = [
         "reading": "れいぎ",
         "mean": "ယဉ်ကျေးမှုအမူအရာ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "伺",
@@ -11099,50 +12298,8 @@ const N3_KANJI = [
         "reading": "うかがう",
         "mean": "မေးမြန်းပါရစေ / လာပါမည်"
       }
-    ]
-  },
-  {
-    "kanji": "遅",
-    "hiragana": "おそ(い) / おく(れる) / ち",
-    "romaji": "oso(i) / chi",
-    "meaning": "နှေးကွေးသော / နောက်ကျသော",
-    "tag": "第5週1日目",
-    "examples": [
-      {
-        "word": "遅い",
-        "reading": "おそい",
-        "mean": "နှေးသော"
-      },
-      {
-        "word": "遅れる",
-        "reading": "おくれる",
-        "mean": "နောက်ကျသည်"
-      },
-      {
-        "word": "遅刻",
-        "reading": "ちこく",
-        "mean": "အချိန်နောက်ကျခြင်း"
-      }
-    ]
-  },
-  {
-    "kanji": "失",
-    "hiragana": "うしな(う) / しつ",
-    "romaji": "shitsu",
-    "meaning": "ဆုံးရှုံးသည် / အမှား",
-    "tag": "第5週1日目",
-    "examples": [
-      {
-        "word": "失礼",
-        "reading": "しつれい",
-        "mean": "ရိုင်းပျမှု/ခွင့်ပြုပါ"
-      },
-      {
-        "word": "失敗",
-        "reading": "しっぱい",
-        "mean": "ကျရှုံးမှု"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "汗",
@@ -11161,7 +12318,8 @@ const N3_KANJI = [
         "reading": "あせをかく",
         "mean": "ချွေးထွက်သည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "念",
@@ -11180,7 +12338,8 @@ const N3_KANJI = [
         "reading": "きねん",
         "mean": "အထိမ်းအမှတ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "涙",
@@ -11194,7 +12353,8 @@ const N3_KANJI = [
         "reading": "なみだ",
         "mean": "မျက်ရည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "笑",
@@ -11213,93 +12373,8 @@ const N3_KANJI = [
         "reading": "えがお",
         "mean": "အပြုံးမျက်နှာ"
       }
-    ]
-  },
-  {
-    "kanji": "調",
-    "hiragana": "しら(べる) / ととの(う) / ちょう",
-    "romaji": "shira(beru) / chou",
-    "meaning": "စုံစမ်းစစ်ဆေးသည် / ညှိနှိုင်းသည်",
-    "tag": "第5週2日目",
-    "examples": [
-      {
-        "word": "調べる",
-        "reading": "しらべる",
-        "mean": "ရှာဖွေစစ်ဆေးသည်"
-      },
-      {
-        "word": "調子",
-        "reading": "ちょうし",
-        "mean": "အခြေအနေ/စည်းချက်"
-      }
-    ]
-  },
-  {
-    "kanji": "査",
-    "hiragana": "さ",
-    "romaji": "sa",
-    "meaning": "စစ်ဆေးသည်",
-    "tag": "第5週2日目",
-    "examples": [
-      {
-        "word": "調査",
-        "reading": "ちょうさ",
-        "mean": "စုံစမ်းစစ်ဆေးမှု"
-      },
-      {
-        "word": "検査",
-        "reading": "けんさ",
-        "mean": "စစ်ဆေးမှု"
-      }
-    ]
-  },
-  {
-    "kanji": "移",
-    "hiragana": "い / うつ(る) / うつ(す)",
-    "romaji": "i / utsu(ru)",
-    "meaning": "ပြောင်းရွှေ့သည် / ကူးစက်သည်",
-    "tag": "第5週2日目",
-    "examples": [
-      {
-        "word": "移動",
-        "reading": "いどう",
-        "mean": "ရွှေ့ပြောင်းသွားလာခြင်း"
-      },
-      {
-        "word": "移る",
-        "reading": "うつる",
-        "mean": "ကူးပြောင်းသည်"
-      },
-      {
-        "word": "移す",
-        "reading": "うつす",
-        "mean": "ရွှေ့ပြောင်းသည်"
-      }
-    ]
-  },
-  {
-    "kanji": "難",
-    "hiragana": "なん / むずか(しい)",
-    "romaji": "nan / muzuka(shii)",
-    "meaning": "ခက်ခဲသော / ဘေးဒုက္ခ",
-    "tag": "第5週2日目",
-    "examples": [
-      {
-        "word": "困難",
-        "reading": "こんなん",
-        "mean": "ခက်ခဲမှု"
-      },
-      {
-        "word": "難問",
-        "reading": "なんもん",
-        "mean": "ခက်ခဲသောပုစ္ဆာ"
-      },
-      {
-        "word": "難しい",
-        "reading": "むずかしい",
-        "mean": "ခက်ခဲသော"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "簡",
@@ -11313,7 +12388,8 @@ const N3_KANJI = [
         "reading": "かんたん",
         "mean": "လွယ်ကူရိုးရှင်းသော"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "単",
@@ -11332,7 +12408,8 @@ const N3_KANJI = [
         "reading": "たんい",
         "mean": "ယူနစ်/အတိုင်းအတာ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "感",
@@ -11351,7 +12428,8 @@ const N3_KANJI = [
         "reading": "かんどう",
         "mean": "စိတ်လှုပ်ရှားထိခိုက်မှု"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "想",
@@ -11370,7 +12448,8 @@ const N3_KANJI = [
         "reading": "よそう",
         "mean": "ကြိုတင်ခန့်မှန်းချက်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "練",
@@ -11384,7 +12463,8 @@ const N3_KANJI = [
         "reading": "れんしゅう",
         "mean": "လေ့ကျင့်ခန်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "最",
@@ -11413,127 +12493,8 @@ const N3_KANJI = [
         "reading": "もっとも",
         "mean": "အလွန်ဆုံး"
       }
-    ]
-  },
-  {
-    "kanji": "適",
-    "hiragana": "てき",
-    "romaji": "teki",
-    "meaning": "သင့်တော်သော",
-    "tag": "第5週3日目",
-    "examples": [
-      {
-        "word": "適当",
-        "reading": "てきとう",
-        "mean": "သင့်လျော်သော"
-      },
-      {
-        "word": "快適",
-        "reading": "かいてき",
-        "mean": "သက်တောင့်သက်သာရှိသော"
-      }
-    ]
-  },
-  {
-    "kanji": "選",
-    "hiragana": "えら(ぶ) / せん",
-    "romaji": "era(bu) / sen",
-    "meaning": "ရွေးချယ်သည်",
-    "tag": "第5週3日目",
-    "examples": [
-      {
-        "word": "選ぶ",
-        "reading": "えらぶ",
-        "mean": "ရွေးသည်"
-      },
-      {
-        "word": "選手",
-        "reading": "せんしゅ",
-        "mean": "အားကစားသမား"
-      },
-      {
-        "word": "選挙",
-        "reading": "せんきょ",
-        "mean": "ရွေးကောက်ပွဲ"
-      }
-    ]
-  },
-  {
-    "kanji": "違",
-    "hiragana": "ちが(う) / ちが(える) / い",
-    "romaji": "chiga(u) / chiga(eru)",
-    "meaning": "ကွဲပြားသည် / မှားယွင်းသည်",
-    "tag": "第5週3日目",
-    "examples": [
-      {
-        "word": "違う",
-        "reading": "ちがう",
-        "mean": "မတူညီ/မှားယွင်းသည်"
-      },
-      {
-        "word": "間違い",
-        "reading": "まちがい",
-        "mean": "အမှား"
-      },
-      {
-        "word": "間違える",
-        "reading": "まちがえる",
-        "mean": "မှားလုပ်မိသည်"
-      }
-    ]
-  },
-  {
-    "kanji": "直",
-    "hiragana": "ちょく / じき / なお(る) / なお(す)",
-    "romaji": "choku / jiki / nao(ru)",
-    "meaning": "တည့်မတ်သော / ပြင်ဆင်သည်",
-    "tag": "第5週3日目",
-    "examples": [
-      {
-        "word": "直線",
-        "reading": "ちょくせん",
-        "mean": "မျဉ်းဖြောင့်"
-      },
-      {
-        "word": "直接",
-        "reading": "ちょくせつ",
-        "mean": "တိုက်ရိုက်"
-      },
-      {
-        "word": "直る",
-        "reading": "なおる",
-        "mean": "ကောင်းမွန်သွားသည်"
-      },
-      {
-        "word": "直す",
-        "reading": "なおす",
-        "mean": "ပြင်ဆင်သည်"
-      }
-    ]
-  },
-  {
-    "kanji": "復",
-    "hiragana": "ふく",
-    "romaji": "fuku",
-    "meaning": "ပြန်လည် / ထပ်မံ",
-    "tag": "第5週3日目",
-    "examples": [
-      {
-        "word": "復習",
-        "reading": "ふくしゅう",
-        "mean": "စာပြန်နွှေးခြင်း"
-      },
-      {
-        "word": "往復",
-        "reading": "おうふく",
-        "mean": "အသွားအပြန်"
-      },
-      {
-        "word": "回復",
-        "reading": "かいふく",
-        "mean": "ပြန်လည်သက်သာလာခြင်း"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "辞",
@@ -11552,31 +12513,8 @@ const N3_KANJI = [
         "reading": "やめる",
         "mean": "အလုပ်ထွက်သည်"
       }
-    ]
-  },
-  {
-    "kanji": "宿",
-    "hiragana": "しゅく / やど",
-    "romaji": "shuku / yado",
-    "meaning": "တည်းခိုသည် / တည်းခိုခန်း",
-    "tag": "第5週3日目",
-    "examples": [
-      {
-        "word": "宿題",
-        "reading": "しゅくだい",
-        "mean": "အိမ်စာ"
-      },
-      {
-        "word": "下宿",
-        "reading": "げしゅく",
-        "mean": "အဆောင်ငှားနေထိုင်ခြင်း"
-      },
-      {
-        "word": "宿",
-        "reading": "やど",
-        "mean": "တည်းခိုခန်း"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "昨",
@@ -11600,7 +12538,8 @@ const N3_KANJI = [
         "reading": "さくねん",
         "mean": "မနှစ်က"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "君",
@@ -11619,7 +12558,8 @@ const N3_KANJI = [
         "reading": "くん",
         "mean": "...မောင်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "結",
@@ -11643,7 +12583,8 @@ const N3_KANJI = [
         "reading": "けつろん",
         "mean": "နိဂုံးချုပ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "婚",
@@ -11667,7 +12608,8 @@ const N3_KANJI = [
         "reading": "こんやく",
         "mean": "စေ့စပ်ခြင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "祝",
@@ -11691,7 +12633,8 @@ const N3_KANJI = [
         "reading": "おいわい",
         "mean": "ဂုဏ်ပြုပွဲ/လက်ဆောင်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "曲",
@@ -11720,7 +12663,8 @@ const N3_KANJI = [
         "reading": "まげる",
         "mean": "ကွေးညွှတ်သည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "奥",
@@ -11739,7 +12683,8 @@ const N3_KANJI = [
         "reading": "おく",
         "mean": "အတွင်းဘက်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "寝",
@@ -11763,7 +12708,8 @@ const N3_KANJI = [
         "reading": "ひるね",
         "mean": "နေ့လယ်တစ်ရေးအိပ်ခြင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "痛",
@@ -11787,7 +12733,8 @@ const N3_KANJI = [
         "reading": "いたい",
         "mean": "နာကျင်သော"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "熱",
@@ -11811,7 +12758,8 @@ const N3_KANJI = [
         "reading": "あつい",
         "mean": "ပူသော"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "虫",
@@ -11830,7 +12778,8 @@ const N3_KANJI = [
         "reading": "むしば",
         "mean": "သွားပိုးစားခြင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "歯",
@@ -11859,26 +12808,8 @@ const N3_KANJI = [
         "reading": "むしば",
         "mean": "သွားပိုးစားခြင်း"
       }
-    ]
-  },
-  {
-    "kanji": "治",
-    "hiragana": "じ / ち",
-    "romaji": "ji / chi",
-    "meaning": "အုပ်ချုပ်သည် / ပျောက်ကင်းသည်",
-    "tag": "第5週5日目",
-    "examples": [
-      {
-        "word": "政治",
-        "reading": "せいじ",
-        "mean": "နိုင်ငံရေး"
-      },
-      {
-        "word": "治療",
-        "reading": "ちりょう",
-        "mean": "ကုသမှု"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "汚",
@@ -11897,7 +12828,8 @@ const N3_KANJI = [
         "reading": "おせん",
         "mean": "ညစ်ညမ်းမှု"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "並",
@@ -11921,7 +12853,8 @@ const N3_KANJI = [
         "reading": "はならび",
         "mean": "သွားအစီအစဉ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "他",
@@ -11940,7 +12873,8 @@ const N3_KANJI = [
         "reading": "このほか",
         "mean": "ဤအရာမှအပ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "身",
@@ -11969,7 +12903,8 @@ const N3_KANJI = [
         "reading": "さしみ",
         "mean": "ငါးအစိမ်းလွှာ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "酒",
@@ -11998,7 +12933,8 @@ const N3_KANJI = [
         "reading": "さかや",
         "mean": "အရက်ဆိုင်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "吸",
@@ -12017,7 +12953,8 @@ const N3_KANJI = [
         "reading": "すう",
         "mean": "ရှူသည်/စုပ်သည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "欲",
@@ -12041,7 +12978,8 @@ const N3_KANJI = [
         "reading": "ほしい",
         "mean": "လိုချင်သော"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "眠",
@@ -12065,7 +13003,8 @@ const N3_KANJI = [
         "reading": "ねむる",
         "mean": "အိပ်ပျော်သည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "疲",
@@ -12084,7 +13023,8 @@ const N3_KANJI = [
         "reading": "ひろう",
         "mean": "ပင်ပန်းနွမ်းနယ်မှု"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "息",
@@ -12108,7 +13048,8 @@ const N3_KANJI = [
         "reading": "むすこ",
         "mean": "သား"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "呼",
@@ -12127,7 +13068,8 @@ const N3_KANJI = [
         "reading": "よぶ",
         "mean": "ခေါ်သည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "厚",
@@ -12146,7 +13088,8 @@ const N3_KANJI = [
         "reading": "のうこう",
         "mean": "ပြင်းပျစ်သော"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "泣",
@@ -12160,7 +13103,8 @@ const N3_KANJI = [
         "reading": "なく",
         "mean": "ငိုသည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "鳴",
@@ -12179,7 +13123,8 @@ const N3_KANJI = [
         "reading": "なる",
         "mean": "မြည်သည် (ခေါင်းလောင်း/ဖုန်း)"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "初",
@@ -12208,7 +13153,8 @@ const N3_KANJI = [
         "reading": "はじめて",
         "mean": "ပထမဆုံးအကြိမ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "泊",
@@ -12232,7 +13178,8 @@ const N3_KANJI = [
         "reading": "とめる",
         "mean": "တည်းခိုစေသည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "葉",
@@ -12256,7 +13203,8 @@ const N3_KANJI = [
         "reading": "ことば",
         "mean": "စကားလုံး/ဘာသာစကား"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "報",
@@ -12275,7 +13223,8 @@ const N3_KANJI = [
         "reading": "ほうこく",
         "mean": "အစီရင်ခံစာ"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "晴",
@@ -12294,7 +13243,8 @@ const N3_KANJI = [
         "reading": "はれ",
         "mean": "သာယာသောနေ့"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "雲",
@@ -12308,7 +13258,8 @@ const N3_KANJI = [
         "reading": "くも",
         "mean": "တိမ်တိုက်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "吹",
@@ -12322,7 +13273,8 @@ const N3_KANJI = [
         "reading": "ふく",
         "mean": "လေတိုက်သည်/မှုတ်သည်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "暖",
@@ -12341,7 +13293,8 @@ const N3_KANJI = [
         "reading": "あたたかい",
         "mean": "နွေးထွေးသော"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "雪",
@@ -12360,7 +13313,8 @@ const N3_KANJI = [
         "reading": "おおゆき",
         "mean": "နှင်းမုန်တိုင်း/နှင်းထူထပ်စွာကျခြင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "震",
@@ -12379,7 +13333,8 @@ const N3_KANJI = [
         "reading": "しんど",
         "mean": "ငလျင်ပြင်းအား"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "波",
@@ -12403,50 +13358,8 @@ const N3_KANJI = [
         "reading": "つなみ",
         "mean": "ဆူနာမီလှိုင်း"
       }
-    ]
-  },
-  {
-    "kanji": "求",
-    "hiragana": "きゅう / もと(める)",
-    "romaji": "kyuu / moto(meru)",
-    "meaning": "တောင်းဆိုသည် / ရှာဖွေလိုလားသည်",
-    "tag": "第6週2日目",
-    "examples": [
-      {
-        "word": "要求",
-        "reading": "ようきゅう",
-        "mean": "တောင်းဆိုချက်"
-      },
-      {
-        "word": "求人",
-        "reading": "きゅうじん",
-        "mean": "အလုပ်ခေါ်ယူခြင်း"
-      },
-      {
-        "word": "請求書",
-        "reading": "せいきゅうしょ",
-        "mean": "ငွေတောင်းခံလွှာ"
-      },
-      {
-        "word": "求める",
-        "reading": "もとめる",
-        "mean": "တောင်းဆိုလိုလားသည်"
-      }
-    ]
-  },
-  {
-    "kanji": "募",
-    "hiragana": "ぼ / つの(る)",
-    "romaji": "bo / tsuno(ru)",
-    "meaning": "ခေါ်ယူစုဆောင်းသည်",
-    "tag": "第6週2日目",
-    "examples": [
-      {
-        "word": "募集",
-        "reading": "ぼしゅう",
-        "mean": "လျှောက်လွှာခေါ်ယူခြင်း"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "職",
@@ -12465,26 +13378,8 @@ const N3_KANJI = [
         "reading": "しゅうしょく",
         "mean": "အလုပ်ရရှိခြင်း"
       }
-    ]
-  },
-  {
-    "kanji": "容",
-    "hiragana": "よう",
-    "romaji": "you",
-    "meaning": "ပါဝင်မှု / ရုပ်သွင်",
-    "tag": "第6週2日目",
-    "examples": [
-      {
-        "word": "美容院",
-        "reading": "びよういん",
-        "mean": "အလှပြင်ဆိုင်"
-      },
-      {
-        "word": "内容",
-        "reading": "ないよう",
-        "mean": "အကြောင်းအရာ/ပါဝင်မှု"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "技",
@@ -12503,7 +13398,8 @@ const N3_KANJI = [
         "reading": "ぎじゅつしゃ",
         "mean": "အင်ဂျင်နီယာ/ကျွမ်းကျင်ပညာရှင်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "般",
@@ -12522,7 +13418,8 @@ const N3_KANJI = [
         "reading": "いっぱんに",
         "mean": "ယေဘုယျအားဖြင့်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "務",
@@ -12541,7 +13438,8 @@ const N3_KANJI = [
         "reading": "こうむいん",
         "mean": "နိုင်ငံ့ဝန်ထမ်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "課",
@@ -12560,7 +13458,8 @@ const N3_KANJI = [
         "reading": "かだい",
         "mean": "တာဝန်/ဆောင်ရွက်ရန်အချက်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "球",
@@ -12584,7 +13483,8 @@ const N3_KANJI = [
         "reading": "でんきゅう",
         "mean": "မီးသီး"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "決",
@@ -12613,31 +13513,8 @@ const N3_KANJI = [
         "reading": "きまる",
         "mean": "ဆုံးဖြတ်ပြီးဖြစ်သည်"
       }
-    ]
-  },
-  {
-    "kanji": "勝",
-    "hiragana": "しょう / か(つ) / まさ(る)",
-    "romaji": "shou / ka(tsu)",
-    "meaning": "အနိုင်ရသည်",
-    "tag": "第6週3日目",
-    "examples": [
-      {
-        "word": "優勝",
-        "reading": "ゆうしょう",
-        "mean": "ဗိုလ်စွဲခြင်း/ပထမရရှိခြင်း"
-      },
-      {
-        "word": "決勝",
-        "reading": "けっしょう",
-        "mean": "ဗိုလ်လုပွဲ"
-      },
-      {
-        "word": "勝つ",
-        "reading": "かつ",
-        "mean": "အနိုင်ရသည်"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "対",
@@ -12656,7 +13533,8 @@ const N3_KANJI = [
         "reading": "はんたい",
         "mean": "ဆန့်ကျင်ဘက်/သဘောမတူခြင်း"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "流",
@@ -12675,45 +13553,8 @@ const N3_KANJI = [
         "reading": "ながす",
         "mean": "မျှောသည်/စီးဆင်းစေသည်"
       }
-    ]
-  },
-  {
-    "kanji": "負",
-    "hiragana": "ふ / ま(ける) / お(う)",
-    "romaji": "fu / ma(keru)",
-    "meaning": "ရှုံးနိမ့်သည် / သယ်ဆောင်သည်",
-    "tag": "第6週3日目",
-    "examples": [
-      {
-        "word": "勝負",
-        "reading": "しょうぶ",
-        "mean": "အရှုံးအနိုင်အပြိုင်"
-      },
-      {
-        "word": "負ける",
-        "reading": "まける",
-        "mean": "ရှုံးသည်"
-      }
-    ]
-  },
-  {
-    "kanji": "投",
-    "hiragana": "とう / な(げる)",
-    "romaji": "tou / na(geru)",
-    "meaning": "ပစ်ပေါက်သည် / ပစ်ချသည်",
-    "tag": "第6週3日目",
-    "examples": [
-      {
-        "word": "投手",
-        "reading": "とうしゅ",
-        "mean": "ဘေ့စ်ဘောပစ်သူ(pitcher)"
-      },
-      {
-        "word": "投げる",
-        "reading": "なげる",
-        "mean": "ပစ်ပေါက်သည်"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "果",
@@ -12737,7 +13578,8 @@ const N3_KANJI = [
         "reading": "こうか",
         "mean": "အကျိုးသက်ရောက်မှု"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "戦",
@@ -12761,35 +13603,8 @@ const N3_KANJI = [
         "reading": "たたかう",
         "mean": "တိုက်ခိုက်ယှဉ်ပြိုင်သည်"
       }
-    ]
-  },
-  {
-    "kanji": "経",
-    "hiragana": "けい",
-    "romaji": "kei",
-    "meaning": "ဖြတ်သန်းသည် / စီးပွားရေး",
-    "tag": "第6週4日目",
-    "examples": [
-      {
-        "word": "経済",
-        "reading": "けいざい",
-        "mean": "စီးပွားရေး"
-      }
-    ]
-  },
-  {
-    "kanji": "済",
-    "hiragana": "ざい / さい",
-    "romaji": "zai / sai",
-    "meaning": "ပြီးစီးသည်",
-    "tag": "第6週4日目",
-    "examples": [
-      {
-        "word": "経済",
-        "reading": "けいざい",
-        "mean": "စီးပွားရေး"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "成",
@@ -12808,40 +13623,8 @@ const N3_KANJI = [
         "reading": "かんせい",
         "mean": "ပြီးပြည့်စုံခြင်း"
       }
-    ]
-  },
-  {
-    "kanji": "貿",
-    "hiragana": "ぼう",
-    "romaji": "bou",
-    "meaning": "ကုန်သွယ်မှု",
-    "tag": "第6週4日目",
-    "examples": [
-      {
-        "word": "貿易",
-        "reading": "ぼうえき",
-        "mean": "နိုင်ငံတကာကုန်သွယ်မှု"
-      }
-    ]
-  },
-  {
-    "kanji": "易",
-    "hiragana": "やさ(しい) / えき / い",
-    "romaji": "yasa(shii) / eki / i",
-    "meaning": "လွယ်ကူသော / ကုန်သွယ်သည်",
-    "tag": "第6週4日目",
-    "examples": [
-      {
-        "word": "貿易",
-        "reading": "ぼうえき",
-        "mean": "ကုန်သွယ်ရေး"
-      },
-      {
-        "word": "容易な",
-        "reading": "よういな",
-        "mean": "လွယ်ကူသော"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "輸",
@@ -12860,7 +13643,8 @@ const N3_KANJI = [
         "reading": "ゆしゅつ",
         "mean": "ပို့ကုန်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "相",
@@ -12884,7 +13668,8 @@ const N3_KANJI = [
         "reading": "しゅしょう",
         "mean": "ဝန်ကြီးချုပ်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "化",
@@ -12898,7 +13683,8 @@ const N3_KANJI = [
         "reading": "ぶんか",
         "mean": "ယဉ်ကျေးမှု"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "比",
@@ -12917,7 +13703,8 @@ const N3_KANJI = [
         "reading": "ひかく",
         "mean": "နှိုင်းယှဉ်ချက်"
       }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "原",
@@ -12936,183 +13723,8 @@ const N3_KANJI = [
         "reading": "げんいん",
         "mean": "အကြောင်းရင်း"
       }
-    ]
-  },
-  {
-    "kanji": "因",
-    "hiragana": "いん / よ(る)",
-    "romaji": "in / yo(ru)",
-    "meaning": "အကြောင်းတရား",
-    "tag": "第6週5日目",
-    "examples": [
-      {
-        "word": "原因",
-        "reading": "げんいん",
-        "mean": "အကြောင်းရင်း"
-      }
-    ]
-  },
-  {
-    "kanji": "際",
-    "hiragana": "さい / きわ",
-    "romaji": "sai / kiwa",
-    "meaning": "အခါသမယ / နယ်နိမိတ်",
-    "tag": "第6週5日目",
-    "examples": [
-      {
-        "word": "国際",
-        "reading": "こくさい",
-        "mean": "နိုင်ငံတကာ"
-      },
-      {
-        "word": "交際",
-        "reading": "こうさい",
-        "mean": "တွဲခေါ်ပေါင်းသင်းခြင်း"
-      }
-    ]
-  },
-  {
-    "kanji": "議",
-    "hiragana": "ぎ",
-    "romaji": "gi",
-    "meaning": "ဆွေးနွေးတိုင်ပင်သည်",
-    "tag": "第6週5日目",
-    "examples": [
-      {
-        "word": "会議",
-        "reading": "かいぎ",
-        "mean": "အစည်းအဝေး"
-      },
-      {
-        "word": "議員",
-        "reading": "ぎいん",
-        "mean": "လွှတ်တော်အမတ်"
-      }
-    ]
-  },
-  {
-    "kanji": "活",
-    "hiragana": "かつ",
-    "romaji": "katsu",
-    "meaning": "တက်ကြွသော / အသက်ဝင်သော",
-    "tag": "第6週5日目",
-    "examples": [
-      {
-        "word": "生活",
-        "reading": "せいかつ",
-        "mean": "လူနေမှုဘဝ"
-      },
-      {
-        "word": "活動",
-        "reading": "かつどう",
-        "mean": "လှုပ်ရှားဆောင်ရွက်မှု"
-      }
-    ]
-  },
-  {
-    "kanji": "変",
-    "hiragana": "へん / か(わる) / か(える)",
-    "romaji": "hen / ka(waru)",
-    "meaning": "ပြောင်းလဲသည် / ထူးဆန်းသော",
-    "tag": "第6週5日目",
-    "examples": [
-      {
-        "word": "大変",
-        "reading": "たいへん",
-        "mean": "ပင်ပန်းခက်ခဲသော"
-      },
-      {
-        "word": "変化",
-        "reading": "へんか",
-        "mean": "ပြောင်းလဲခြင်း"
-      },
-      {
-        "word": "変わる",
-        "reading": "かわる",
-        "mean": "ပြောင်းလဲသည်"
-      },
-      {
-        "word": "変える",
-        "reading": "かえる",
-        "mean": "ပြောင်းလဲစေသည်"
-      }
-    ]
-  },
-  {
-    "kanji": "政",
-    "hiragana": "せい",
-    "romaji": "sei",
-    "meaning": "နိုင်ငံရေး",
-    "tag": "第6週6日目",
-    "examples": [
-      {
-        "word": "政治",
-        "reading": "せいじ",
-        "mean": "နိုင်ငံရေး"
-      }
-    ]
-  },
-  {
-    "kanji": "府",
-    "hiragana": "ふ",
-    "romaji": "fu",
-    "meaning": "အစိုးရ / မြို့တော်စီရင်စု",
-    "tag": "第6週6日目",
-    "examples": [
-      {
-        "word": "政府",
-        "reading": "せいふ",
-        "mean": "အစိုးရ"
-      },
-      {
-        "word": "都道府県",
-        "reading": "とどうふけん",
-        "mean": "ဂျပန်စီရင်စုများ"
-      }
-    ]
-  },
-  {
-    "kanji": "改",
-    "hiragana": "かい / あらた(める)",
-    "romaji": "kai / arata(meru)",
-    "meaning": "ပြုပြင်ပြောင်းလဲသည်",
-    "tag": "第6週6日目",
-    "examples": [
-      {
-        "word": "改正",
-        "reading": "かいせい",
-        "mean": "ပြင်ဆင်သတ်မှတ်ခြင်း"
-      },
-      {
-        "word": "改札口",
-        "reading": "かいさつぐち",
-        "mean": "လက်မှတ်စစ်ဂိတ်"
-      },
-      {
-        "word": "改める",
-        "reading": "あらためる",
-        "mean": "ပြုပြင်သည်"
-      }
-    ]
-  },
-  {
-    "kanji": "否",
-    "hiragana": "ひ / いな",
-    "romaji": "hi / ina",
-    "meaning": "ငြင်းပယ်သည် / မဟုတ်မမှန်",
-    "tag": "第6週6日目",
-    "examples": [
-      {
-        "word": "否定",
-        "reading": "ひてい",
-        "mean": "ငြင်းပယ်ခြင်း"
-      },
-      {
-        "word": "否定的",
-        "reading": "ひていてき",
-        "mean": "အဆိုးမြင်ငြင်းပယ်သော"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "的",
@@ -13136,55 +13748,8 @@ const N3_KANJI = [
         "reading": "こじんてき",
         "mean": "တစ်ဦးချင်းကိုယ်ပိုင်ဆန်သော"
       }
-    ]
-  },
-  {
-    "kanji": "実",
-    "hiragana": "じつ / み / みの(る)",
-    "romaji": "jitsu / mi",
-    "meaning": "အမှန်တရား / အသီးအပွင့်",
-    "tag": "第6週6日目",
-    "examples": [
-      {
-        "word": "実際に",
-        "reading": "じっさいに",
-        "mean": "လက်တွေ့အားဖြင့်"
-      },
-      {
-        "word": "実は",
-        "reading": "じつは",
-        "mean": "အမှန်တကယ်တော့"
-      },
-      {
-        "word": "実験",
-        "reading": "じっけん",
-        "mean": "လက်တွေ့စမ်းသပ်မှု"
-      }
-    ]
-  },
-  {
-    "kanji": "欠",
-    "hiragana": "けつ / か(ける)",
-    "romaji": "ketsu / ka(keru)",
-    "meaning": "ချို့ယွင်းချက် / ပျက်ကွက်သည်",
-    "tag": "第6週6日目",
-    "examples": [
-      {
-        "word": "欠点",
-        "reading": "けってん",
-        "mean": "အားနည်းချက်"
-      },
-      {
-        "word": "欠席",
-        "reading": "けっせき",
-        "mean": "ပျက်ကွက်ခြင်း"
-      },
-      {
-        "word": "欠ける",
-        "reading": "かける",
-        "mean": "လိုအပ်ချို့ယွင်းသည်"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "専",
@@ -13203,26 +13768,8 @@ const N3_KANJI = [
         "reading": "せんもんか",
         "mean": "ကျွမ်းကျင်ပညာရှင်"
       }
-    ]
-  },
-  {
-    "kanji": "亡",
-    "hiragana": "ぼう / な(くなる)",
-    "romaji": "bou / na(kunaru)",
-    "meaning": "ကွယ်လွန်သည် / မရှိတော့သော",
-    "tag": "第6週7日目",
-    "examples": [
-      {
-        "word": "死亡",
-        "reading": "しぼう",
-        "mean": "သေဆုံးခြင်း"
-      },
-      {
-        "word": "亡くなる",
-        "reading": "なくなる",
-        "mean": "ကွယ်လွန်သည်"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "忙",
@@ -13241,31 +13788,8 @@ const N3_KANJI = [
         "reading": "いそがしい",
         "mean": "အလုပ်ရှုပ်သော"
       }
-    ]
-  },
-  {
-    "kanji": "忘",
-    "hiragana": "ぼう / わす(れる)",
-    "romaji": "bou / wasu(reru)",
-    "meaning": "မေ့လျော့သည်",
-    "tag": "第6週7日目",
-    "examples": [
-      {
-        "word": "忘年会",
-        "reading": "ぼうねんかい",
-        "mean": "နှစ်ကုန်နှုတ်ဆက်ညစာစားပွဲ"
-      },
-      {
-        "word": "忘れる",
-        "reading": "わすれる",
-        "mean": "မေ့သွားသည်"
-      },
-      {
-        "word": "忘れ物",
-        "reading": "わすれもの",
-        "mean": "ကျန်ခဲ့သောပစ္စည်း"
-      }
-    ]
+    ],
+    "isHot": false
   },
   {
     "kanji": "祭",
@@ -13284,97 +13808,7 @@ const N3_KANJI = [
         "reading": "おまつり",
         "mean": "ရိုးရာပွဲတော်"
       }
-    ]
-  },
-  {
-    "kanji": "労",
-    "hiragana": "ろう",
-    "romaji": "rou",
-    "meaning": "လုပ်အား / ပင်ပန်းမှု",
-    "tag": "第6週7日目",
-    "examples": [
-      {
-        "word": "労働",
-        "reading": "ろうどう",
-        "mean": "ကာယ/ဉာဏလုပ်အား"
-      },
-      {
-        "word": "苦労",
-        "reading": "くろう",
-        "mean": "ပင်ပန်းဆင်းရဲမှု"
-      }
-    ]
-  },
-  {
-    "kanji": "加",
-    "hiragana": "か / くわ(える) / くわ(わる)",
-    "romaji": "ka / kuwa(eru)",
-    "meaning": "ပေါင်းထည့်သည် / တိုးပွားသည်",
-    "tag": "第6週7日目",
-    "examples": [
-      {
-        "word": "参加",
-        "reading": "さんか",
-        "mean": "ပါဝင်ခြင်း"
-      },
-      {
-        "word": "増加",
-        "reading": "ぞうか",
-        "mean": "တိုးပွားလာခြင်း"
-      },
-      {
-        "word": "加える",
-        "reading": "くわえる",
-        "mean": "ပေါင်းထည့်သည်"
-      }
-    ]
-  },
-  {
-    "kanji": "情",
-    "hiragana": "じょう / せい / なさ(け)",
-    "romaji": "jou / nasa(ke)",
-    "meaning": "သတင်းအချက်အလက် / ခံစားချက် / စာနာမှု",
-    "tag": "第6週7日目",
-    "examples": [
-      {
-        "word": "情報",
-        "reading": "じょうほう",
-        "mean": "သတင်းအချက်အလက်"
-      },
-      {
-        "word": "表情",
-        "reading": "ひょうじょう",
-        "mean": "မျက်နှာအမူအရာ"
-      },
-      {
-        "word": "事情",
-        "reading": "じじょう",
-        "mean": "အခြေအနေအကြောင်းရင်း"
-      },
-      {
-        "word": "感情",
-        "reading": "かんじょう",
-        "mean": "ခံစားချက်"
-      }
-    ]
-  },
-  {
-    "kanji": "反",
-    "hiragana": "はん / たん / そ(る)",
-    "romaji": "han / tan",
-    "meaning": "ဆန့်ကျင်ဘက် / ကန့်ကွက်သည်",
-    "tag": "第6週7日目",
-    "examples": [
-      {
-        "word": "反対",
-        "reading": "はんたい",
-        "mean": "ဆန့်ကျင်ကန့်ကွက်ခြင်း"
-      },
-      {
-        "word": "違反",
-        "reading": "いはん",
-        "mean": "ဖောက်ဖျက်မှု"
-      }
-    ]
+    ],
+    "isHot": false
   }
 ];
