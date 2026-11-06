@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.csv
+unmapped_152.json
+run_app.bat

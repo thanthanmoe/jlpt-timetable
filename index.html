@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>JLPT Timetable & Alarm</title>
+
+  <!-- Apple iOS Web App Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="JLPT Alarm">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <link rel="manifest" href="./manifest.json">
+
+  <link rel="stylesheet" href="./styles.css?v=2.2">
+</head>
+
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-top">
+      <div class="brand-title">
+        <span class="brand-icon">⏰</span>
+        <div>
+          <div class="brand-name">JLPT Timetable & Alarm</div>
+          <div style="font-size: 0.72rem; color: var(--text-muted);">09/11/2026 - 09/12/2026 (31 Days Prep)</div>
+        </div>
+      </div>
+      <div class="header-controls">
+        <button class="icon-btn" onclick="forceAppUpdate()" title="Update App"
+          style="color:#38bdf8; border-color: rgba(56,189,248,0.4);">
+          <span>🔄</span>
+        </button>
+        <button id="wakeLockBtn" class="icon-btn" onclick="toggleWakeLock()" title="Screen Always On">
+          <span>💡</span>
+        </button>
+        <button class="icon-btn" onclick="openSettings()" title="Settings">
+          <span>⚙️</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- D-Day Exam Countdown & Motivation Banner (Target: 09/12/2026) -->
+  <div class="dday-banner" id="ddayBanner">
+    <div class="dday-left">
+      <div class="dday-badge" id="ddayBadge">D-34</div>
+      <div>
+        <div class="dday-title">🎯 JLPT စာမေးပွဲနေ့ (09/12/2026)</div>
+        <div class="dday-quote" id="ddayQuote">「七転び八起き」- ၇ ကြိမ်လဲရင် ၈ ကြိမ်မြောက် ပြန်ထပါ</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio Enable Banner (Crucial for iOS Safari) -->
+  <div id="audioBanner" class="audio-banner">
+    <div class="audio-banner-text">
+      🔔 <strong>Alarm အသံ မြည်စေရန် စတင်ဖွင့်ပါ</strong><br>
+      <span style="font-size: 0.78rem; opacity: 0.9;">iPhone တွင် အသံမြည်စေရန် ဒီခလုတ်ကို နှိပ်ပေးပါ</span>
+    </div>
+    <button class="audio-banner-btn" onclick="initAudio()">Open Alarm</button>
+  </div>
+
+  <div class="container">
+
+    <!-- Live Active Slot Hero Card -->
+    <div class="hero-card" id="heroCard">
+      <div class="hero-status-row">
+        <div class="live-badge">
+          <span class="live-dot"></span>
+          <span>LIVE</span>
+        </div>
+        <div class="current-time-text" id="currentTimeDisplay">--:--:--</div>
+      </div>
+
+      <div class="hero-activity-title" id="heroActivityTitle">အချိန်ဇယား တင်နေသည်...</div>
+
+      <div class="hero-activity-meta">
+        <span id="heroCategory" class="tag-badge tag-study">Category</span>
+        <span id="heroTimeRange" style="font-size:0.82rem; color: #94a3b8; font-weight:600;">--:-- - --:--</span>
+      </div>
+
+      <div class="hero-timer-box">
+        <div class="timer-label">⏱️ REMAINING TIME</div>
+        <div class="timer-digits" id="heroCountdown">--:--</div>
+        <div class="progress-track">
+          <div class="progress-bar-fill" id="heroProgressBar"></div>
+        </div>
+      </div>
+
+      <div class="hero-next-preview">
+        <span>Next:</span>
+        <span class="next-highlight" id="heroNextName">--</span>
+      </div>
+    </div>
+
+    <!-- Quick Focus Presets -->
+    <div style="font-size: 0.8rem; font-weight: 600; color: #94a3b8; margin-bottom: 6px;">⚡ အမြန် Focus Timer စတင်ရန်:
+    </div>
+    <div class="quick-presets-bar">
+      <button class="preset-chip" onclick="startQuickFocusTimer(25, 'Pomodoro Focus (၂၅ မိနစ်)')">
+        ⏱️ 25m Pomodoro
+      </button>
+      <button class="preset-chip" onclick="startQuickFocusTimer(45, 'Study Sprint (၄၅ မိနစ်)')">
+        🔥 45m Sprint
+      </button>
+      <button class="preset-chip" onclick="startQuickFocusTimer(90, 'Choukai Listening (၁.၅ နာရီ)')">
+        🎧 90m Choukai
+      </button>
+      <button class="preset-chip" onclick="startQuickFocusTimer(120, 'Dokkai Reading (၂ နာရီ)')">
+        📖 120m Dokkai
+      </button>
+      <button class="preset-chip" onclick="startQuickFocusTimer(15, 'အနားယူချိန် (၁၅ မိနစ်)')">
+        ☕ 15m Break
+      </button>
+    </div>
+
+    <!-- Quick Action Bar -->
+    <div class="quick-actions">
+      <button class="action-card-btn" onclick="testAlarmSound()">
+        <span class="action-icon">🔊</span>
+        <div>
+          <div>Alarm အသံ စမ်းမည်</div>
+          <div style="font-size: 0.72rem; color: var(--text-muted);">အသံမြည်မမြည် စမ်းရန်</div>
+        </div>
+      </button>
+      <button class="action-card-btn" onclick="exportAppleCalendar()">
+        <span class="action-icon">📅</span>
+        <div>
+          <div>iPhone Calendar Sync</div>
+          <div style="font-size: 0.72rem; color: var(--text-muted);">Apple Calendar သို့ထည့်ရန်</div>
+        </div>
+      </button>
+    </div>
+
+    <!-- Tab Navigation (4 Tabs) -->
+    <div class="tab-navigation">
+      <button class="tab-btn active" id="tabDaily" onclick="switchTab('daily')">
+        📅 Date & အချိန်
+      </button>
+      <button class="tab-btn" id="tabPlan" onclick="switchTab('plan')">
+        📚 မေးခွန်းဟောင်း
+      </button>
+      <button class="tab-btn" id="tabKanji" onclick="switchTab('kanji')">
+        🈸 Kanji & Kana
+      </button>
+      <button class="tab-btn" id="tabNotes" onclick="switchTab('notes')">
+        📝 အမှတ်မှတ်စု
+      </button>
+    </div>
+
+    <!-- VIEW 1: Date & Time Schedule -->
+    <div id="viewDaily">
+      <!-- Date Selector & Navigation Card -->
+      <div class="date-navigator-card">
+        <div class="date-nav-controls">
+          <button class="nav-arrow-btn" onclick="changeSelectedDay(-1)" title="ယခင်ရက်">◀</button>
+          <div class="date-nav-center">
+            <select id="dateDropdown" class="date-dropdown-select" onchange="onDateDropdownChange(this.value)">
+              <!-- Populated dynamically by JS -->
+            </select>
+            <div id="selectedDaySubtext" class="selected-day-subtext">Day 1 of 31</div>
+          </div>
+          <button class="nav-arrow-btn" onclick="changeSelectedDay(1)" title="နောက်ရက်">▶</button>
+        </div>
+
+        <div class="date-quick-buttons">
+          <button class="today-jump-btn" id="todayJumpBtn" onclick="jumpToToday()">
+            ⭐ ယနေ့ဇယားသို့ ပြန်သွားမည်
+          </button>
+        </div>
+
+        <!-- Selected Date Past Paper Highlight Banner -->
+        <div class="date-paper-banner" id="datePaperBanner">
+          <div class="date-paper-title-row">
+            <span class="date-paper-tag">📖 ဒီနေ့အတွက် မေးခွန်းဟောင်း:</span>
+            <span class="date-paper-year" id="bannerPaperYear">2021 July (2021-07)</span>
+          </div>
+          <div class="date-paper-breakdown" id="bannerPaperBreakdown">
+            <!-- Dynamic past paper tasks -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Time by Time Breakdown Header -->
+      <div class="section-title-bar">
+        <div class="section-title">⏱️ အချိန်အလိုက် နေ့စဉ် အစီအစဉ်</div>
+        <div class="section-subtitle" id="selectedDateTitle">ရွေးချယ်ထားသော ရက်စွဲအတွက် အသေးစိတ် အချိန်ဇယား</div>
+      </div>
+
+      <!-- Timeline List -->
+      <div class="timeline-list" id="timelineContainer">
+        <!-- Daily slots populated by JS -->
+      </div>
+    </div>
+
+    <!-- VIEW 2: Past Paper Plan -->
+    <div id="viewPlan" class="hidden">
+      <div class="calendar-summary-card">
+        <div class="cal-summary-row">
+          <div class="cal-title">၃၁ ရက် မေးခွန်းဟောင်း အစီအစဉ် (09/11 - 09/12)</div>
+          <div class="cal-counter" id="calProgressText">0 / 31 ရက် ပြီးစီး</div>
+        </div>
+        <div style="font-size: 0.82rem; color: #cbd5e1; margin-top: 4px;">
+          ရက်စွဲတစ်ခုချင်းစီကို နှိပ်၍ ထိုနေ့၏ အချိန်ဇယားကို ကြည့်ရှုနိုင်ပါသည်။
+        </div>
+      </div>
+
+      <div class="cal-list" id="calContainer">
+        <!-- Days populated by JS -->
+      </div>
+    </div>
+
+    <!-- VIEW 3: Kanji & Kana Reference & Practice -->
+    <div id="viewKanji" class="hidden">
+      <!-- Filter Chips -->
+      <div class="kanji-filter-bar">
+        <button class="kanji-filter-chip active" id="chipHiragana" onclick="setKanjiFilter('hiragana')">あ Hiragana (၇၁ လုံး)</button>
+        <button class="kanji-filter-chip" id="chipKatakana" onclick="setKanjiFilter('katakana')">ア Katakana (၄၆ လုံး)</button>
+        <button class="kanji-filter-chip" id="chipN5" onclick="setKanjiFilter('n5')">N5 (Minna 1: ၁၁၄ လုံး)</button>
+        <button class="kanji-filter-chip" id="chipN4" onclick="setKanjiFilter('n4')">N4 (Minna 2: ၁၈၆ လုံး)</button>
+        <button class="kanji-filter-chip" id="chipN3" onclick="setKanjiFilter('n3')">N3 (Soumatome: ၃၃၆ လုံး အပြည့်)</button>
+      </div>
+
+      <!-- Search Input -->
+      <input type="text" id="kanjiSearchInput" class="kanji-search-box"
+        placeholder="🔍 Kanji, Hiragana သို့မဟုတ် မြန်မာအဓိပ္ပာယ် ရှာရန်..." oninput="onKanjiSearch(this.value)">
+
+      <!-- Test Mode Toggle -->
+      <div class="test-mode-toggle-row">
+        <span id="kanjiCountLabel" style="font-weight:600; color:#38bdf8;">-- ခု ပြသထားသည်</span>
+        <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+          <input type="checkbox" id="testModeCheck" onchange="toggleTestMode(this.checked)"
+            style="width:18px; height:18px; accent-color:#6366f1;">
+          <span>👁️ အသံထွက် ဝှက်မည် (Quiz Mode)</span>
+        </label>
+      </div>
+
+      <!-- Display Container -->
+      <div id="kanjiDisplayContainer">
+        <!-- Dynamically rendered -->
+      </div>
+    </div>
+
+    <!-- VIEW 4: Score & Mistake Notebook -->
+    <div id="viewNotes" class="hidden">
+      <div class="notes-container">
+        <div class="notes-card">
+          <div class="notes-header-row">
+            <div class="notes-title" id="notesDayTitle">📝 ယနေ့အတွက် အမှတ်နှင့် အမှားမှတ်စု</div>
+            <span class="tag-badge tag-study" id="notesPaperTag">2021-07</span>
+          </div>
+
+          <div style="font-size: 0.82rem; color: #94a3b8; margin-bottom: 10px;">
+            မေးခွန်းဟောင်း အပိုင်းတစ်ခုချင်းစီ၏ ရမှတ် (Score) ကို ထည့်သွင်းမှတ်သားနိုင်ပါသည်:
+          </div>
+
+          <div class="score-inputs-grid">
+            <div class="score-input-box">
+              <div class="score-label">Moji / Goi / Bunpou</div>
+              <input type="number" id="scoreMoji" class="score-num-input" placeholder="/ 60" min="0" max="60">
+            </div>
+            <div class="score-input-box">
+              <div class="score-label">Dokkai (စာဖတ်)</div>
+              <input type="number" id="scoreDokkai" class="score-num-input" placeholder="/ 60" min="0" max="60">
+            </div>
+            <div class="score-input-box">
+              <div class="score-label">Choukai (နားထောင်)</div>
+              <input type="number" id="scoreChoukai" class="score-num-input" placeholder="/ 60" min="0" max="60">
+            </div>
+          </div>
+
+          <label style="display: block; font-size: 0.82rem; font-weight: 600; color: #cbd5e1; margin-bottom: 6px;">
+            ⚠️ မှားသွားသော ဝေါဟာရ၊ သဒ္ဒါ & အရေးကြီးမှတ်စုများ:
+          </label>
+          <textarea id="notesMistakeText" class="mistake-textarea" placeholder="ဥပမာ -
+- ～に関して (Kanji အမှား)
+- Dokkai အပိုဒ် ၃ အချိန်မလောက်ခဲ့
+- Choukai Task 4 မှာ 曖昧 တုံ့ပြန်ပုံ နားမလည်ခဲ့"></textarea>
+
+          <button class="save-notes-btn" onclick="saveDayNotes()">
+            💾 မှတ်စု သိမ်းဆည်းမည်
+          </button>
+        </div>
+
+        <!-- All Saved Mistake Summaries -->
+        <div class="notes-card">
+          <div class="notes-header-row">
+            <div class="notes-title">📚 သိမ်းဆည်းထားသော အမှားမှတ်စု အားလုံး</div>
+          </div>
+          <div style="font-size: 0.82rem; color: #94a3b8; margin-bottom: 12px;">
+            စာမေးပွဲမတိုင်မီ ပြန်လှန်ဖတ်ရှုရန် ကိုယ်တိုင်ရေး အမှားမှတ်စုများ ဖြစ်ပါသည်:
+          </div>
+          <div id="allNotesList">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FULL EXAM FOCUS TIMER MODAL -->
+  <div id="focusModal" class="focus-modal-overlay hidden">
+    <div class="focus-top-bar">
+      <div style="font-weight: 700; color: #fff; font-size: 1.05rem;">🎯 Exam Focus Timer</div>
+      <button class="focus-close-btn" onclick="closeFocusTimer()">✕ ပိတ်မည်</button>
+    </div>
+
+    <div class="focus-center-body">
+      <div class="focus-session-tag" id="focusTag">Study Session</div>
+      <div class="focus-title" id="focusTitle">မေးခွန်းဟောင်း လေ့ကျင့်မှု</div>
+      <div class="focus-subtext" id="focusSubtext">သတ်မှတ်ချိန်အတွင်း အာရုံစိုက် ဖြေဆိုပါ</div>
+
+      <div class="focus-big-clock" id="focusClock">00:00:00</div>
+
+      <div class="focus-warning-badge" id="focusWarningBadge">
+        <span>🔔 ၁၀ မိနစ်အလိုတွင် သတိပေး ခေါင်းလောင်း မြည်ပါမည်</span>
+      </div>
+
+      <div class="focus-controls-row">
+        <button class="focus-btn primary" id="focusPauseBtn" onclick="togglePauseFocusTimer()">ခေတ္တရပ်မည်</button>
+        <button class="focus-btn" onclick="resetFocusTimer()">ပြန်စမည်</button>
+      </div>
+    </div>
+
+    <div style="text-align: center; font-size: 0.8rem; color: #64748b;">
+      💡 iPhone Screen မပိတ်သွားစေရန် အပေါ်ဘက်ရှိ "💡 မျက်နှာပြင်ဖွင့်" ကို ဖွင့်ထားပါ
+    </div>
+  </div>
+
+  <!-- ALARM RINGING FULL-SCREEN MODAL -->
+  <div id="alarmOverlay" class="alarm-overlay hidden">
+    <div class="alarm-modal">
+      <div class="alarm-icon-anim">⏰</div>
+      <div class="alarm-modal-title" id="alarmModalTitle">အချိန်ပြည့်ပါပြီ!</div>
+      <div class="alarm-modal-message" id="alarmModalMsg">
+        သတ်မှတ်ထားသော အချိန်ဇယား ပြီးဆုံးပါပြီ။
+      </div>
+      <div class="alarm-modal-next" id="alarmModalNext">
+        နောက်အစီအစဉ် စတင်ပါပြီ
+      </div>
+      <button class="alarm-dismiss-btn" onclick="dismissAlarm()">
+        <span>🔕</span> ALARM ပိတ်မည် (DISMISS)
+      </button>
+    </div>
+  </div>
+
+  <!-- SETTINGS MODAL -->
+  <div id="settingsModal" class="settings-modal hidden">
+    <div class="settings-content">
+      <div class="settings-header">
+        <h3 style="font-size: 1.15rem; color: #fff;">⚙️ Alarm & Coach Settings</h3>
+        <button class="close-btn" onclick="closeSettings()">&times;</button>
+      </div>
+
+      <div class="settings-group">
+        <label class="settings-label">🔊 Alarm အသံ ရွေးချယ်ရန်</label>
+        <select id="soundSelect" class="settings-select">
+          <option value="digital">Classic Digital Beep (မြည်သံပြတ်)</option>
+          <option value="bell">Pleasant Chime / Bell (ခေါင်းလောင်းသံ)</option>
+          <option value="siren">Urgent Alarm Siren (အရေးပေါ် သတိပေးသံ)</option>
+        </select>
+      </div>
+
+      <div class="settings-group">
+        <label class="settings-label">🎚️ Alarm အသံအတိုးအကျယ်</label>
+        <select id="volSelect" class="settings-select">
+          <option value="1.0">အကျယ်ဆုံး (100%)</option>
+          <option value="0.75">အလယ်အလတ် (75%)</option>
+          <option value="0.5">အသင့်အတင့် (50%)</option>
+        </select>
+      </div>
+
+      <div class="settings-group">
+        <label class="settings-label"
+          style="display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+          <span>🗣️ ဂျပန်အသံဖြင့် အသိပေးခြင်း (Japanese Voice)</span>
+          <input type="checkbox" id="voiceSelect" checked style="width: 20px; height: 20px; accent-color: #6366f1;">
+        </label>
+      </div>
+
+      <div class="settings-group">
+        <label class="settings-label"
+          style="display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+          <span>🔔 ၁၀ မိနစ်အလို သတိပေးသံ (10m Warning)</span>
+          <input type="checkbox" id="preWarnSelect" checked style="width: 20px; height: 20px; accent-color: #6366f1;">
+        </label>
+      </div>
+
+      <div class="settings-group">
+        <label class="settings-label"
+          style="display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+          <span>📳 တုန်ခါမှု (Vibration)</span>
+          <input type="checkbox" id="vibSelect" checked style="width: 20px; height: 20px; accent-color: #6366f1;">
+        </label>
+      </div>
+
+      <div style="display: flex; gap: 10px; margin-top: 20px;">
+        <button class="icon-btn active" style="flex:1; justify-content: center; padding: 12px;"
+          onclick="saveSoundSettings()">
+          သိမ်းမည်
+        </button>
+        <button class="icon-btn" style="flex:1; justify-content: center; padding: 12px;" onclick="testAlarmSound()">
+          အသံစမ်းရန်
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./kanji_data.js?v=2.2"></script>
+  <script src="./app.js?v=2.2"></script>
+</body>
+
+</html>
